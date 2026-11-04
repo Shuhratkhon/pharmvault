@@ -281,6 +281,54 @@
     ["expiry_status", "Expiry Status", "calendar"], ["prescription", "Prescription", "file"],
   ];
 
+
+  // Clicking a row in the Pharma / Ingredient / Illness / Drug Class tabs shows its medicines.
+  TABS.pharma.go = (r) => ["pharma", r.pharma_name];
+  TABS.ingredient.go = (r) => ["ingredients", r.ingredient_name];
+  TABS.illness.go = (r) => ["illness", r.illness_name];
+
+  // ---- Web Stock: the national US catalogue (FDA + NADAC). Same look as Local Stock, read-only prices,
+  //      no quantity / expiry, and tabs/categories that fit the data.
+  const DASH = '<span class="dim">—</span>';
+  const medicinesCol = ["count", "Medicines", (r) => Number(r.med_count).toLocaleString(), "num"];
+  const rxShareCol = ["rx", "Prescription", (r) => `${Number(r.rx_count).toLocaleString()} of ${Number(r.med_count).toLocaleString()}`, "num"];
+  const WEB_TABS = {
+    med: {
+      ...TABS.med,
+      search: "Search US medicines, ingredients, makers, drug classes…",
+      orders: [["id", "ID (Default)"], ["alphabet", "Alphabet"], ["price", "Price"]],
+      cols: TABS.med.cols.map((c) => (
+        c[0] === "price" ? ["price", "Price ($)", (r) => money(r.price), "num"]
+          : c[0] === "quantity" ? ["quantity", "Quantity", () => DASH, "num"]
+            : c[0] === "expiry" ? ["expiry", "Expiry Date", () => DASH, "num"]
+              : c[0] === "type" ? ["type", "Type", (r) => hl(r.type || "—"), "wrap"]
+                : c)),
+    },
+    pharma: {
+      label: "Pharma", single: "Pharma", search: "Search pharma companies…", fields: TABS.pharma.fields,
+      orders: [["id", "ID (Default)"], ["alphabet", "Alphabet"], ["count", "Most medicines"]],
+      cols: [["id", "ID", (r) => r.pharma_id], ["name", "Name", (r) => hl(r.pharma_name), "name"], medicinesCol, rxShareCol],
+      go: (r) => ["pharma", r.pharma_name],
+    },
+    ingredient: {
+      label: "Ingredients", single: "Ingredient", search: "Search ingredients…", fields: TABS.ingredient.fields,
+      orders: [["id", "ID (Default)"], ["alphabet", "Alphabet"], ["count", "Most medicines"]],
+      cols: [["id", "ID", (r) => r.ingredient_id], ["name", "Name", (r) => hl(r.ingredient_name), "name"], medicinesCol],
+      go: (r) => ["ingredients", r.ingredient_name],
+    },
+    drugclass: {
+      label: "Drug Classes", single: "Drug Class", search: "Search drug classes…", noAdd: true,
+      orders: [["id", "ID (Default)"], ["alphabet", "Alphabet"], ["count", "Most medicines"]],
+      cols: [["id", "ID", (r) => r.class_id], ["name", "Drug Class", (r) => hl(r.class_name), "name"], medicinesCol, rxShareCol],
+      go: (r) => ["type", r.class_name],
+    },
+  };
+  // Show by categories that make sense for each stock (Web Stock has no illness, country, quantity or expiry).
+  const WEB_CATEGORIES = new Set(["type", "form", "pharma", "ingredients", "prescription"]);
+  const isWeb = () => state.stock !== "local";
+  const tabDef = () => (isWeb() ? WEB_TABS : TABS)[state.tab] || TABS.med;
+  const categoriesFor = () => CATEGORIES.filter(([k]) => !isWeb() || WEB_CATEGORIES.has(k));
+
   // ------------------------------------------------------------------ state
   const state = {
     pharmacy: null,
@@ -402,7 +450,16 @@
   }
 
   function renderChrome() {
-    const t = TABS[state.tab];
+    // 4th tab: Illness in Local Stock, Drug Class in Web Stock
+    const tab4 = isWeb() ? "drugclass" : "illness";
+    if (state.tab === "illness" || state.tab === "drugclass") state.tab = tab4;
+    $("#tab-4").dataset.tab = tab4;
+    $("#tab-4").textContent = isWeb() ? "Drug Class" : "Illness";
+    if (!categoriesFor().some(([k]) => k === state.showBy)) { state.showBy = "alphabet"; state.group = null; }
+    $$("#show-by option").forEach((o) => { o.hidden = o.value !== "alphabet" && isWeb() && !WEB_CATEGORIES.has(o.value); });
+    const t = tabDef();
+    if (!t.orders.some(([v]) => v === state.order)) state.order = "id";
+    $("#btn-add").disabled = !!t.noAdd;
     $$("[data-tab]").forEach((b) => b.classList.toggle("active", b.dataset.tab === state.tab));
     $("#search").placeholder = t.search;
     $("#order-by").innerHTML = t.orders.map(([v, l]) => `<option value="${v}">${l}</option>`).join("");
@@ -418,7 +475,7 @@
 
   function renderCategories() {
     const isMed = state.tab === "med";
-    $("#cat-list").innerHTML = CATEGORIES.map(([key, label, ic]) => {
+    $("#cat-list").innerHTML = categoriesFor().map(([key, label, ic]) => {
       const active = isMed && key === state.showBy;
       let groups = "";
       if (active && state.groupsOpen && state.groups.length) {
@@ -523,7 +580,7 @@
 
   async function loadRows() {
     const seq = ++loadSeq;
-    const t = TABS[state.tab];
+    const t = tabDef();
     const url = state.tab === "med" ? "/api/meds?" : `/api/table/${state.tab}?`;
     const extra = state.tab === "med" && state.group != null ? { group: state.group } : {};
     $(".table-card").classList.add("loading");
@@ -605,7 +662,7 @@
   });
 
   function renderHead() {
-    const cols = TABS[state.tab].cols;
+    const cols = tabDef().cols;
     $("#thead").innerHTML = "<tr>" + cols.map(([, label]) => `<th>${esc(label)}</th>`).join("") + "</tr>";
   }
 
@@ -642,10 +699,11 @@
   });
 
   function renderBody(data) {
-    const t = TABS[state.tab];
+    const t = tabDef();
     let html = "";
     for (const r of data.rows) {
-      html +="<tr>" + t.cols.map(([, , fmt, cls]) => `<td class="${cls || ""}">${fmt(r)}</td>`).join("") + "</tr>";
+      const go = t.go ? ` class="row-link" data-go="${esc(JSON.stringify(t.go(r)))}" title="Show its medicines"` : "";
+      html += `<tr${go}>` + t.cols.map(([, , fmt, cls]) => `<td class="${cls || ""}">${fmt(r)}</td>`).join("") + "</tr>";
     }
     $("#tbody").innerHTML = html;
     if (data.rows.length) { $("#empty").hidden = true; return; }
@@ -658,9 +716,20 @@
       showEmpty(`<strong>Local stock is empty</strong>Import your Excel, CSV or text file, or add rows by hand.
         <br><button class="btn btn-primary" data-empty-import>${icon("upload")} Import Stock</button>`);
     } else {
-      showEmpty("<strong>Web Stock is empty for now</strong>The big medicines dataset will be added here later. You can add rows by hand meanwhile.");
+      showEmpty("<strong>Web Stock is empty</strong>Load the national catalogue with <code>python scripts/web_stock.py all</code>.");
     }
   }
+  // Row in Pharma / Ingredient / Illness / Drug Class -> its medicines in the Medicine tab
+  $("#tbody").addEventListener("click", (e) => {
+    const tr = e.target.closest("tr[data-go]");
+    if (!tr || e.target.closest("input, button, a")) return;
+    const [showBy, group] = JSON.parse(tr.dataset.go);
+    Object.assign(state, { tab: "med", order: "id", showBy, group, groupsOpen: true, page: 1, q: "" });
+    $("#search").value = "";
+    renderChrome();
+    refresh();
+    $(".table-card").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
   function showEmpty(html) { $("#empty").innerHTML = html; $("#empty").hidden = false; }
   $("#empty").addEventListener("click", (e) => { if (e.target.closest("[data-empty-import]")) openImport(); });
 
@@ -699,7 +768,7 @@
 
   // add row
   $("#btn-add").addEventListener("click", async () => {
-    const t = TABS[state.tab];
+    const t = tabDef();
     if (!lookups) { try { lookups = await api("/api/lookups"); } catch { lookups = {}; } }
     $("#add-title").textContent = `Add ${t.single}`;
     $("#add-sub").textContent = state.tab === "med"
@@ -735,7 +804,7 @@
       } else {
         Object.assign(body, { stock: state.stock, pharmacy_id: state.pharmacy.pharmacy_id });
         await api(`/api/table/${state.tab}`, json(body));
-        toast(`${TABS[state.tab].single} added — it shows in this stock once one of its medicines is in it`);
+        toast(`${tabDef().single} added — it shows in this stock once one of its medicines is in it`);
       }
       lookups = null;
       closeModal(e.target);
@@ -868,11 +937,14 @@
 
   // Keep at most 7 named slices; fold the rest into "Other (n forms)".
   function foldSlices(rows, key) {
-    const sorted = [...rows].sort((a, b) => b[key] - a[key]);
-    if (sorted.length <= 8) return sorted.map((r) => ({ name: r.name, v: r[key] }));
+    // a real "Other" / "No form" bucket always joins the grey Other slice, so there is only one "Other"
+    const isOther = (r) => /^(other|no form)$/i.test(r.name);
+    const sorted = rows.filter((r) => !isOther(r)).sort((a, b) => b[key] - a[key]);
     const top = sorted.slice(0, 7).map((r) => ({ name: r.name, v: r[key] }));
-    const rest = sorted.slice(7);
-    top.push({ name: `Other: ${rest.length} more forms`, v: rest.reduce((s, r) => s + r[key], 0), detail: rest.map((r) => r.name).join(", ") });
+    const rest = [...sorted.slice(7), ...rows.filter(isOther)];
+    if (rest.length) {
+      top.push({ name: "Other", v: rest.reduce((s, r) => s + r[key], 0), detail: rest.map((r) => r.name).join(", ") });
+    }
     return top;
   }
 
@@ -931,6 +1003,21 @@
     });
   }
 
+  function vbar(id, rows) {
+    draw(id, {
+      type: "bar",
+      data: { labels: rows.map((r) => r.name), datasets: [{ data: rows.map((r) => r.value), backgroundColor: "#9d9af4", borderRadius: 4, borderSkipped: "start", barPercentage: 0.6 }] },
+      options: {
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => ` ${fmtMoney(c.raw)} average · ${rows[c.dataIndex].count.toLocaleString()} medicines` } } },
+        scales: {
+          x: { grid: { display: false }, border: { color: GRID }, ticks: { color: MUTED } },
+          y: { beginAtZero: true, grid: { color: GRID }, border: { display: false }, ticks: { color: MUTED, callback: (v) => "$" + v } },
+        },
+      },
+    });
+  }
+
   function line(id, rows) {
     const labels = rows.map((r) => new Date(r.month + "-01T00:00").toLocaleString("en-US", { month: "short" }));
     draw(id, {
@@ -958,14 +1045,27 @@
       $("#dash-empty").hidden = !empty;
       $("#dash-empty").innerHTML = "<strong>No medicines in this stock yet</strong>Import or add medicines to see the dashboard.";
       if (empty) return;
+      const web = d.stock === "web";
       $("#dash-total").textContent = d.totals.medicines.toLocaleString();
-      $("#dash-total-sub").textContent = `${d.totals.packs.toLocaleString()} packs · ${fmtMoney(d.totals.value)} stock value`;
-      $("#dash-expired").textContent = d.expired ? `${d.expired} already expired (not shown)` : "";
+      $("#dash-total-sub").textContent = web
+        ? `${d.rx.rx.toLocaleString()} prescription · ${d.rx.otc.toLocaleString()} over the counter`
+        : `${d.totals.packs.toLocaleString()} packs · ${fmtMoney(d.totals.value)} stock value`;
+      $("#dash-h-pie2").textContent = web ? "Prescription vs over the counter" : "Stock value per form ($)";
+      $("#dash-h-wide").textContent = web ? "Average pack price per form ($)" : "Expiry timeline — next 12 months";
+      $("#dash-h-bar1").textContent = web ? "Top 10 pharma companies" : "Top 10 illnesses covered";
+      $("#dash-h-bar2").textContent = web ? "Top drug classes" : "Medicines by type";
+      $("#dash-expired").textContent = !web && d.expired ? `${d.expired} already expired (not shown)` : "";
       pie("ch-form-count", foldSlices(d.by_form, "count"), (v) => v.toLocaleString());
-      pie("ch-form-value", foldSlices(d.by_form, "value"), fmtMoneyShort);
-      line("ch-expiry", d.expiry);
-      hbar("ch-illness", d.illness);
-      hbar("ch-type", d.by_type);
+      if (web) {
+        pie("ch-form-value", [{ name: "Prescription", v: d.rx.rx }, { name: "Over the counter", v: d.rx.otc }], (v) => v.toLocaleString());
+        vbar("ch-expiry", d.avg_price);
+        hbar("ch-illness", d.pharma);
+      } else {
+        pie("ch-form-value", foldSlices(d.by_form, "value"), fmtMoneyShort);
+        line("ch-expiry", d.expiry);
+        hbar("ch-illness", d.illness);
+      }
+      hbar("ch-type", d.by_type.map((r) => ({ ...r, name: cap(r.name) })));
     } catch (err) { toast(err.message, true); }
   });
 

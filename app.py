@@ -285,10 +285,10 @@ def limit_sql(key):
     return f"(CASE LOWER(form) {whens} ELSE {DEFAULT_LIMITS[key]} END)"
 
 
-STOCK_LEVELS = ["Out of stock", "Very low", "Low", "In stock"]
+STOCK_LEVELS = ["Out of stock", "Very low", "Low", "In stock", "Not tracked"]
 EXPIRY_LEVELS = ["Expired", "Expiring very soon", "Expiring soon", "Valid", "No expiry date"]
 STOCK_STATUS = (
-    "CASE WHEN quantity = 0 THEN 'Out of stock' "
+    "CASE WHEN quantity IS NULL THEN 'Not tracked' WHEN quantity = 0 THEN 'Out of stock' "
     f"WHEN quantity < {limit_sql('qty_red')} THEN 'Very low' "
     f"WHEN quantity < {limit_sql('qty_yellow')} THEN 'Low' ELSE 'In stock' END"
 )
@@ -349,11 +349,20 @@ def dashboard():
             f"SELECT illness_name AS name, COUNT(*) AS count FROM {base} WHERE illness_name IS NOT NULL "
             f"GROUP BY 1 ORDER BY count DESC, name LIMIT 10", params).fetchall()
         by_type = conn.execute(
-            f"SELECT COALESCE(INITCAP(type), 'No type') AS name, COUNT(*) AS count FROM {base} "
-            f"GROUP BY 1 ORDER BY count DESC, name", params).fetchall()
+            f"SELECT COALESCE(type, 'No type') AS name, COUNT(*) AS count FROM {base} "
+            f"GROUP BY 1 ORDER BY count DESC, name LIMIT 12", params).fetchall()
+        pharma = conn.execute(
+            f"SELECT pharma_name AS name, COUNT(*) AS count FROM {base} WHERE pharma_name IS NOT NULL "
+            f"GROUP BY 1 ORDER BY count DESC, name LIMIT 10", params).fetchall()
+        avg_price = conn.execute(
+            f"SELECT COALESCE(INITCAP(form), 'No form') AS name, ROUND(AVG(price), 2) AS value, COUNT(*) AS count "
+            f"FROM {base} GROUP BY 1 ORDER BY count DESC, name", params).fetchall()
+        rx = conn.execute(f"SELECT COUNT(*) FILTER (WHERE prescription_required) AS rx, "
+                          f"COUNT(*) FILTER (WHERE NOT prescription_required) AS otc FROM {base}", params).fetchone()
     return jsonify(totals={k: to_json(v) for k, v in totals.items()}, by_form=rows_json(by_form),
                    expiry=rows_json(expiry), expired=expired, illness=rows_json(illness),
-                   by_type=rows_json(by_type))
+                   by_type=rows_json(by_type), pharma=rows_json(pharma), avg_price=rows_json(avg_price),
+                   rx=rx, stock=stock)
 
 
 WATCH_LEVEL = (f"CASE WHEN ({STOCK_STATUS}) IN ('Out of stock', 'Very low') "
@@ -420,7 +429,7 @@ def med_base(stock, pharmacy_id, show_by, age):
         )
         price, qty, exp = "COALESCE(s.unit_price, m.price)", "s.quantity", "COALESCE(s.expiry_date, m.expiry_date)"
     else:
-        stock_join, price, qty, exp = "", "m.price", "m.quantity", "m.expiry_date"
+        stock_join, price, qty, exp = "", "m.price", "NULL::int", "NULL::date"  # catalogue: no stock / expiry
     web_where = "WHERE m.in_web" if stock != "local" else ""
 
     dosage_filter = "AND d.age_group = %(age)s" if age else ""
@@ -601,8 +610,62 @@ TABLES = {
 }
 
 
+WEB_TABLES = {
+    "pharma": {
+        "pk": "pharma_id", "search": ["pharma_name"],
+        "from": "(SELECT p.pharma_id, p.pharma_name, COUNT(*) AS med_count, "
+                "COUNT(*) FILTER (WHERE m.prescription_required) AS rx_count "
+                "FROM pharma p JOIN med m ON m.pharma_id = p.pharma_id AND m.in_web "
+                "GROUP BY p.pharma_id, p.pharma_name) t",
+        "orders": {"id": "pharma_id", "alphabet": "pharma_name", "count": "med_count DESC, pharma_name"},
+    },
+    "ingredient": {
+        "pk": "ingredient_id", "search": ["ingredient_name"],
+        "from": "(SELECT i.ingredient_id, i.ingredient_name, COUNT(*) AS med_count "
+                "FROM ingredient i JOIN med_ingredient mi ON mi.ingredient_id = i.ingredient_id "
+                "JOIN med m ON m.med_id = mi.med_id AND m.in_web "
+                "GROUP BY i.ingredient_id, i.ingredient_name) t",
+        "orders": {"id": "ingredient_id", "alphabet": "ingredient_name", "count": "med_count DESC, ingredient_name"},
+    },
+    "drugclass": {
+        "pk": "class_id", "search": ["class_name"],
+        "from": "(SELECT ROW_NUMBER() OVER (ORDER BY type) AS class_id, type AS class_name, COUNT(*) AS med_count, "
+                "COUNT(*) FILTER (WHERE prescription_required) AS rx_count "
+                "FROM med WHERE in_web AND type IS NOT NULL GROUP BY type) t",
+        "orders": {"id": "class_id", "alphabet": "class_name", "count": "med_count DESC, class_name"},
+    },
+}
+
+
+def list_web_table(name):
+    t = WEB_TABLES[name]
+    per_page = int_arg("per_page", 10, hi=PAGE_SIZE_MAX)
+    page = int_arg("page", 1)
+    params = {"limit": per_page, "offset": (page - 1) * per_page}
+    where = ""
+    q = request.args.get("q", "").strip()
+    if q:
+        params["like"] = f"%{q}%"
+        where = "WHERE " + " OR ".join(f"{c} ILIKE %(like)s" for c in t["search"])
+        m = re.fullmatch(r"[a-zA-Z]*0*(\d+)", q)
+        if m:
+            params["qid"] = int(m.group(1))
+            where += f" OR {t['pk']} = %(qid)s"
+    order = t["orders"].get(request.args.get("order", "id"), t["orders"]["id"])
+    sql = (f"SELECT *, COUNT(*) OVER () AS total FROM {t['from']} {where} "
+           f"ORDER BY {order} LIMIT %(limit)s OFFSET %(offset)s")
+    with db() as conn:
+        rows = conn.execute(sql, params).fetchall()
+    total = rows[0]["total"] if rows else 0
+    for r in rows:
+        r.pop("total")
+    return jsonify(rows=rows_json(rows), total=total, page=page, per_page=per_page)
+
+
 @app.get("/api/table/<name>")
 def list_table(name):
+    if request.args.get("stock") != "local" and name in WEB_TABLES:
+        return list_web_table(name)
     t = TABLES.get(name)
     if not t:
         abort(404)
@@ -770,6 +833,8 @@ def edit_med(med_id):
     if field not in EDITABLE:
         return jsonify(error="This column can't be edited"), 400
     stock = "local" if data.get("stock") == "local" else "web"
+    if stock == "web":
+        return jsonify(error="Web Stock is read-only — it is the national price list"), 400
     pid = current_pid()
     try:
         if field == "price":

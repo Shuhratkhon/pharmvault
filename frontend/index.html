@@ -153,7 +153,7 @@
         <button data-tab="med" class="active">Medicine</button>
         <button data-tab="pharma">Pharma</button>
         <button data-tab="ingredient">Ingredient</button>
-        <button data-tab="illness">Illness</button>
+        <button data-tab="illness" id="tab-4">Illness</button>
       </nav>
 
       <div class="search-row">
@@ -283,10 +283,10 @@
           <span class="muted small" id="dash-total-sub"></span>
         </section>
         <section class="dash-tile"><h4>Medicines per form</h4><div class="dash-pie"><canvas id="ch-form-count"></canvas></div></section>
-        <section class="dash-tile"><h4>Stock value per form ($)</h4><div class="dash-pie"><canvas id="ch-form-value"></canvas></div></section>
-        <section class="dash-tile dash-span"><h4>Expiry timeline — next 12 months</h4><p class="muted small" id="dash-expired"></p><div class="dash-line"><canvas id="ch-expiry"></canvas></div></section>
-        <section class="dash-tile"><h4>Top 10 illnesses covered</h4><div class="dash-bar"><canvas id="ch-illness"></canvas></div></section>
-        <section class="dash-tile"><h4>Medicines by type</h4><div class="dash-bar"><canvas id="ch-type"></canvas></div></section>
+        <section class="dash-tile"><h4 id="dash-h-pie2">Stock value per form ($)</h4><div class="dash-pie"><canvas id="ch-form-value"></canvas></div></section>
+        <section class="dash-tile dash-span"><h4 id="dash-h-wide">Expiry timeline — next 12 months</h4><p class="muted small" id="dash-expired"></p><div class="dash-line"><canvas id="ch-expiry"></canvas></div></section>
+        <section class="dash-tile"><h4 id="dash-h-bar1">Top 10 illnesses covered</h4><div class="dash-bar"><canvas id="ch-illness"></canvas></div></section>
+        <section class="dash-tile"><h4 id="dash-h-bar2">Medicines by type</h4><div class="dash-bar"><canvas id="ch-type"></canvas></div></section>
       </div>
       <p class="empty" id="dash-empty" hidden></p>
     </div>

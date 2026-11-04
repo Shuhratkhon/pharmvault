@@ -427,3 +427,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 .menu { z-index: 20; }
 .menu svg { color: var(--lavender); }
+
+/* ---------- clickable rows (Pharma / Ingredient / Illness / Drug Class) ---------- */
+tr.row-link { cursor: pointer; }
+tr.row-link:hover td.name { color: var(--lavender); text-decoration: underline; text-underline-offset: 3px; }

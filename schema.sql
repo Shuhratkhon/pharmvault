@@ -111,3 +111,8 @@ CREATE INDEX IF NOT EXISTS idx_history_pharmacy ON history (pharmacy_id, stock_t
 
 -- Sign-in: one hashed password per pharmacy (NULL until the first visitor sets it)
 ALTER TABLE pharmacy ADD COLUMN IF NOT EXISTS password_hash VARCHAR(255);
+
+-- Web Stock (national catalogue) lookups
+CREATE INDEX IF NOT EXISTS idx_med_in_web ON med (in_web) WHERE in_web;
+CREATE INDEX IF NOT EXISTS idx_dosage_med ON dosage (med_id);
+CREATE INDEX IF NOT EXISTS idx_med_ingredient_ing ON med_ingredient (ingredient_id);
