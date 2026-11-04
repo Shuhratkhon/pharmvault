@@ -4,20 +4,41 @@ import csv
 import io
 import os
 import re
+import secrets
 import zipfile
-from datetime import date
+from datetime import date, timedelta
 from decimal import Decimal
 from pathlib import Path
 
 import psycopg
 from dotenv import load_dotenv
-from flask import Flask, abort, jsonify, request, send_file, send_from_directory
+from flask import Flask, abort, jsonify, request, send_file, send_from_directory, session
 from psycopg.rows import dict_row
+from werkzeug.security import check_password_hash, generate_password_hash
 
 ROOT = Path(__file__).resolve().parent
 load_dotenv(ROOT / ".env")
 
 app = Flask(__name__, static_folder=None)
+
+
+def _secret_key():
+    """Key that signs the sign-in cookie. Kept in .env so sessions survive restarts."""
+    key = os.getenv("SECRET_KEY")
+    if not key:
+        key = secrets.token_hex(32)
+        with (ROOT / ".env").open("a", encoding="utf-8") as f:
+            f.write(f"\nSECRET_KEY={key}\n")
+    return key
+
+
+app.config.update(
+    SECRET_KEY=_secret_key(),
+    PERMANENT_SESSION_LIFETIME=timedelta(days=30),  # stay signed in for 30 days
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE="Lax",
+)
+MIN_PASSWORD = 8
 
 FRONTEND = ROOT / "frontend"  # index.html, style.css, script.js
 FRONTEND_FILES = {"index.html", "style.css", "script.js"}
@@ -115,39 +136,126 @@ def frontend(name):
 
 @app.get("/api/pharmacies")
 def pharmacies():
+    """Pharmacy names for the sign-in suggestions (names only)."""
     with db() as conn:
-        rows = conn.execute(
-            """SELECT p.pharmacy_id, p.pharmacy_name,
-                      (SELECT COUNT(*) FROM stock s
-                        WHERE s.pharmacy_id = p.pharmacy_id AND s.stock_type = 'local') AS local_count
-               FROM pharmacy p ORDER BY p.pharmacy_name"""
-        ).fetchall()
-    return jsonify(rows_json(rows))
+        rows = conn.execute("SELECT pharmacy_name FROM pharmacy ORDER BY pharmacy_name").fetchall()
+    return jsonify([r["pharmacy_name"] for r in rows])
 
 
-@app.post("/api/pharmacy")
-def open_pharmacy():
+def current_pid():
+    """The signed-in pharmacy. The server never trusts a pharmacy_id sent by the browser."""
+    return session.get("pid") or 0
+
+
+OPEN_API = {"/api/pharmacies", "/api/pharmacy/check", "/api/login", "/api/logout", "/api/me", "/api/form-limits"}
+
+
+@app.before_request
+def require_sign_in():
+    if request.path.startswith("/api/") and request.path not in OPEN_API and not current_pid():
+        return jsonify(error="Please sign in first", signed_out=True), 401
+
+
+def pharmacy_info(cur, pid):
+    cur.execute("SELECT pharmacy_id, pharmacy_name FROM pharmacy WHERE pharmacy_id = %s", (pid,))
+    row = cur.fetchone()
+    cur.execute("SELECT COUNT(*) AS c FROM stock WHERE pharmacy_id = %s AND stock_type = 'local'", (pid,))
+    row["local_count"] = cur.fetchone()["c"]
+    return row
+
+
+def sign_in(pid):
+    session.clear()
+    session.permanent = True
+    session["pid"] = pid
+
+
+@app.post("/api/pharmacy/check")
+def check_pharmacy():
+    """Tells the sign-in page which step to show: 'login', 'set' (no password yet) or 'create' (new name)."""
     name = (request.json or {}).get("name", "").strip()
     if not name:
-        return jsonify(error="Pharmacy name is required"), 400
+        return jsonify(error="Enter a pharmacy name"), 400
+    with db() as conn:
+        row = conn.execute("SELECT pharmacy_name, password_hash FROM pharmacy WHERE LOWER(pharmacy_name) = LOWER(%s)",
+                           (name,)).fetchone()
+    if not row:
+        return jsonify(step="create", name=name)
+    return jsonify(step="login" if row["password_hash"] else "set", name=row["pharmacy_name"])
+
+
+@app.post("/api/login")
+def login():
+    data = request.json or {}
+    name = (data.get("name") or "").strip()[:150]
+    password = data.get("password") or ""
+    if not name:
+        return jsonify(error="Enter a pharmacy name"), 400
     with db() as conn:
         cur = conn.cursor()
-        cur.execute("SELECT pharmacy_id, pharmacy_name FROM pharmacy WHERE LOWER(pharmacy_name) = LOWER(%s)", (name,))
+        cur.execute("SELECT pharmacy_id, password_hash FROM pharmacy WHERE LOWER(pharmacy_name) = LOWER(%s)", (name,))
         row = cur.fetchone()
-        if not row:
-            pid = next_id(cur, "pharmacy", "pharmacy_id")
-            cur.execute(
-                "INSERT INTO pharmacy (pharmacy_id, pharmacy_name, pharmacy_country) VALUES (%s, %s, %s)"
-                " RETURNING pharmacy_id, pharmacy_name",
-                (pid, name[:150], "Unknown"),
-            )
-            row = cur.fetchone()
-        seed_local_stock(cur, row["pharmacy_id"])
-        cur.execute(
-            "SELECT COUNT(*) AS c FROM stock WHERE pharmacy_id = %s AND stock_type = 'local'", (row["pharmacy_id"],)
-        )
-        row["local_count"] = cur.fetchone()["c"]
-    return jsonify(row)
+        if row and row["password_hash"]:
+            if not check_password_hash(row["password_hash"], password):
+                return jsonify(error="Wrong password"), 401
+            pid = row["pharmacy_id"]
+        else:
+            # new pharmacy, or an existing one without a password yet: the first visitor sets it
+            if len(password) < MIN_PASSWORD:
+                return jsonify(error=f"Password must be at least {MIN_PASSWORD} characters"), 400
+            if password != data.get("confirm"):
+                return jsonify(error="The two passwords don't match"), 400
+            hashed = generate_password_hash(password)
+            if row:
+                pid = row["pharmacy_id"]
+                cur.execute("UPDATE pharmacy SET password_hash = %s WHERE pharmacy_id = %s", (hashed, pid))
+            else:
+                pid = next_id(cur, "pharmacy", "pharmacy_id")
+                cur.execute("INSERT INTO pharmacy (pharmacy_id, pharmacy_name, pharmacy_country, password_hash) "
+                            "VALUES (%s, %s, %s, %s)", (pid, name, "Unknown", hashed))
+        seed_local_stock(cur, pid)
+        info = pharmacy_info(cur, pid)
+    sign_in(pid)
+    return jsonify(info)
+
+
+@app.post("/api/logout")
+def logout():
+    session.clear()
+    return jsonify(status="signed out")
+
+
+@app.get("/api/me")
+def me():
+    pid = current_pid()
+    if not pid:
+        return jsonify(error="Not signed in", signed_out=True), 401
+    with db() as conn:
+        cur = conn.cursor()
+        cur.execute("SELECT 1 FROM pharmacy WHERE pharmacy_id = %s", (pid,))
+        if not cur.fetchone():
+            session.clear()
+            return jsonify(error="Not signed in", signed_out=True), 401
+        return jsonify(pharmacy_info(cur, pid))
+
+
+@app.post("/api/password")
+def change_password():
+    data = request.json or {}
+    new = data.get("new") or ""
+    if len(new) < MIN_PASSWORD:
+        return jsonify(error=f"New password must be at least {MIN_PASSWORD} characters"), 400
+    if new != data.get("confirm"):
+        return jsonify(error="The two new passwords don't match"), 400
+    with db() as conn:
+        cur = conn.cursor()
+        cur.execute("SELECT password_hash FROM pharmacy WHERE pharmacy_id = %s", (current_pid(),))
+        row = cur.fetchone()
+        if not row or not check_password_hash(row["password_hash"] or "", data.get("current") or ""):
+            return jsonify(error="Current password is wrong"), 400
+        cur.execute("UPDATE pharmacy SET password_hash = %s WHERE pharmacy_id = %s",
+                    (generate_password_hash(new), current_pid()))
+    return jsonify(status="changed")
 
 
 # --------------------------------------------------------------------------- medicines
@@ -218,7 +326,7 @@ WATCH_URGENCY = (f"LEAST(array_position({_level_list(STOCK_LEVELS)}, {STOCK_STAT
 def dashboard():
     """Numbers for the Dashboard popup, for the current stock (local = this pharmacy)."""
     stock = "local" if request.args.get("stock") == "local" else "web"
-    params = {"pid": int_arg("pharmacy_id", 0, lo=0)}
+    params = {"pid": current_pid()}
     base = f"({med_base(stock, None, None, None)}) b"
     with db() as conn:
         totals = conn.execute(
@@ -262,7 +370,7 @@ def watchlist():
                 FROM ({med_base("local", None, None, None)}) b
                 WHERE {WATCH_WHERE}
                 ORDER BY CASE WHEN {WATCH_LEVEL} = 'red' THEN 0 ELSE 1 END, med_id""",
-            {"pid": int_arg("pharmacy_id", 0, lo=0)},
+            {"pid": current_pid()},
         ).fetchall()
     for r in rows:
         nice = {"Low": "Low stock", "Very low": "Very low stock"}
@@ -350,7 +458,7 @@ def med_filters():
     q = request.args.get("q", "").strip()
     group = request.args.get("group")
 
-    params = {"pid": int_arg("pharmacy_id", 0, lo=0), "age": age}
+    params = {"pid": current_pid(), "age": age}
     where = []
     if age:
         where.append("times_per_day IS NOT NULL")
@@ -500,7 +608,7 @@ def list_table(name):
         abort(404)
     per_page = int_arg("per_page", 10, hi=PAGE_SIZE_MAX)
     page = int_arg("page", 1)
-    params = {"pid": int_arg("pharmacy_id", 0, lo=0), "limit": per_page, "offset": (page - 1) * per_page}
+    params = {"pid": current_pid(), "limit": per_page, "offset": (page - 1) * per_page}
     where = []
     where.append(t["local"] if request.args.get("stock") == "local" else t["web"])
     q = request.args.get("q", "").strip()
@@ -639,7 +747,7 @@ def save_med(cur, data, stock, pharmacy_id):
 def add_med():
     data = request.json or {}
     stock = "local" if data.get("stock") == "local" else "web"
-    pid = int(data.get("pharmacy_id") or 0)
+    pid = current_pid()
     try:
         with db() as conn:
             cur = conn.cursor()
@@ -662,7 +770,7 @@ def edit_med(med_id):
     if field not in EDITABLE:
         return jsonify(error="This column can't be edited"), 400
     stock = "local" if data.get("stock") == "local" else "web"
-    pid = int(data.get("pharmacy_id") or 0)
+    pid = current_pid()
     try:
         if field == "price":
             value = as_num(data.get("value"))
@@ -702,7 +810,7 @@ def edit_med(med_id):
 
 @app.get("/api/history")
 def history():
-    pid = int_arg("pharmacy_id", 0, lo=0)
+    pid = current_pid()
     stock = "local" if request.args.get("stock") == "local" else "web"
     with db() as conn:
         rows = conn.execute(
@@ -716,7 +824,7 @@ def history():
 @app.post("/api/stock/clear")
 def clear_stock():
     data = request.json or {}
-    pid = int(data.get("pharmacy_id") or 0)
+    pid = current_pid()
     with db() as conn:
         cur = conn.cursor()
         cur.execute("SELECT pharmacy_name FROM pharmacy WHERE pharmacy_id = %s", (pid,))
@@ -767,7 +875,7 @@ def add_row(name):
             new_id = next_id(cur, name, pk)
             cur.execute(f"INSERT INTO {name} ({pk}, {', '.join(fields)}) VALUES ({', '.join(['%s'] * (len(fields) + 1))})",
                         (new_id, *values))
-            log(cur, int(data.get("pharmacy_id") or 0), data.get("stock"), "add",
+            log(cur, current_pid(), data.get("stock"), "add",
                 f"Added {name} “{values[0]}” by hand")
     except (ValueError, psycopg.Error) as e:
         return jsonify(error=str(e).split("\n")[0]), 400
@@ -822,7 +930,7 @@ def read_upload(file):
 @app.post("/api/import")
 def import_stock():
     file = request.files.get("file")
-    pharmacy_id = int(request.form.get("pharmacy_id") or 0)
+    pharmacy_id = current_pid()
     stock = "local" if request.form.get("stock", "local") == "local" else "web"
     if not file:
         return jsonify(error="No file uploaded"), 400
@@ -885,7 +993,7 @@ EXPORT_LABELS = {"watchlist": "Watchlist", "med": "Medicine", "pharma": "Pharma"
 
 @app.get("/api/export")
 def export_stock():
-    pid = int_arg("pharmacy_id", 0, lo=0)
+    pid = current_pid()
     tables = [t for t in request.args.get("tables", "med").split(",") if t in EXPORT_SQL]
     if not tables:
         return jsonify(error="Choose at least one table"), 400

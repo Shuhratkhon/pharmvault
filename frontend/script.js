@@ -31,6 +31,9 @@
     cloud: '<path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>',
     database: '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/>',
     arrowRight: '<path d="M5 12h14M12 5l7 7-7 7"/>',
+    eye: '<path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"/><circle cx="12" cy="12" r="3"/>',
+    eyeOff: '<path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c4.84 0 8.29 3.13 9.94 7a10.8 10.8 0 0 1-1.44 2.49"/><path d="M14.08 14.16a3 3 0 0 1-4.17-4.17"/><path d="M17.48 17.5A10.75 10.75 0 0 1 2.06 12a10.8 10.8 0 0 1 4.45-5.48"/><path d="m2 2 20 20"/>',
+    key: '<path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"/><path d="m21 2-9.6 9.6"/><circle cx="7.5" cy="15.5" r="5.5"/>',
     chart: '<path d="M3 3v18h18"/><path d="M7 16v-4M12 16V8M17 16v-7"/>',
     history: '<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/>',
     trash: '<path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M10 11v6M14 11v6"/>',
@@ -136,6 +139,7 @@
   async function api(url, opts = {}) {
     const res = await fetch(url, opts);
     const data = await res.json().catch(() => ({}));
+    if (res.status === 401 && data.signed_out && state.pharmacy) { signedOut("Your sign-in expired. Please sign in again."); }
     if (!res.ok) throw new Error(data.error || `Request failed (${res.status})`);
     return data;
   }
@@ -279,7 +283,7 @@
 
   // ------------------------------------------------------------------ state
   const state = {
-    pharmacy: store.get("pharmacy"),
+    pharmacy: null,
     stock: store.get("stock") || "web",
     tab: "med", q: "", watch: false, order: "id", showBy: "alphabet", group: null,
     sort: null, dir: "asc", page: 1, perPage: 10,
@@ -297,22 +301,76 @@
   async function loadPharmacyList() {
     try {
       const list = await api("/api/pharmacies");
-      $("#pharmacy-list").innerHTML = list.map((p) => `<option value="${esc(p.pharmacy_name)}">`).join("");
+      $("#pharmacy-list").innerHTML = list.map((n) => `<option value="${esc(n)}">`).join("");
     } catch { /* optional */ }
+  }
+
+  // Sign-in: step 1 = pharmacy name, step 2 = password ("login", "set" = first password, "create" = new pharmacy)
+  let signStep = "name";
+  function showSignStep(step, name) {
+    signStep = step;
+    const pw = step !== "name";
+    $("#pw-step").hidden = !pw;
+    $("#pw-confirm-wrap").hidden = step === "name" || step === "login";
+    $("#pw-back").hidden = !pw;
+    $("#pharmacy-input").readOnly = pw;
+    $("#pw-input").value = ""; $("#pw-confirm").value = "";
+    $("#pw-input").autocomplete = step === "login" ? "current-password" : "new-password";
+    const hints = {
+      login: `Enter the password for ${name}.`,
+      set: `${name} has no password yet. Create one (at least 8 characters) — you'll use it from now on.`,
+      create: `${name} is a new pharmacy. Create a password (at least 8 characters). It starts with the demo stock.`,
+    };
+    $("#pw-hint").textContent = hints[step] || "";
+    $("#pharmacy-submit-label").textContent = { name: "Continue", login: "Sign in", set: "Save password", create: "Create pharmacy" }[step];
+    if (pw) $("#pw-input").focus();
+  }
+  function signedOut(message = "") {
+    state.pharmacy = null;
+    $$(".modal").forEach((m) => { m.hidden = true; });
+    $("#pharmacy-input").value = "";
+    showSignStep("name");
+    $("#pharmacy-error").textContent = message;
+    loadPharmacyList();
+    showScreen("screen-welcome");
   }
 
   $("#pharmacy-form").addEventListener("submit", async (e) => {
     e.preventDefault();
     $("#pharmacy-error").textContent = "";
+    const name = $("#pharmacy-input").value.trim();
     try {
-      const p = await api("/api/pharmacy", json({ name: $("#pharmacy-input").value }));
+      if (signStep === "name") {
+        const r = await api("/api/pharmacy/check", json({ name }));
+        $("#pharmacy-input").value = r.name;
+        showSignStep(r.step, r.name);
+        return;
+      }
+      const password = $("#pw-input").value;
+      if (signStep !== "login") {
+        if (password.length < 8) { $("#pharmacy-error").textContent = "Password must be at least 8 characters."; return; }
+        if (password !== $("#pw-confirm").value) { $("#pharmacy-error").textContent = "The two passwords don't match."; return; }
+      }
+      const p = await api("/api/login", json({ name, password, confirm: $("#pw-confirm").value }));
       state.pharmacy = p;
-      store.set("pharmacy", p);
+      showSignStep("name");
       $("#intro-pharmacy").textContent = p.pharmacy_name;
       showScreen("screen-intro");
     } catch (err) {
       $("#pharmacy-error").textContent = err.message === "Failed to fetch" ? "Cannot reach the server — is app.py running?" : err.message;
     }
+  });
+  $("#pw-back").addEventListener("click", () => { $("#pharmacy-error").textContent = ""; showSignStep("name"); $("#pharmacy-input").focus(); });
+
+  // Show / hide password (eye button)
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-eye]");
+    if (!b) return;
+    const input = document.getElementById(b.dataset.eye);
+    const show = input.type === "password";
+    input.type = show ? "text" : "password";
+    b.innerHTML = icon(show ? "eyeOff" : "eye");
+    b.setAttribute("aria-label", show ? "Hide password" : "Show password");
   });
 
   $$("[data-pick]").forEach((b) => b.addEventListener("click", () => openApp(b.dataset.pick)));
@@ -416,12 +474,26 @@
 
   $("#pharmacy-btn").addEventListener("click", (e) => { e.stopPropagation(); $("#pharmacy-menu").hidden = !$("#pharmacy-menu").hidden; });
   document.addEventListener("click", () => { $("#pharmacy-menu").hidden = true; });
-  $("#change-pharmacy").addEventListener("click", () => {
-    store.del("pharmacy");
-    state.pharmacy = null;
-    $("#pharmacy-input").value = "";
-    loadPharmacyList();
-    showScreen("screen-welcome");
+  $("#btn-sign-out").addEventListener("click", async () => {
+    try { await api("/api/logout", { method: "POST" }); } catch { /* signed out anyway */ }
+    signedOut();
+  });
+  $("#btn-change-pw").addEventListener("click", () => {
+    $("#password-form").reset();
+    $("#password-error").textContent = "";
+    $$("#password-form input").forEach((i) => { i.type = "password"; });
+    $$("#password-form [data-eye]").forEach((b) => { b.innerHTML = icon("eye"); });
+    openModal("#modal-password");
+  });
+  $("#password-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const body = { current: $("#pw-current").value, new: $("#pw-new").value, confirm: $("#pw-new2").value };
+    if (body.new !== body.confirm) { $("#password-error").textContent = "The two new passwords don't match."; return; }
+    try {
+      await api("/api/password", json(body));
+      closeModal(e.target);
+      toast("Password changed");
+    } catch (err) { $("#password-error").textContent = err.message; }
   });
 
   // ------------------------------------------------------------------ data loading
@@ -900,12 +972,11 @@
   // ------------------------------------------------------------------ boot
   hydrate();
   try { limits = await api("/api/form-limits"); } catch { /* keep defaults */ }
-  if (state.pharmacy) {
-    // Re-validate the remembered pharmacy, then go straight to the dashboard.
-    api("/api/pharmacy", json({ name: state.pharmacy.pharmacy_name }))
-      .then((p) => { state.pharmacy = p; store.set("pharmacy", p); openApp(state.stock); })
-      .catch(() => { loadPharmacyList(); showScreen("screen-welcome"); });
-  } else {
+  store.del("pharmacy"); // older versions remembered the pharmacy in the browser; the server session does that now
+  try {
+    state.pharmacy = await api("/api/me"); // still signed in (30-day session)?
+    openApp(state.stock);
+  } catch {
     loadPharmacyList();
   }
 })();

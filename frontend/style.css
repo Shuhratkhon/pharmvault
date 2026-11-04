@@ -404,3 +404,16 @@ td.edit .cur + input.cell-edit { margin-left: -7px; padding-left: 6px; }
 .watch-sec td, .watch-sec th { padding: 10px 14px; }
 span.lvl-red { color: var(--red); font-weight: 700; }
 span.lvl-yellow { color: var(--yellow); font-weight: 700; }
+
+/* ---------- sign-in & passwords ---------- */
+.pw-step { display: grid; gap: 10px; }
+.pw-wrap { position: relative; }
+.pw-wrap input { padding-right: 44px; }
+.eye { position: absolute; right: 6px; top: 50%; translate: 0 -50%; width: 32px; height: 32px; display: grid; place-items: center; border: 0; background: none; border-radius: 8px; color: var(--subtext0); }
+.eye:hover { background: var(--surface0); color: var(--text); }
+.eye svg { width: 18px; height: 18px; }
+input[readonly] { opacity: .75; }
+.link-btn { border: 0; background: none; color: var(--lavender); font-weight: 600; padding: 4px; justify-self: center; }
+.link-btn:hover { text-decoration: underline; }
+.modal-card.modal-narrow { width: min(440px, 100%); }
+#password-form label { font-size: 13px; }

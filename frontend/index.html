@@ -20,9 +20,19 @@
       <p class="muted">Search · Explore · Manage</p>
       <form id="pharmacy-form">
         <label for="pharmacy-input">Pharmacy name</label>
-        <input id="pharmacy-input" list="pharmacy-list" placeholder="e.g. Riverside Pharmacy" autocomplete="off" required />
+        <input id="pharmacy-input" list="pharmacy-list" placeholder="e.g. Riverside Pharmacy" autocomplete="username" required />
         <datalist id="pharmacy-list"></datalist>
-        <button class="btn btn-primary btn-block" type="submit">Continue <i data-icon="arrowRight"></i></button>
+        <div class="pw-step" id="pw-step" hidden>
+          <p class="muted small" id="pw-hint"></p>
+          <label for="pw-input">Password</label>
+          <div class="pw-wrap"><input id="pw-input" type="password" autocomplete="current-password" /><button type="button" class="eye" data-eye="pw-input" aria-label="Show password"><i data-icon="eye"></i></button></div>
+          <div class="pw-step" id="pw-confirm-wrap" hidden>
+            <label for="pw-confirm">Repeat password</label>
+            <div class="pw-wrap"><input id="pw-confirm" type="password" autocomplete="new-password" /><button type="button" class="eye" data-eye="pw-confirm" aria-label="Show password"><i data-icon="eye"></i></button></div>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit" id="pharmacy-submit"><span id="pharmacy-submit-label">Continue</span> <i data-icon="arrowRight"></i></button>
+        <button class="link-btn" type="button" id="pw-back" hidden>Use a different pharmacy</button>
         <p class="form-error" id="pharmacy-error"></p>
       </form>
     </div>
@@ -132,7 +142,8 @@
             <i data-icon="store"></i> <span id="pharmacy-name"></span> <i data-icon="chevronDown"></i>
           </button>
           <div class="menu" id="pharmacy-menu" hidden>
-            <button id="change-pharmacy"><i data-icon="logout"></i> Change pharmacy</button>
+            <button id="btn-change-pw"><i data-icon="key"></i> Change password</button>
+            <button id="btn-sign-out"><i data-icon="logout"></i> Sign out</button>
           </div>
           <span class="avatar" id="avatar"></span>
         </div>
@@ -236,6 +247,21 @@
       <input id="delete-confirm" autocomplete="off" />
       <p class="form-error" id="delete-error"></p>
       <footer><button type="button" class="btn" data-close>Cancel</button><button class="btn btn-danger-solid" type="submit" id="delete-submit" disabled><i data-icon="trash"></i> Delete Stock</button></footer>
+    </form>
+  </div>
+
+  <div class="modal" id="modal-password" hidden>
+    <form class="modal-card modal-narrow" id="password-form">
+      <header><h3>Change password</h3><button type="button" class="icon-btn" data-close aria-label="Close"><i data-icon="x"></i></button></header>
+      <p class="muted small">At least 8 characters.</p>
+      <label for="pw-current">Current password</label>
+      <div class="pw-wrap"><input id="pw-current" type="password" autocomplete="current-password" required /><button type="button" class="eye" data-eye="pw-current" aria-label="Show password"><i data-icon="eye"></i></button></div>
+      <label for="pw-new">New password</label>
+      <div class="pw-wrap"><input id="pw-new" type="password" autocomplete="new-password" minlength="8" required /><button type="button" class="eye" data-eye="pw-new" aria-label="Show password"><i data-icon="eye"></i></button></div>
+      <label for="pw-new2">Repeat new password</label>
+      <div class="pw-wrap"><input id="pw-new2" type="password" autocomplete="new-password" minlength="8" required /><button type="button" class="eye" data-eye="pw-new2" aria-label="Show password"><i data-icon="eye"></i></button></div>
+      <p class="form-error" id="password-error"></p>
+      <footer><button type="button" class="btn" data-close>Cancel</button><button class="btn btn-primary" type="submit">Save password</button></footer>
     </form>
   </div>
 

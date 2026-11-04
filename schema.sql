@@ -108,3 +108,6 @@ CREATE TABLE IF NOT EXISTS history (
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 CREATE INDEX IF NOT EXISTS idx_history_pharmacy ON history (pharmacy_id, stock_type, created_at DESC);
+
+-- Sign-in: one hashed password per pharmacy (NULL until the first visitor sets it)
+ALTER TABLE pharmacy ADD COLUMN IF NOT EXISTS password_hash VARCHAR(255);
