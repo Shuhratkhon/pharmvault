@@ -1,0 +1,101 @@
+﻿illness_id,illness_name,illness_type,illness_danger_level,illness_pre_required
+1,Seasonal Allergies,allergy,low,false
+2,Common Cold,respiratory,low,false
+3,Headache,pain,low,false
+4,Muscle Discomfort,pain,low,false
+5,Indigestion,digestive,low,false
+6,Dry Skin,skin,low,false
+7,Minor Cough,respiratory,low,false
+8,Travel Nausea,digestive,low,false
+9,Nutritional Deficiency,nutrition,moderate,false
+10,Mild Dehydration,hydration,moderate,false
+11,Sleep Difficulty,wellness,low,false
+12,Motion Sickness,digestive,low,false
+13,Sore Throat,respiratory,low,false
+14,Nasal Congestion,respiratory,low,false
+15,Occasional Heartburn,digestive,low,false
+16,Digestive Discomfort,digestive,low,false
+17,Minor Joint Discomfort,pain,low,false
+18,Eye Dryness,eye-care,low,false
+19,Oral Care Needs,oral-care,low,false
+20,General Wellness,wellness,low,false
+21,Acid Reflux,digestive,moderate,false
+22,Constipation,digestive,low,false
+23,Diarrhea,digestive,moderate,false
+24,Bloating,digestive,low,false
+25,Gas Discomfort,digestive,low,false
+26,Mild Nausea,digestive,low,false
+27,Appetite Loss,digestive,moderate,false
+28,Mouth Ulcers,oral-care,low,false
+29,Gum Irritation,oral-care,low,false
+30,Tooth Sensitivity,oral-care,low,false
+31,Minor Burns,skin,moderate,false
+32,Minor Cuts and Scrapes,skin,low,false
+33,Insect Bites,skin,low,false
+34,Skin Itching,skin,low,false
+35,Eczema Symptoms,skin,moderate,false
+36,Acne,skin,low,false
+37,Dandruff,skin,low,false
+38,Sunburn,skin,moderate,false
+39,Dry Eyes,eye-care,low,false
+40,Eye Allergy Symptoms,eye-care,low,false
+41,Earwax Buildup,ear-care,low,false
+42,Ear Discomfort,ear-care,moderate,false
+43,Nasal Allergy Symptoms,allergy,low,false
+44,Sinus Pressure,respiratory,moderate,false
+45,Hoarseness,respiratory,low,false
+46,Seasonal Sneezing,allergy,low,false
+47,Mild Fever,respiratory,moderate,false
+48,Chills,respiratory,moderate,false
+49,Minor Back Discomfort,pain,low,false
+50,Neck Stiffness,pain,low,false
+51,Foot Discomfort,pain,low,false
+52,Occasional Leg Cramps,pain,low,false
+53,Minor Sprain Discomfort,pain,moderate,false
+54,Menstrual Discomfort,reproductive-health,low,false
+55,Premenstrual Symptoms,reproductive-health,low,false
+56,Menopause Symptoms,reproductive-health,moderate,false
+57,Urinary Discomfort,urinary-health,moderate,false
+58,Overactive Bladder Symptoms,urinary-health,moderate,false
+59,Mild Hemorrhoid Symptoms,digestive,moderate,false
+60,Motion-Related Dizziness,neurological,moderate,false
+61,Occasional Tension,wellness,low,false
+62,Stress-Related Sleep Trouble,wellness,low,false
+63,Low Iron Levels,nutrition,moderate,false
+64,Low Vitamin D Levels,nutrition,moderate,false
+65,Low Vitamin B12 Levels,nutrition,moderate,false
+66,Low Calcium Intake,nutrition,low,false
+67,Low Magnesium Intake,nutrition,low,false
+68,Low Zinc Intake,nutrition,low,false
+69,Electrolyte Loss,hydration,moderate,false
+70,Lactose Digestion Difficulty,digestive,low,false
+71,Temporary Voice Strain,respiratory,low,false
+72,Mild Throat Irritation,respiratory,low,false
+73,Dry Nasal Passages,respiratory,low,false
+74,Minor Mouth Dryness,oral-care,low,false
+75,Bad Breath,oral-care,low,false
+76,Sensitive Skin,skin,low,false
+77,Minor Rash,skin,low,false
+78,Calluses,skin,low,false
+79,Cracked Heels,skin,low,false
+80,Brittle Nails,skin,low,false
+81,Hair Thinning Concerns,skin,low,false
+82,Travel-Related Digestive Upset,digestive,low,false
+83,Occasional Bowel Irregularity,digestive,low,false
+84,Minor Eye Irritation,eye-care,low,false
+85,Contact Lens Dryness,eye-care,low,false
+86,Mild Seasonal Respiratory Symptoms,respiratory,low,false
+87,Cough with Throat Irritation,respiratory,low,false
+88,Mild Allergy-Related Itching,allergy,low,false
+89,Allergy-Related Watery Eyes,allergy,low,false
+90,Occasional Stomach Fullness,digestive,low,false
+91,Low Fiber Intake,nutrition,low,false
+92,Low Protein Intake,nutrition,moderate,false
+93,Low Potassium Intake,nutrition,moderate,false
+94,Low Folate Intake,nutrition,moderate,false
+95,Exercise-Related Dehydration,hydration,moderate,false
+96,Exercise-Related Muscle Soreness,pain,low,false
+97,Skin Irritation from Friction,skin,low,false
+98,Minor Oral Irritation,oral-care,low,false
+99,Indigestion After Meals,digestive,low,false
+100,Occasional Digestive Upset,digestive,low,false

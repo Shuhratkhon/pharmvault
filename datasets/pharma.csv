@@ -1,0 +1,101 @@
+﻿pharma_id,pharma_name,pharma_country,pharma_market_value,pharma_origin_year
+1,Northstar Therapeutics,Japan,7268.3,1980
+2,Blue Cedar Pharma,Canada,1976.83,1989
+3,Silverline Laboratories,India,8461.84,1952
+4,Oakwell Medicines,United States,917.2,1968
+5,Brightwell Health,Australia,6462.75,1956
+6,Pinecrest Biologics,Germany,2143.47,2006
+7,Riverstone Pharma,United Kingdom,3309.37,1970
+8,Clearpath Therapeutics,South Korea,3911.66,1967
+9,Evergreen Remedies,Japan,906.13,2012
+10,SummitCare Labs,Canada,4096.66,1973
+11,Red Maple Pharmaceuticals,India,7752.39,1997
+12,Harborview Health,United States,1000.3,2013
+13,Cobalt Medical,Australia,4625.26,1987
+14,Sunfield Pharma,Germany,2931.99,1979
+15,Willowgate Laboratories,United Kingdom,3077.74,2007
+16,Westbridge Therapeutics,South Korea,326.64,1957
+17,Lumen Healthworks,Japan,4853.49,1997
+18,Meadowbrook Pharma,Canada,302.04,1960
+19,Stonehaven Medicines,India,94.9,2013
+20,Cloudspring Labs,United States,5399.86,2004
+21,Northstar Therapeutics 2,Australia,1825.62,1975
+22,Blue Cedar Pharma 2,Germany,8640.59,2010
+23,Silverline Laboratories 2,United Kingdom,4733.85,1964
+24,Oakwell Medicines 2,South Korea,145.54,1951
+25,Brightwell Health 2,Japan,9259.72,1977
+26,Pinecrest Biologics 2,Canada,8519.95,1967
+27,Riverstone Pharma 2,India,571.91,2012
+28,Clearpath Therapeutics 2,United States,2218.27,1955
+29,Evergreen Remedies 2,Australia,8077.35,1952
+30,SummitCare Labs 2,Germany,7577.84,2019
+31,Red Maple Pharmaceuticals 2,United Kingdom,2343.0,1954
+32,Harborview Health 2,South Korea,9316.24,2016
+33,Cobalt Medical 2,Japan,2912.66,1986
+34,Sunfield Pharma 2,Canada,9259.9,2001
+35,Willowgate Laboratories 2,India,4806.24,2009
+36,Westbridge Therapeutics 2,United States,5817.95,2008
+37,Lumen Healthworks 2,Australia,8356.81,1980
+38,Meadowbrook Pharma 2,Germany,1935.22,2008
+39,Stonehaven Medicines 2,United Kingdom,1610.1,2017
+40,Cloudspring Labs 2,South Korea,2826.01,1989
+41,Northstar Therapeutics 3,Japan,8514.16,1986
+42,Blue Cedar Pharma 3,Canada,12.2,2006
+43,Silverline Laboratories 3,India,4090.71,1979
+44,Oakwell Medicines 3,United States,4424.02,2013
+45,Brightwell Health 3,Australia,8876.15,1971
+46,Pinecrest Biologics 3,Germany,7804.61,2013
+47,Riverstone Pharma 3,United Kingdom,3086.5,1959
+48,Clearpath Therapeutics 3,South Korea,5067.77,2006
+49,Evergreen Remedies 3,Japan,8697.54,1950
+50,SummitCare Labs 3,Canada,6710.76,1994
+51,Red Maple Pharmaceuticals 3,India,8049.83,2020
+52,Harborview Health 3,United States,6774.65,1986
+53,Cobalt Medical 3,Australia,7910.57,1997
+54,Sunfield Pharma 3,Germany,7418.14,1975
+55,Willowgate Laboratories 3,United Kingdom,8636.5,2006
+56,Westbridge Therapeutics 3,South Korea,2566.79,1970
+57,Lumen Healthworks 3,Japan,3585.99,1978
+58,Meadowbrook Pharma 3,Canada,944.77,2018
+59,Stonehaven Medicines 3,India,4374.15,2018
+60,Cloudspring Labs 3,United States,7038.25,2010
+61,Northstar Therapeutics 4,Australia,8886.2,1992
+62,Blue Cedar Pharma 4,Germany,5599.53,1970
+63,Silverline Laboratories 4,United Kingdom,2584.73,1969
+64,Oakwell Medicines 4,South Korea,7569.88,2001
+65,Brightwell Health 4,Japan,5584.02,1988
+66,Pinecrest Biologics 4,Canada,1736.95,1990
+67,Riverstone Pharma 4,India,4205.83,2005
+68,Clearpath Therapeutics 4,United States,1805.96,2012
+69,Evergreen Remedies 4,Australia,6772.75,1980
+70,SummitCare Labs 4,Germany,1731.84,1984
+71,Red Maple Pharmaceuticals 4,United Kingdom,3186.05,1973
+72,Harborview Health 4,South Korea,8221.16,2016
+73,Cobalt Medical 4,Japan,856.26,1998
+74,Sunfield Pharma 4,Canada,9327.63,1972
+75,Willowgate Laboratories 4,India,8767.26,1998
+76,Westbridge Therapeutics 4,United States,9056.89,1967
+77,Lumen Healthworks 4,Australia,5594.0,1962
+78,Meadowbrook Pharma 4,Germany,6070.59,1974
+79,Stonehaven Medicines 4,United Kingdom,8246.19,1950
+80,Cloudspring Labs 4,South Korea,1952.72,1978
+81,Northstar Therapeutics 5,Japan,5917.15,1994
+82,Blue Cedar Pharma 5,Canada,8788.3,1959
+83,Silverline Laboratories 5,India,5246.04,1951
+84,Oakwell Medicines 5,United States,9490.8,1951
+85,Brightwell Health 5,Australia,5711.03,1994
+86,Pinecrest Biologics 5,Germany,8861.46,2002
+87,Riverstone Pharma 5,United Kingdom,4890.81,1970
+88,Clearpath Therapeutics 5,South Korea,6091.41,1992
+89,Evergreen Remedies 5,Japan,262.74,1951
+90,SummitCare Labs 5,Canada,2939.83,1960
+91,Red Maple Pharmaceuticals 5,India,4928.92,1953
+92,Harborview Health 5,United States,1504.0,2015
+93,Cobalt Medical 5,Australia,4407.38,1994
+94,Sunfield Pharma 5,Germany,8629.27,1965
+95,Willowgate Laboratories 5,United Kingdom,6760.18,1956
+96,Westbridge Therapeutics 5,South Korea,1072.23,2008
+97,Lumen Healthworks 5,Japan,7624.6,2014
+98,Meadowbrook Pharma 5,Canada,8225.74,1963
+99,Stonehaven Medicines 5,India,814.34,1956
+100,Cloudspring Labs 5,United States,4584.27,2019

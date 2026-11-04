@@ -1,0 +1,6001 @@
+﻿dosage_id,med_id,age_group,dosage_note,times_per_day
+1,1,adult,follow product label,3
+2,1,adult,follow product label,3
+3,1,child,not specified,1
+4,2,adult,follow product label,3
+5,2,adult,demo only,1
+6,2,child,not specified,3
+7,3,adult,not specified,1
+8,3,adult,demo only,1
+9,3,child,follow product label,1
+10,4,adult,demo only,2
+11,4,adult,demo only,2
+12,4,child,demo only,3
+13,5,adult,demo only,3
+14,5,adult,follow product label,2
+15,5,child,follow product label,2
+16,6,adult,demo only,1
+17,6,adult,follow product label,2
+18,6,child,follow product label,1
+19,7,adult,not specified,1
+20,7,adult,demo only,3
+21,7,child,demo only,3
+22,8,adult,not specified,2
+23,8,adult,not specified,2
+24,8,child,follow product label,2
+25,9,adult,not specified,3
+26,9,adult,not specified,2
+27,9,child,demo only,1
+28,10,adult,follow product label,1
+29,10,adult,not specified,2
+30,10,child,demo only,1
+31,11,adult,demo only,1
+32,11,adult,demo only,1
+33,11,child,not specified,2
+34,12,adult,demo only,3
+35,12,adult,not specified,3
+36,12,child,not specified,3
+37,13,adult,follow product label,3
+38,13,adult,demo only,2
+39,13,child,not specified,3
+40,14,adult,not specified,3
+41,14,adult,not specified,2
+42,14,child,follow product label,1
+43,15,adult,not specified,1
+44,15,adult,demo only,3
+45,15,child,not specified,1
+46,16,adult,demo only,3
+47,16,adult,demo only,3
+48,16,child,demo only,1
+49,17,adult,demo only,3
+50,17,adult,not specified,2
+51,17,child,demo only,1
+52,18,adult,follow product label,1
+53,18,adult,demo only,3
+54,18,child,demo only,2
+55,19,adult,not specified,1
+56,19,adult,not specified,2
+57,19,child,demo only,1
+58,20,adult,follow product label,2
+59,20,adult,follow product label,2
+60,20,child,follow product label,3
+61,21,adult,follow product label,2
+62,21,adult,follow product label,3
+63,21,child,not specified,2
+64,22,adult,follow product label,1
+65,22,adult,not specified,1
+66,22,child,follow product label,3
+67,23,adult,demo only,1
+68,23,adult,follow product label,3
+69,23,child,not specified,3
+70,24,adult,not specified,3
+71,24,adult,not specified,1
+72,24,child,demo only,1
+73,25,adult,follow product label,1
+74,25,adult,demo only,1
+75,25,child,demo only,3
+76,26,adult,demo only,1
+77,26,adult,follow product label,1
+78,26,child,follow product label,3
+79,27,adult,demo only,1
+80,27,adult,follow product label,3
+81,27,child,follow product label,2
+82,28,adult,demo only,3
+83,28,adult,not specified,2
+84,28,child,follow product label,3
+85,29,adult,follow product label,2
+86,29,adult,follow product label,3
+87,29,child,not specified,1
+88,30,adult,not specified,1
+89,30,adult,not specified,2
+90,30,child,demo only,1
+91,31,adult,not specified,1
+92,31,adult,follow product label,1
+93,31,child,not specified,2
+94,32,adult,not specified,2
+95,32,adult,follow product label,1
+96,32,child,not specified,1
+97,33,adult,not specified,1
+98,33,adult,demo only,2
+99,33,child,not specified,1
+100,34,adult,demo only,2
+101,34,adult,not specified,3
+102,34,child,not specified,3
+103,35,adult,not specified,2
+104,35,adult,demo only,2
+105,35,child,demo only,2
+106,36,adult,not specified,2
+107,36,adult,demo only,3
+108,36,child,not specified,3
+109,37,adult,demo only,3
+110,37,adult,not specified,1
+111,37,child,follow product label,2
+112,38,adult,demo only,1
+113,38,adult,follow product label,2
+114,38,child,demo only,2
+115,39,adult,not specified,3
+116,39,adult,follow product label,1
+117,39,child,follow product label,1
+118,40,adult,not specified,2
+119,40,adult,follow product label,1
+120,40,child,follow product label,1
+121,41,adult,demo only,1
+122,41,adult,not specified,1
+123,41,child,demo only,2
+124,42,adult,demo only,1
+125,42,adult,not specified,3
+126,42,child,demo only,2
+127,43,adult,follow product label,3
+128,43,adult,follow product label,3
+129,43,child,not specified,2
+130,44,adult,not specified,1
+131,44,adult,not specified,1
+132,44,child,demo only,1
+133,45,adult,demo only,2
+134,45,adult,demo only,3
+135,45,child,follow product label,2
+136,46,adult,follow product label,3
+137,46,adult,not specified,3
+138,46,child,not specified,2
+139,47,adult,not specified,2
+140,47,adult,not specified,3
+141,47,child,not specified,2
+142,48,adult,not specified,2
+143,48,adult,not specified,1
+144,48,child,demo only,2
+145,49,adult,not specified,3
+146,49,adult,demo only,1
+147,49,child,demo only,2
+148,50,adult,demo only,2
+149,50,adult,follow product label,1
+150,50,child,follow product label,3
+151,51,adult,follow product label,3
+152,51,adult,demo only,2
+153,51,child,demo only,3
+154,52,adult,not specified,2
+155,52,adult,not specified,2
+156,52,child,demo only,1
+157,53,adult,demo only,3
+158,53,adult,demo only,3
+159,53,child,demo only,1
+160,54,adult,follow product label,2
+161,54,adult,follow product label,1
+162,54,child,follow product label,2
+163,55,adult,demo only,1
+164,55,adult,demo only,1
+165,55,child,not specified,3
+166,56,adult,not specified,3
+167,56,adult,demo only,2
+168,56,child,not specified,2
+169,57,adult,not specified,2
+170,57,adult,not specified,1
+171,57,child,demo only,2
+172,58,adult,not specified,2
+173,58,adult,demo only,3
+174,58,child,not specified,2
+175,59,adult,demo only,3
+176,59,adult,not specified,1
+177,59,child,follow product label,3
+178,60,adult,follow product label,1
+179,60,adult,not specified,2
+180,60,child,demo only,3
+181,61,adult,not specified,2
+182,61,adult,follow product label,3
+183,61,child,not specified,3
+184,62,adult,not specified,1
+185,62,adult,follow product label,3
+186,62,child,demo only,3
+187,63,adult,follow product label,2
+188,63,adult,not specified,3
+189,63,child,demo only,1
+190,64,adult,follow product label,2
+191,64,adult,demo only,2
+192,64,child,follow product label,1
+193,65,adult,demo only,1
+194,65,adult,not specified,3
+195,65,child,demo only,1
+196,66,adult,demo only,3
+197,66,adult,not specified,1
+198,66,child,follow product label,1
+199,67,adult,not specified,2
+200,67,adult,demo only,3
+201,67,child,demo only,3
+202,68,adult,follow product label,3
+203,68,adult,demo only,1
+204,68,child,not specified,3
+205,69,adult,demo only,3
+206,69,adult,follow product label,3
+207,69,child,demo only,2
+208,70,adult,demo only,3
+209,70,adult,not specified,1
+210,70,child,demo only,1
+211,71,adult,not specified,2
+212,71,adult,demo only,1
+213,71,child,follow product label,3
+214,72,adult,demo only,3
+215,72,adult,not specified,2
+216,72,child,follow product label,1
+217,73,adult,not specified,3
+218,73,adult,not specified,2
+219,73,child,demo only,2
+220,74,adult,demo only,3
+221,74,adult,demo only,3
+222,74,child,not specified,3
+223,75,adult,demo only,3
+224,75,adult,not specified,3
+225,75,child,demo only,1
+226,76,adult,not specified,2
+227,76,adult,demo only,2
+228,76,child,follow product label,1
+229,77,adult,follow product label,3
+230,77,adult,follow product label,3
+231,77,child,not specified,2
+232,78,adult,follow product label,3
+233,78,adult,follow product label,1
+234,78,child,follow product label,2
+235,79,adult,not specified,2
+236,79,adult,follow product label,1
+237,79,child,not specified,2
+238,80,adult,demo only,1
+239,80,adult,demo only,1
+240,80,child,demo only,2
+241,81,adult,demo only,2
+242,81,adult,demo only,1
+243,81,child,demo only,2
+244,82,adult,demo only,1
+245,82,adult,demo only,3
+246,82,child,follow product label,3
+247,83,adult,demo only,1
+248,83,adult,follow product label,1
+249,83,child,demo only,3
+250,84,adult,not specified,2
+251,84,adult,not specified,1
+252,84,child,demo only,1
+253,85,adult,not specified,3
+254,85,adult,follow product label,1
+255,85,child,follow product label,1
+256,86,adult,not specified,1
+257,86,adult,follow product label,1
+258,86,child,follow product label,3
+259,87,adult,follow product label,3
+260,87,adult,follow product label,2
+261,87,child,demo only,3
+262,88,adult,follow product label,3
+263,88,adult,demo only,3
+264,88,child,follow product label,2
+265,89,adult,demo only,3
+266,89,adult,demo only,1
+267,89,child,demo only,2
+268,90,adult,not specified,3
+269,90,adult,not specified,3
+270,90,child,follow product label,2
+271,91,adult,demo only,3
+272,91,adult,follow product label,2
+273,91,child,demo only,1
+274,92,adult,not specified,2
+275,92,adult,demo only,1
+276,92,child,follow product label,2
+277,93,adult,not specified,2
+278,93,adult,not specified,1
+279,93,child,demo only,2
+280,94,adult,follow product label,3
+281,94,adult,demo only,1
+282,94,child,not specified,3
+283,95,adult,demo only,2
+284,95,adult,demo only,1
+285,95,child,follow product label,1
+286,96,adult,not specified,2
+287,96,adult,follow product label,3
+288,96,child,demo only,2
+289,97,adult,follow product label,2
+290,97,adult,follow product label,3
+291,97,child,demo only,2
+292,98,adult,not specified,2
+293,98,adult,follow product label,1
+294,98,child,not specified,1
+295,99,adult,demo only,1
+296,99,adult,demo only,3
+297,99,child,not specified,1
+298,100,adult,not specified,3
+299,100,adult,follow product label,1
+300,100,child,follow product label,3
+301,101,adult,follow product label,3
+302,101,adult,not specified,3
+303,101,child,demo only,3
+304,102,adult,follow product label,2
+305,102,adult,follow product label,2
+306,102,child,demo only,1
+307,103,adult,not specified,1
+308,103,adult,demo only,3
+309,103,child,demo only,1
+310,104,adult,follow product label,2
+311,104,adult,not specified,3
+312,104,child,demo only,2
+313,105,adult,follow product label,1
+314,105,adult,demo only,1
+315,105,child,not specified,3
+316,106,adult,follow product label,2
+317,106,adult,follow product label,2
+318,106,child,not specified,1
+319,107,adult,demo only,1
+320,107,adult,follow product label,3
+321,107,child,demo only,1
+322,108,adult,not specified,1
+323,108,adult,demo only,3
+324,108,child,demo only,3
+325,109,adult,demo only,2
+326,109,adult,follow product label,1
+327,109,child,not specified,1
+328,110,adult,follow product label,2
+329,110,adult,follow product label,2
+330,110,child,follow product label,3
+331,111,adult,follow product label,3
+332,111,adult,demo only,2
+333,111,child,follow product label,3
+334,112,adult,not specified,2
+335,112,adult,not specified,2
+336,112,child,demo only,1
+337,113,adult,follow product label,2
+338,113,adult,follow product label,3
+339,113,child,follow product label,3
+340,114,adult,demo only,1
+341,114,adult,demo only,2
+342,114,child,demo only,1
+343,115,adult,demo only,1
+344,115,adult,demo only,1
+345,115,child,demo only,1
+346,116,adult,not specified,1
+347,116,adult,demo only,2
+348,116,child,not specified,3
+349,117,adult,not specified,1
+350,117,adult,follow product label,2
+351,117,child,not specified,3
+352,118,adult,demo only,2
+353,118,adult,follow product label,1
+354,118,child,demo only,2
+355,119,adult,follow product label,3
+356,119,adult,follow product label,2
+357,119,child,not specified,1
+358,120,adult,not specified,3
+359,120,adult,demo only,3
+360,120,child,demo only,3
+361,121,adult,not specified,3
+362,121,adult,follow product label,2
+363,121,child,demo only,3
+364,122,adult,follow product label,1
+365,122,adult,not specified,3
+366,122,child,demo only,2
+367,123,adult,follow product label,3
+368,123,adult,not specified,2
+369,123,child,not specified,3
+370,124,adult,not specified,1
+371,124,adult,follow product label,2
+372,124,child,demo only,3
+373,125,adult,not specified,1
+374,125,adult,follow product label,2
+375,125,child,demo only,3
+376,126,adult,not specified,1
+377,126,adult,not specified,3
+378,126,child,not specified,3
+379,127,adult,not specified,1
+380,127,adult,not specified,2
+381,127,child,demo only,3
+382,128,adult,not specified,2
+383,128,adult,not specified,3
+384,128,child,demo only,3
+385,129,adult,follow product label,1
+386,129,adult,follow product label,3
+387,129,child,demo only,3
+388,130,adult,follow product label,3
+389,130,adult,demo only,3
+390,130,child,demo only,3
+391,131,adult,demo only,3
+392,131,adult,not specified,3
+393,131,child,not specified,3
+394,132,adult,demo only,1
+395,132,adult,not specified,2
+396,132,child,demo only,3
+397,133,adult,not specified,2
+398,133,adult,follow product label,2
+399,133,child,demo only,2
+400,134,adult,follow product label,3
+401,134,adult,not specified,2
+402,134,child,follow product label,3
+403,135,adult,not specified,1
+404,135,adult,not specified,1
+405,135,child,demo only,2
+406,136,adult,not specified,1
+407,136,adult,demo only,1
+408,136,child,follow product label,2
+409,137,adult,demo only,1
+410,137,adult,follow product label,3
+411,137,child,demo only,2
+412,138,adult,demo only,2
+413,138,adult,not specified,2
+414,138,child,follow product label,2
+415,139,adult,demo only,3
+416,139,adult,demo only,3
+417,139,child,demo only,2
+418,140,adult,not specified,1
+419,140,adult,demo only,2
+420,140,child,demo only,2
+421,141,adult,not specified,2
+422,141,adult,not specified,1
+423,141,child,follow product label,1
+424,142,adult,not specified,1
+425,142,adult,demo only,1
+426,142,child,demo only,2
+427,143,adult,follow product label,1
+428,143,adult,demo only,3
+429,143,child,demo only,2
+430,144,adult,not specified,3
+431,144,adult,follow product label,2
+432,144,child,not specified,2
+433,145,adult,not specified,2
+434,145,adult,demo only,2
+435,145,child,demo only,3
+436,146,adult,follow product label,3
+437,146,adult,follow product label,2
+438,146,child,demo only,1
+439,147,adult,follow product label,1
+440,147,adult,demo only,2
+441,147,child,not specified,1
+442,148,adult,follow product label,1
+443,148,adult,follow product label,2
+444,148,child,demo only,3
+445,149,adult,demo only,3
+446,149,adult,not specified,2
+447,149,child,follow product label,2
+448,150,adult,not specified,2
+449,150,adult,follow product label,2
+450,150,child,not specified,1
+451,151,adult,follow product label,3
+452,151,adult,demo only,1
+453,151,child,follow product label,1
+454,152,adult,demo only,1
+455,152,adult,demo only,2
+456,152,child,follow product label,2
+457,153,adult,demo only,3
+458,153,adult,follow product label,3
+459,153,child,follow product label,2
+460,154,adult,demo only,3
+461,154,adult,demo only,3
+462,154,child,not specified,2
+463,155,adult,follow product label,1
+464,155,adult,demo only,1
+465,155,child,follow product label,3
+466,156,adult,not specified,2
+467,156,adult,not specified,2
+468,156,child,follow product label,3
+469,157,adult,not specified,2
+470,157,adult,follow product label,1
+471,157,child,follow product label,3
+472,158,adult,not specified,1
+473,158,adult,follow product label,1
+474,158,child,follow product label,2
+475,159,adult,not specified,2
+476,159,adult,follow product label,3
+477,159,child,demo only,1
+478,160,adult,follow product label,1
+479,160,adult,demo only,2
+480,160,child,follow product label,2
+481,161,adult,follow product label,2
+482,161,adult,not specified,2
+483,161,child,follow product label,2
+484,162,adult,not specified,1
+485,162,adult,follow product label,3
+486,162,child,follow product label,1
+487,163,adult,demo only,3
+488,163,adult,follow product label,1
+489,163,child,demo only,3
+490,164,adult,demo only,2
+491,164,adult,demo only,1
+492,164,child,demo only,2
+493,165,adult,demo only,1
+494,165,adult,follow product label,3
+495,165,child,follow product label,2
+496,166,adult,demo only,3
+497,166,adult,not specified,3
+498,166,child,demo only,1
+499,167,adult,follow product label,3
+500,167,adult,follow product label,1
+501,167,child,not specified,3
+502,168,adult,follow product label,1
+503,168,adult,demo only,1
+504,168,child,follow product label,3
+505,169,adult,not specified,1
+506,169,adult,not specified,1
+507,169,child,demo only,1
+508,170,adult,follow product label,2
+509,170,adult,follow product label,1
+510,170,child,demo only,3
+511,171,adult,follow product label,1
+512,171,adult,not specified,3
+513,171,child,follow product label,3
+514,172,adult,not specified,2
+515,172,adult,demo only,1
+516,172,child,demo only,1
+517,173,adult,not specified,3
+518,173,adult,follow product label,3
+519,173,child,demo only,3
+520,174,adult,follow product label,1
+521,174,adult,follow product label,2
+522,174,child,not specified,2
+523,175,adult,follow product label,3
+524,175,adult,not specified,1
+525,175,child,follow product label,2
+526,176,adult,follow product label,3
+527,176,adult,demo only,2
+528,176,child,follow product label,3
+529,177,adult,follow product label,2
+530,177,adult,follow product label,2
+531,177,child,not specified,3
+532,178,adult,demo only,1
+533,178,adult,follow product label,3
+534,178,child,demo only,1
+535,179,adult,not specified,3
+536,179,adult,demo only,3
+537,179,child,not specified,1
+538,180,adult,follow product label,2
+539,180,adult,demo only,3
+540,180,child,demo only,1
+541,181,adult,follow product label,3
+542,181,adult,demo only,1
+543,181,child,demo only,2
+544,182,adult,not specified,2
+545,182,adult,not specified,1
+546,182,child,not specified,2
+547,183,adult,not specified,1
+548,183,adult,not specified,3
+549,183,child,not specified,3
+550,184,adult,follow product label,3
+551,184,adult,follow product label,1
+552,184,child,not specified,1
+553,185,adult,not specified,2
+554,185,adult,not specified,3
+555,185,child,follow product label,2
+556,186,adult,follow product label,1
+557,186,adult,follow product label,2
+558,186,child,not specified,1
+559,187,adult,not specified,2
+560,187,adult,follow product label,1
+561,187,child,not specified,2
+562,188,adult,follow product label,3
+563,188,adult,demo only,1
+564,188,child,not specified,1
+565,189,adult,follow product label,1
+566,189,adult,demo only,2
+567,189,child,demo only,3
+568,190,adult,not specified,1
+569,190,adult,demo only,3
+570,190,child,not specified,1
+571,191,adult,demo only,3
+572,191,adult,demo only,2
+573,191,child,follow product label,1
+574,192,adult,not specified,1
+575,192,adult,not specified,2
+576,192,child,not specified,1
+577,193,adult,follow product label,1
+578,193,adult,demo only,3
+579,193,child,not specified,2
+580,194,adult,follow product label,2
+581,194,adult,demo only,2
+582,194,child,demo only,3
+583,195,adult,not specified,2
+584,195,adult,not specified,1
+585,195,child,demo only,1
+586,196,adult,demo only,1
+587,196,adult,not specified,1
+588,196,child,not specified,2
+589,197,adult,follow product label,1
+590,197,adult,follow product label,1
+591,197,child,demo only,3
+592,198,adult,not specified,2
+593,198,adult,demo only,1
+594,198,child,follow product label,1
+595,199,adult,demo only,3
+596,199,adult,not specified,2
+597,199,child,not specified,1
+598,200,adult,demo only,3
+599,200,adult,demo only,1
+600,200,child,not specified,2
+601,201,adult,not specified,1
+602,201,adult,not specified,3
+603,201,child,demo only,2
+604,202,adult,demo only,2
+605,202,adult,not specified,3
+606,202,child,follow product label,1
+607,203,adult,not specified,2
+608,203,adult,demo only,3
+609,203,child,follow product label,1
+610,204,adult,demo only,3
+611,204,adult,demo only,3
+612,204,child,demo only,3
+613,205,adult,not specified,1
+614,205,adult,not specified,3
+615,205,child,not specified,3
+616,206,adult,not specified,2
+617,206,adult,not specified,3
+618,206,child,follow product label,3
+619,207,adult,demo only,2
+620,207,adult,not specified,2
+621,207,child,follow product label,2
+622,208,adult,follow product label,3
+623,208,adult,demo only,3
+624,208,child,not specified,1
+625,209,adult,demo only,1
+626,209,adult,follow product label,2
+627,209,child,not specified,1
+628,210,adult,demo only,2
+629,210,adult,demo only,2
+630,210,child,demo only,3
+631,211,adult,not specified,3
+632,211,adult,demo only,2
+633,211,child,demo only,3
+634,212,adult,demo only,2
+635,212,adult,not specified,3
+636,212,child,demo only,3
+637,213,adult,not specified,2
+638,213,adult,not specified,3
+639,213,child,demo only,3
+640,214,adult,follow product label,3
+641,214,adult,not specified,1
+642,214,child,not specified,1
+643,215,adult,follow product label,1
+644,215,adult,not specified,3
+645,215,child,not specified,1
+646,216,adult,follow product label,3
+647,216,adult,not specified,3
+648,216,child,demo only,3
+649,217,adult,follow product label,3
+650,217,adult,not specified,3
+651,217,child,not specified,3
+652,218,adult,follow product label,2
+653,218,adult,not specified,2
+654,218,child,not specified,2
+655,219,adult,follow product label,2
+656,219,adult,not specified,2
+657,219,child,follow product label,1
+658,220,adult,not specified,1
+659,220,adult,demo only,3
+660,220,child,follow product label,1
+661,221,adult,demo only,3
+662,221,adult,follow product label,2
+663,221,child,demo only,2
+664,222,adult,follow product label,3
+665,222,adult,not specified,3
+666,222,child,follow product label,2
+667,223,adult,not specified,2
+668,223,adult,demo only,3
+669,223,child,demo only,3
+670,224,adult,not specified,3
+671,224,adult,follow product label,2
+672,224,child,not specified,3
+673,225,adult,not specified,2
+674,225,adult,follow product label,2
+675,225,child,not specified,2
+676,226,adult,not specified,3
+677,226,adult,demo only,2
+678,226,child,not specified,3
+679,227,adult,follow product label,1
+680,227,adult,not specified,3
+681,227,child,not specified,2
+682,228,adult,follow product label,2
+683,228,adult,follow product label,3
+684,228,child,demo only,1
+685,229,adult,not specified,3
+686,229,adult,demo only,2
+687,229,child,not specified,3
+688,230,adult,follow product label,1
+689,230,adult,not specified,3
+690,230,child,not specified,3
+691,231,adult,demo only,3
+692,231,adult,not specified,2
+693,231,child,demo only,2
+694,232,adult,not specified,1
+695,232,adult,follow product label,2
+696,232,child,demo only,3
+697,233,adult,not specified,1
+698,233,adult,follow product label,2
+699,233,child,demo only,3
+700,234,adult,follow product label,2
+701,234,adult,demo only,2
+702,234,child,not specified,2
+703,235,adult,follow product label,2
+704,235,adult,demo only,3
+705,235,child,follow product label,1
+706,236,adult,not specified,1
+707,236,adult,demo only,1
+708,236,child,follow product label,3
+709,237,adult,not specified,3
+710,237,adult,demo only,3
+711,237,child,not specified,2
+712,238,adult,demo only,1
+713,238,adult,demo only,1
+714,238,child,not specified,2
+715,239,adult,not specified,3
+716,239,adult,follow product label,1
+717,239,child,not specified,2
+718,240,adult,demo only,2
+719,240,adult,demo only,2
+720,240,child,demo only,3
+721,241,adult,not specified,2
+722,241,adult,follow product label,1
+723,241,child,demo only,1
+724,242,adult,demo only,1
+725,242,adult,demo only,1
+726,242,child,not specified,2
+727,243,adult,follow product label,3
+728,243,adult,follow product label,3
+729,243,child,not specified,2
+730,244,adult,follow product label,2
+731,244,adult,follow product label,3
+732,244,child,demo only,3
+733,245,adult,demo only,2
+734,245,adult,demo only,3
+735,245,child,demo only,2
+736,246,adult,follow product label,2
+737,246,adult,follow product label,3
+738,246,child,demo only,3
+739,247,adult,follow product label,3
+740,247,adult,not specified,3
+741,247,child,follow product label,3
+742,248,adult,follow product label,1
+743,248,adult,not specified,3
+744,248,child,not specified,3
+745,249,adult,follow product label,2
+746,249,adult,demo only,3
+747,249,child,demo only,3
+748,250,adult,follow product label,1
+749,250,adult,not specified,3
+750,250,child,follow product label,3
+751,251,adult,follow product label,3
+752,251,adult,not specified,1
+753,251,child,follow product label,1
+754,252,adult,follow product label,1
+755,252,adult,demo only,2
+756,252,child,demo only,1
+757,253,adult,demo only,3
+758,253,adult,demo only,1
+759,253,child,demo only,3
+760,254,adult,not specified,1
+761,254,adult,follow product label,1
+762,254,child,not specified,1
+763,255,adult,demo only,2
+764,255,adult,follow product label,1
+765,255,child,demo only,3
+766,256,adult,demo only,1
+767,256,adult,demo only,2
+768,256,child,not specified,2
+769,257,adult,not specified,2
+770,257,adult,follow product label,3
+771,257,child,follow product label,1
+772,258,adult,demo only,2
+773,258,adult,not specified,3
+774,258,child,not specified,1
+775,259,adult,demo only,1
+776,259,adult,not specified,1
+777,259,child,not specified,2
+778,260,adult,not specified,3
+779,260,adult,not specified,2
+780,260,child,demo only,1
+781,261,adult,not specified,3
+782,261,adult,demo only,3
+783,261,child,not specified,2
+784,262,adult,follow product label,1
+785,262,adult,follow product label,3
+786,262,child,not specified,2
+787,263,adult,follow product label,1
+788,263,adult,demo only,1
+789,263,child,demo only,3
+790,264,adult,not specified,3
+791,264,adult,demo only,2
+792,264,child,follow product label,1
+793,265,adult,not specified,3
+794,265,adult,not specified,1
+795,265,child,follow product label,3
+796,266,adult,follow product label,3
+797,266,adult,not specified,1
+798,266,child,not specified,1
+799,267,adult,demo only,1
+800,267,adult,follow product label,1
+801,267,child,follow product label,2
+802,268,adult,demo only,2
+803,268,adult,demo only,2
+804,268,child,demo only,2
+805,269,adult,follow product label,2
+806,269,adult,demo only,1
+807,269,child,not specified,3
+808,270,adult,follow product label,2
+809,270,adult,demo only,1
+810,270,child,not specified,3
+811,271,adult,not specified,3
+812,271,adult,demo only,1
+813,271,child,follow product label,1
+814,272,adult,demo only,1
+815,272,adult,demo only,1
+816,272,child,follow product label,1
+817,273,adult,demo only,2
+818,273,adult,follow product label,1
+819,273,child,not specified,1
+820,274,adult,demo only,3
+821,274,adult,demo only,1
+822,274,child,follow product label,1
+823,275,adult,demo only,3
+824,275,adult,not specified,1
+825,275,child,follow product label,1
+826,276,adult,demo only,3
+827,276,adult,not specified,3
+828,276,child,not specified,2
+829,277,adult,demo only,3
+830,277,adult,follow product label,3
+831,277,child,follow product label,3
+832,278,adult,demo only,1
+833,278,adult,demo only,2
+834,278,child,not specified,3
+835,279,adult,not specified,1
+836,279,adult,not specified,2
+837,279,child,follow product label,1
+838,280,adult,demo only,1
+839,280,adult,not specified,3
+840,280,child,not specified,3
+841,281,adult,not specified,2
+842,281,adult,follow product label,1
+843,281,child,follow product label,2
+844,282,adult,demo only,3
+845,282,adult,follow product label,1
+846,282,child,demo only,3
+847,283,adult,follow product label,1
+848,283,adult,not specified,1
+849,283,child,not specified,3
+850,284,adult,not specified,1
+851,284,adult,follow product label,1
+852,284,child,follow product label,2
+853,285,adult,follow product label,2
+854,285,adult,not specified,3
+855,285,child,follow product label,2
+856,286,adult,demo only,3
+857,286,adult,demo only,3
+858,286,child,demo only,2
+859,287,adult,demo only,2
+860,287,adult,follow product label,1
+861,287,child,demo only,3
+862,288,adult,follow product label,2
+863,288,adult,follow product label,1
+864,288,child,follow product label,2
+865,289,adult,demo only,1
+866,289,adult,demo only,3
+867,289,child,follow product label,2
+868,290,adult,not specified,3
+869,290,adult,demo only,3
+870,290,child,follow product label,3
+871,291,adult,follow product label,2
+872,291,adult,not specified,2
+873,291,child,demo only,3
+874,292,adult,follow product label,2
+875,292,adult,demo only,1
+876,292,child,not specified,1
+877,293,adult,demo only,2
+878,293,adult,demo only,2
+879,293,child,follow product label,2
+880,294,adult,follow product label,3
+881,294,adult,follow product label,2
+882,294,child,demo only,2
+883,295,adult,follow product label,1
+884,295,adult,not specified,3
+885,295,child,demo only,1
+886,296,adult,follow product label,1
+887,296,adult,demo only,2
+888,296,child,not specified,2
+889,297,adult,follow product label,3
+890,297,adult,follow product label,3
+891,297,child,demo only,1
+892,298,adult,follow product label,2
+893,298,adult,demo only,2
+894,298,child,follow product label,3
+895,299,adult,not specified,3
+896,299,adult,demo only,2
+897,299,child,demo only,1
+898,300,adult,demo only,3
+899,300,adult,not specified,3
+900,300,child,follow product label,3
+901,301,adult,demo only,3
+902,301,adult,demo only,3
+903,301,child,not specified,2
+904,302,adult,not specified,3
+905,302,adult,follow product label,3
+906,302,child,follow product label,1
+907,303,adult,not specified,2
+908,303,adult,not specified,3
+909,303,child,demo only,3
+910,304,adult,follow product label,1
+911,304,adult,not specified,2
+912,304,child,demo only,1
+913,305,adult,demo only,3
+914,305,adult,follow product label,3
+915,305,child,not specified,2
+916,306,adult,not specified,2
+917,306,adult,demo only,2
+918,306,child,follow product label,2
+919,307,adult,demo only,1
+920,307,adult,demo only,3
+921,307,child,not specified,1
+922,308,adult,not specified,1
+923,308,adult,demo only,1
+924,308,child,demo only,3
+925,309,adult,not specified,3
+926,309,adult,follow product label,1
+927,309,child,follow product label,2
+928,310,adult,not specified,3
+929,310,adult,follow product label,3
+930,310,child,demo only,1
+931,311,adult,not specified,2
+932,311,adult,demo only,1
+933,311,child,demo only,1
+934,312,adult,not specified,1
+935,312,adult,not specified,1
+936,312,child,demo only,3
+937,313,adult,not specified,2
+938,313,adult,demo only,3
+939,313,child,follow product label,3
+940,314,adult,not specified,2
+941,314,adult,follow product label,2
+942,314,child,not specified,3
+943,315,adult,demo only,3
+944,315,adult,demo only,2
+945,315,child,demo only,3
+946,316,adult,follow product label,1
+947,316,adult,follow product label,3
+948,316,child,not specified,2
+949,317,adult,follow product label,3
+950,317,adult,demo only,1
+951,317,child,demo only,3
+952,318,adult,demo only,3
+953,318,adult,follow product label,3
+954,318,child,follow product label,3
+955,319,adult,not specified,3
+956,319,adult,demo only,1
+957,319,child,follow product label,2
+958,320,adult,demo only,2
+959,320,adult,not specified,1
+960,320,child,demo only,1
+961,321,adult,demo only,2
+962,321,adult,demo only,2
+963,321,child,demo only,3
+964,322,adult,not specified,3
+965,322,adult,demo only,2
+966,322,child,follow product label,1
+967,323,adult,follow product label,2
+968,323,adult,follow product label,3
+969,323,child,follow product label,3
+970,324,adult,demo only,3
+971,324,adult,not specified,2
+972,324,child,not specified,3
+973,325,adult,follow product label,3
+974,325,adult,demo only,3
+975,325,child,not specified,1
+976,326,adult,not specified,2
+977,326,adult,not specified,2
+978,326,child,not specified,1
+979,327,adult,follow product label,3
+980,327,adult,demo only,1
+981,327,child,demo only,1
+982,328,adult,not specified,3
+983,328,adult,demo only,2
+984,328,child,demo only,2
+985,329,adult,not specified,2
+986,329,adult,not specified,2
+987,329,child,not specified,2
+988,330,adult,follow product label,2
+989,330,adult,demo only,3
+990,330,child,follow product label,1
+991,331,adult,demo only,2
+992,331,adult,demo only,3
+993,331,child,follow product label,2
+994,332,adult,follow product label,3
+995,332,adult,not specified,2
+996,332,child,demo only,1
+997,333,adult,not specified,3
+998,333,adult,demo only,2
+999,333,child,follow product label,3
+1000,334,adult,not specified,3
+1001,334,adult,demo only,1
+1002,334,child,follow product label,3
+1003,335,adult,demo only,2
+1004,335,adult,follow product label,3
+1005,335,child,follow product label,1
+1006,336,adult,demo only,1
+1007,336,adult,follow product label,3
+1008,336,child,not specified,2
+1009,337,adult,not specified,2
+1010,337,adult,follow product label,3
+1011,337,child,not specified,2
+1012,338,adult,not specified,3
+1013,338,adult,follow product label,2
+1014,338,child,not specified,2
+1015,339,adult,follow product label,1
+1016,339,adult,not specified,3
+1017,339,child,follow product label,3
+1018,340,adult,follow product label,3
+1019,340,adult,not specified,3
+1020,340,child,not specified,1
+1021,341,adult,demo only,1
+1022,341,adult,demo only,1
+1023,341,child,demo only,3
+1024,342,adult,follow product label,1
+1025,342,adult,demo only,3
+1026,342,child,not specified,1
+1027,343,adult,follow product label,3
+1028,343,adult,not specified,1
+1029,343,child,not specified,3
+1030,344,adult,follow product label,1
+1031,344,adult,follow product label,3
+1032,344,child,follow product label,1
+1033,345,adult,follow product label,1
+1034,345,adult,not specified,2
+1035,345,child,demo only,1
+1036,346,adult,demo only,2
+1037,346,adult,follow product label,2
+1038,346,child,demo only,2
+1039,347,adult,not specified,1
+1040,347,adult,follow product label,1
+1041,347,child,not specified,2
+1042,348,adult,follow product label,3
+1043,348,adult,demo only,1
+1044,348,child,follow product label,1
+1045,349,adult,follow product label,1
+1046,349,adult,demo only,2
+1047,349,child,follow product label,1
+1048,350,adult,demo only,1
+1049,350,adult,follow product label,1
+1050,350,child,demo only,3
+1051,351,adult,follow product label,1
+1052,351,adult,not specified,2
+1053,351,child,not specified,2
+1054,352,adult,not specified,3
+1055,352,adult,demo only,3
+1056,352,child,not specified,1
+1057,353,adult,demo only,2
+1058,353,adult,demo only,2
+1059,353,child,follow product label,1
+1060,354,adult,not specified,2
+1061,354,adult,follow product label,2
+1062,354,child,not specified,2
+1063,355,adult,follow product label,1
+1064,355,adult,demo only,1
+1065,355,child,follow product label,3
+1066,356,adult,follow product label,2
+1067,356,adult,follow product label,3
+1068,356,child,not specified,1
+1069,357,adult,not specified,1
+1070,357,adult,not specified,1
+1071,357,child,follow product label,2
+1072,358,adult,not specified,1
+1073,358,adult,demo only,2
+1074,358,child,demo only,1
+1075,359,adult,follow product label,1
+1076,359,adult,follow product label,3
+1077,359,child,follow product label,3
+1078,360,adult,follow product label,3
+1079,360,adult,not specified,3
+1080,360,child,not specified,3
+1081,361,adult,follow product label,1
+1082,361,adult,follow product label,2
+1083,361,child,demo only,1
+1084,362,adult,follow product label,2
+1085,362,adult,follow product label,2
+1086,362,child,follow product label,2
+1087,363,adult,demo only,3
+1088,363,adult,not specified,3
+1089,363,child,not specified,3
+1090,364,adult,follow product label,1
+1091,364,adult,follow product label,1
+1092,364,child,not specified,2
+1093,365,adult,not specified,3
+1094,365,adult,demo only,1
+1095,365,child,not specified,2
+1096,366,adult,follow product label,3
+1097,366,adult,not specified,3
+1098,366,child,not specified,2
+1099,367,adult,follow product label,3
+1100,367,adult,not specified,1
+1101,367,child,not specified,3
+1102,368,adult,follow product label,2
+1103,368,adult,not specified,1
+1104,368,child,not specified,3
+1105,369,adult,demo only,3
+1106,369,adult,not specified,1
+1107,369,child,demo only,2
+1108,370,adult,follow product label,1
+1109,370,adult,follow product label,1
+1110,370,child,not specified,1
+1111,371,adult,follow product label,1
+1112,371,adult,not specified,1
+1113,371,child,demo only,3
+1114,372,adult,follow product label,2
+1115,372,adult,not specified,3
+1116,372,child,not specified,1
+1117,373,adult,follow product label,2
+1118,373,adult,follow product label,3
+1119,373,child,demo only,2
+1120,374,adult,follow product label,1
+1121,374,adult,not specified,2
+1122,374,child,demo only,1
+1123,375,adult,demo only,1
+1124,375,adult,not specified,1
+1125,375,child,not specified,2
+1126,376,adult,not specified,1
+1127,376,adult,not specified,3
+1128,376,child,follow product label,1
+1129,377,adult,not specified,2
+1130,377,adult,demo only,2
+1131,377,child,not specified,3
+1132,378,adult,demo only,1
+1133,378,adult,not specified,1
+1134,378,child,not specified,2
+1135,379,adult,not specified,1
+1136,379,adult,follow product label,2
+1137,379,child,not specified,2
+1138,380,adult,follow product label,1
+1139,380,adult,demo only,2
+1140,380,child,follow product label,3
+1141,381,adult,follow product label,3
+1142,381,adult,not specified,1
+1143,381,child,not specified,1
+1144,382,adult,not specified,3
+1145,382,adult,demo only,2
+1146,382,child,follow product label,3
+1147,383,adult,follow product label,3
+1148,383,adult,follow product label,3
+1149,383,child,follow product label,3
+1150,384,adult,demo only,2
+1151,384,adult,follow product label,2
+1152,384,child,not specified,1
+1153,385,adult,demo only,1
+1154,385,adult,not specified,1
+1155,385,child,follow product label,3
+1156,386,adult,demo only,3
+1157,386,adult,follow product label,1
+1158,386,child,not specified,1
+1159,387,adult,not specified,2
+1160,387,adult,not specified,1
+1161,387,child,demo only,1
+1162,388,adult,demo only,1
+1163,388,adult,not specified,2
+1164,388,child,not specified,1
+1165,389,adult,not specified,3
+1166,389,adult,demo only,1
+1167,389,child,not specified,1
+1168,390,adult,demo only,1
+1169,390,adult,not specified,2
+1170,390,child,demo only,2
+1171,391,adult,not specified,3
+1172,391,adult,not specified,2
+1173,391,child,follow product label,2
+1174,392,adult,demo only,2
+1175,392,adult,follow product label,2
+1176,392,child,not specified,3
+1177,393,adult,follow product label,1
+1178,393,adult,follow product label,1
+1179,393,child,demo only,2
+1180,394,adult,not specified,2
+1181,394,adult,follow product label,2
+1182,394,child,demo only,2
+1183,395,adult,follow product label,1
+1184,395,adult,demo only,1
+1185,395,child,demo only,1
+1186,396,adult,follow product label,3
+1187,396,adult,not specified,2
+1188,396,child,follow product label,1
+1189,397,adult,not specified,2
+1190,397,adult,not specified,3
+1191,397,child,follow product label,1
+1192,398,adult,not specified,2
+1193,398,adult,follow product label,3
+1194,398,child,not specified,1
+1195,399,adult,follow product label,1
+1196,399,adult,follow product label,3
+1197,399,child,not specified,1
+1198,400,adult,follow product label,1
+1199,400,adult,not specified,2
+1200,400,child,not specified,3
+1201,401,adult,follow product label,3
+1202,401,adult,follow product label,2
+1203,401,child,follow product label,1
+1204,402,adult,demo only,3
+1205,402,adult,not specified,3
+1206,402,child,not specified,2
+1207,403,adult,demo only,2
+1208,403,adult,not specified,3
+1209,403,child,demo only,1
+1210,404,adult,not specified,3
+1211,404,adult,not specified,1
+1212,404,child,not specified,1
+1213,405,adult,not specified,1
+1214,405,adult,not specified,1
+1215,405,child,not specified,3
+1216,406,adult,follow product label,1
+1217,406,adult,follow product label,2
+1218,406,child,not specified,2
+1219,407,adult,not specified,1
+1220,407,adult,follow product label,1
+1221,407,child,demo only,3
+1222,408,adult,not specified,1
+1223,408,adult,not specified,3
+1224,408,child,demo only,2
+1225,409,adult,follow product label,3
+1226,409,adult,not specified,1
+1227,409,child,not specified,1
+1228,410,adult,not specified,3
+1229,410,adult,demo only,3
+1230,410,child,follow product label,2
+1231,411,adult,not specified,3
+1232,411,adult,demo only,2
+1233,411,child,not specified,1
+1234,412,adult,demo only,3
+1235,412,adult,follow product label,2
+1236,412,child,demo only,2
+1237,413,adult,follow product label,3
+1238,413,adult,demo only,2
+1239,413,child,follow product label,2
+1240,414,adult,not specified,2
+1241,414,adult,follow product label,1
+1242,414,child,not specified,3
+1243,415,adult,not specified,1
+1244,415,adult,not specified,3
+1245,415,child,not specified,3
+1246,416,adult,not specified,2
+1247,416,adult,not specified,1
+1248,416,child,not specified,1
+1249,417,adult,follow product label,1
+1250,417,adult,not specified,2
+1251,417,child,follow product label,1
+1252,418,adult,follow product label,2
+1253,418,adult,not specified,1
+1254,418,child,not specified,2
+1255,419,adult,follow product label,2
+1256,419,adult,follow product label,3
+1257,419,child,not specified,1
+1258,420,adult,demo only,1
+1259,420,adult,demo only,1
+1260,420,child,demo only,1
+1261,421,adult,demo only,2
+1262,421,adult,follow product label,2
+1263,421,child,not specified,3
+1264,422,adult,not specified,1
+1265,422,adult,demo only,1
+1266,422,child,not specified,1
+1267,423,adult,demo only,2
+1268,423,adult,not specified,1
+1269,423,child,not specified,2
+1270,424,adult,follow product label,1
+1271,424,adult,follow product label,1
+1272,424,child,follow product label,2
+1273,425,adult,demo only,2
+1274,425,adult,not specified,2
+1275,425,child,follow product label,1
+1276,426,adult,demo only,2
+1277,426,adult,demo only,3
+1278,426,child,demo only,2
+1279,427,adult,follow product label,2
+1280,427,adult,demo only,2
+1281,427,child,demo only,3
+1282,428,adult,demo only,1
+1283,428,adult,demo only,3
+1284,428,child,demo only,3
+1285,429,adult,follow product label,1
+1286,429,adult,not specified,3
+1287,429,child,demo only,1
+1288,430,adult,follow product label,1
+1289,430,adult,follow product label,2
+1290,430,child,demo only,1
+1291,431,adult,demo only,1
+1292,431,adult,follow product label,3
+1293,431,child,demo only,3
+1294,432,adult,demo only,1
+1295,432,adult,not specified,2
+1296,432,child,follow product label,2
+1297,433,adult,not specified,1
+1298,433,adult,follow product label,2
+1299,433,child,not specified,1
+1300,434,adult,not specified,1
+1301,434,adult,follow product label,3
+1302,434,child,not specified,1
+1303,435,adult,not specified,2
+1304,435,adult,follow product label,3
+1305,435,child,follow product label,3
+1306,436,adult,demo only,3
+1307,436,adult,follow product label,2
+1308,436,child,not specified,2
+1309,437,adult,not specified,3
+1310,437,adult,not specified,3
+1311,437,child,not specified,1
+1312,438,adult,demo only,2
+1313,438,adult,not specified,1
+1314,438,child,not specified,3
+1315,439,adult,not specified,1
+1316,439,adult,demo only,2
+1317,439,child,not specified,3
+1318,440,adult,not specified,2
+1319,440,adult,not specified,1
+1320,440,child,not specified,2
+1321,441,adult,follow product label,1
+1322,441,adult,demo only,3
+1323,441,child,follow product label,2
+1324,442,adult,follow product label,1
+1325,442,adult,demo only,2
+1326,442,child,demo only,2
+1327,443,adult,demo only,2
+1328,443,adult,demo only,2
+1329,443,child,follow product label,1
+1330,444,adult,demo only,2
+1331,444,adult,not specified,1
+1332,444,child,follow product label,1
+1333,445,adult,demo only,2
+1334,445,adult,not specified,3
+1335,445,child,follow product label,3
+1336,446,adult,not specified,2
+1337,446,adult,not specified,2
+1338,446,child,demo only,3
+1339,447,adult,demo only,3
+1340,447,adult,follow product label,3
+1341,447,child,follow product label,3
+1342,448,adult,not specified,2
+1343,448,adult,not specified,3
+1344,448,child,demo only,3
+1345,449,adult,demo only,3
+1346,449,adult,demo only,2
+1347,449,child,follow product label,3
+1348,450,adult,follow product label,3
+1349,450,adult,demo only,1
+1350,450,child,demo only,1
+1351,451,adult,follow product label,1
+1352,451,adult,demo only,3
+1353,451,child,demo only,2
+1354,452,adult,not specified,3
+1355,452,adult,demo only,1
+1356,452,child,demo only,3
+1357,453,adult,demo only,3
+1358,453,adult,follow product label,2
+1359,453,child,demo only,3
+1360,454,adult,follow product label,2
+1361,454,adult,demo only,2
+1362,454,child,not specified,3
+1363,455,adult,demo only,3
+1364,455,adult,demo only,1
+1365,455,child,not specified,1
+1366,456,adult,demo only,3
+1367,456,adult,demo only,3
+1368,456,child,not specified,1
+1369,457,adult,demo only,3
+1370,457,adult,demo only,1
+1371,457,child,follow product label,1
+1372,458,adult,not specified,2
+1373,458,adult,follow product label,2
+1374,458,child,follow product label,2
+1375,459,adult,demo only,2
+1376,459,adult,not specified,1
+1377,459,child,not specified,1
+1378,460,adult,follow product label,3
+1379,460,adult,not specified,2
+1380,460,child,demo only,3
+1381,461,adult,follow product label,1
+1382,461,adult,demo only,3
+1383,461,child,follow product label,1
+1384,462,adult,not specified,1
+1385,462,adult,follow product label,3
+1386,462,child,not specified,3
+1387,463,adult,not specified,2
+1388,463,adult,follow product label,3
+1389,463,child,demo only,2
+1390,464,adult,not specified,3
+1391,464,adult,demo only,3
+1392,464,child,demo only,2
+1393,465,adult,follow product label,3
+1394,465,adult,follow product label,3
+1395,465,child,follow product label,2
+1396,466,adult,follow product label,2
+1397,466,adult,follow product label,1
+1398,466,child,demo only,1
+1399,467,adult,not specified,2
+1400,467,adult,demo only,1
+1401,467,child,not specified,1
+1402,468,adult,not specified,2
+1403,468,adult,follow product label,3
+1404,468,child,follow product label,2
+1405,469,adult,follow product label,2
+1406,469,adult,demo only,2
+1407,469,child,not specified,1
+1408,470,adult,not specified,2
+1409,470,adult,not specified,2
+1410,470,child,not specified,2
+1411,471,adult,demo only,2
+1412,471,adult,demo only,1
+1413,471,child,demo only,1
+1414,472,adult,demo only,3
+1415,472,adult,not specified,2
+1416,472,child,not specified,2
+1417,473,adult,demo only,3
+1418,473,adult,not specified,1
+1419,473,child,not specified,1
+1420,474,adult,demo only,1
+1421,474,adult,follow product label,3
+1422,474,child,follow product label,2
+1423,475,adult,follow product label,2
+1424,475,adult,not specified,1
+1425,475,child,follow product label,1
+1426,476,adult,not specified,3
+1427,476,adult,demo only,3
+1428,476,child,follow product label,2
+1429,477,adult,not specified,2
+1430,477,adult,demo only,1
+1431,477,child,demo only,2
+1432,478,adult,not specified,2
+1433,478,adult,not specified,3
+1434,478,child,follow product label,1
+1435,479,adult,follow product label,1
+1436,479,adult,demo only,3
+1437,479,child,not specified,3
+1438,480,adult,demo only,1
+1439,480,adult,not specified,2
+1440,480,child,demo only,3
+1441,481,adult,demo only,2
+1442,481,adult,not specified,3
+1443,481,child,follow product label,1
+1444,482,adult,follow product label,2
+1445,482,adult,demo only,2
+1446,482,child,not specified,2
+1447,483,adult,demo only,2
+1448,483,adult,demo only,1
+1449,483,child,demo only,2
+1450,484,adult,demo only,3
+1451,484,adult,demo only,2
+1452,484,child,follow product label,2
+1453,485,adult,not specified,2
+1454,485,adult,demo only,1
+1455,485,child,follow product label,3
+1456,486,adult,follow product label,3
+1457,486,adult,follow product label,1
+1458,486,child,not specified,2
+1459,487,adult,follow product label,3
+1460,487,adult,not specified,2
+1461,487,child,demo only,1
+1462,488,adult,not specified,1
+1463,488,adult,not specified,2
+1464,488,child,not specified,2
+1465,489,adult,not specified,1
+1466,489,adult,follow product label,1
+1467,489,child,follow product label,1
+1468,490,adult,demo only,2
+1469,490,adult,follow product label,2
+1470,490,child,not specified,1
+1471,491,adult,demo only,2
+1472,491,adult,follow product label,2
+1473,491,child,follow product label,1
+1474,492,adult,follow product label,3
+1475,492,adult,not specified,1
+1476,492,child,demo only,2
+1477,493,adult,follow product label,3
+1478,493,adult,not specified,3
+1479,493,child,demo only,3
+1480,494,adult,demo only,2
+1481,494,adult,demo only,1
+1482,494,child,not specified,1
+1483,495,adult,not specified,2
+1484,495,adult,not specified,1
+1485,495,child,demo only,1
+1486,496,adult,not specified,2
+1487,496,adult,follow product label,2
+1488,496,child,follow product label,2
+1489,497,adult,follow product label,2
+1490,497,adult,follow product label,1
+1491,497,child,not specified,1
+1492,498,adult,not specified,1
+1493,498,adult,follow product label,3
+1494,498,child,not specified,3
+1495,499,adult,not specified,2
+1496,499,adult,not specified,2
+1497,499,child,follow product label,3
+1498,500,adult,demo only,2
+1499,500,adult,follow product label,1
+1500,500,child,not specified,2
+1501,501,adult,not specified,2
+1502,501,adult,demo only,1
+1503,501,child,demo only,1
+1504,502,adult,not specified,1
+1505,502,adult,follow product label,2
+1506,502,child,demo only,2
+1507,503,adult,demo only,3
+1508,503,adult,demo only,3
+1509,503,child,not specified,1
+1510,504,adult,demo only,1
+1511,504,adult,demo only,1
+1512,504,child,follow product label,3
+1513,505,adult,not specified,3
+1514,505,adult,follow product label,3
+1515,505,child,demo only,2
+1516,506,adult,follow product label,1
+1517,506,adult,not specified,3
+1518,506,child,not specified,1
+1519,507,adult,not specified,3
+1520,507,adult,demo only,1
+1521,507,child,not specified,3
+1522,508,adult,not specified,3
+1523,508,adult,follow product label,1
+1524,508,child,demo only,3
+1525,509,adult,demo only,2
+1526,509,adult,follow product label,1
+1527,509,child,demo only,3
+1528,510,adult,demo only,1
+1529,510,adult,demo only,1
+1530,510,child,demo only,1
+1531,511,adult,follow product label,2
+1532,511,adult,demo only,2
+1533,511,child,demo only,2
+1534,512,adult,demo only,3
+1535,512,adult,not specified,1
+1536,512,child,demo only,2
+1537,513,adult,demo only,1
+1538,513,adult,demo only,1
+1539,513,child,not specified,3
+1540,514,adult,not specified,1
+1541,514,adult,demo only,1
+1542,514,child,not specified,2
+1543,515,adult,not specified,3
+1544,515,adult,follow product label,3
+1545,515,child,not specified,3
+1546,516,adult,follow product label,1
+1547,516,adult,demo only,2
+1548,516,child,demo only,3
+1549,517,adult,not specified,1
+1550,517,adult,demo only,3
+1551,517,child,follow product label,2
+1552,518,adult,follow product label,3
+1553,518,adult,demo only,3
+1554,518,child,demo only,2
+1555,519,adult,not specified,2
+1556,519,adult,not specified,1
+1557,519,child,demo only,2
+1558,520,adult,follow product label,2
+1559,520,adult,follow product label,3
+1560,520,child,not specified,2
+1561,521,adult,not specified,2
+1562,521,adult,not specified,2
+1563,521,child,follow product label,3
+1564,522,adult,demo only,2
+1565,522,adult,follow product label,2
+1566,522,child,demo only,1
+1567,523,adult,demo only,1
+1568,523,adult,not specified,1
+1569,523,child,demo only,3
+1570,524,adult,follow product label,2
+1571,524,adult,not specified,2
+1572,524,child,not specified,3
+1573,525,adult,not specified,1
+1574,525,adult,follow product label,2
+1575,525,child,follow product label,1
+1576,526,adult,demo only,3
+1577,526,adult,not specified,2
+1578,526,child,not specified,2
+1579,527,adult,demo only,2
+1580,527,adult,demo only,1
+1581,527,child,not specified,2
+1582,528,adult,demo only,2
+1583,528,adult,follow product label,3
+1584,528,child,not specified,3
+1585,529,adult,follow product label,1
+1586,529,adult,demo only,2
+1587,529,child,follow product label,2
+1588,530,adult,follow product label,3
+1589,530,adult,not specified,3
+1590,530,child,not specified,1
+1591,531,adult,not specified,1
+1592,531,adult,follow product label,1
+1593,531,child,follow product label,3
+1594,532,adult,not specified,3
+1595,532,adult,demo only,1
+1596,532,child,follow product label,2
+1597,533,adult,follow product label,2
+1598,533,adult,not specified,1
+1599,533,child,not specified,1
+1600,534,adult,not specified,3
+1601,534,adult,follow product label,3
+1602,534,child,demo only,1
+1603,535,adult,follow product label,2
+1604,535,adult,not specified,3
+1605,535,child,not specified,3
+1606,536,adult,demo only,2
+1607,536,adult,not specified,3
+1608,536,child,follow product label,2
+1609,537,adult,follow product label,2
+1610,537,adult,follow product label,1
+1611,537,child,follow product label,1
+1612,538,adult,follow product label,2
+1613,538,adult,demo only,2
+1614,538,child,follow product label,2
+1615,539,adult,follow product label,2
+1616,539,adult,not specified,3
+1617,539,child,not specified,3
+1618,540,adult,demo only,2
+1619,540,adult,not specified,1
+1620,540,child,follow product label,2
+1621,541,adult,follow product label,1
+1622,541,adult,demo only,1
+1623,541,child,not specified,2
+1624,542,adult,follow product label,1
+1625,542,adult,demo only,1
+1626,542,child,follow product label,3
+1627,543,adult,not specified,1
+1628,543,adult,not specified,2
+1629,543,child,follow product label,1
+1630,544,adult,demo only,1
+1631,544,adult,follow product label,2
+1632,544,child,not specified,2
+1633,545,adult,follow product label,3
+1634,545,adult,demo only,1
+1635,545,child,not specified,2
+1636,546,adult,follow product label,3
+1637,546,adult,follow product label,1
+1638,546,child,demo only,3
+1639,547,adult,demo only,3
+1640,547,adult,follow product label,3
+1641,547,child,demo only,3
+1642,548,adult,demo only,2
+1643,548,adult,not specified,2
+1644,548,child,follow product label,1
+1645,549,adult,demo only,2
+1646,549,adult,follow product label,1
+1647,549,child,follow product label,3
+1648,550,adult,follow product label,2
+1649,550,adult,demo only,2
+1650,550,child,not specified,3
+1651,551,adult,follow product label,1
+1652,551,adult,demo only,1
+1653,551,child,demo only,3
+1654,552,adult,demo only,2
+1655,552,adult,not specified,3
+1656,552,child,demo only,3
+1657,553,adult,demo only,2
+1658,553,adult,demo only,2
+1659,553,child,not specified,2
+1660,554,adult,follow product label,1
+1661,554,adult,follow product label,1
+1662,554,child,not specified,2
+1663,555,adult,demo only,3
+1664,555,adult,not specified,3
+1665,555,child,follow product label,1
+1666,556,adult,follow product label,3
+1667,556,adult,not specified,3
+1668,556,child,demo only,1
+1669,557,adult,follow product label,2
+1670,557,adult,not specified,1
+1671,557,child,follow product label,3
+1672,558,adult,follow product label,3
+1673,558,adult,follow product label,1
+1674,558,child,not specified,2
+1675,559,adult,not specified,1
+1676,559,adult,demo only,2
+1677,559,child,follow product label,3
+1678,560,adult,demo only,1
+1679,560,adult,follow product label,1
+1680,560,child,follow product label,1
+1681,561,adult,follow product label,1
+1682,561,adult,not specified,3
+1683,561,child,follow product label,2
+1684,562,adult,follow product label,2
+1685,562,adult,follow product label,1
+1686,562,child,follow product label,2
+1687,563,adult,demo only,1
+1688,563,adult,follow product label,1
+1689,563,child,not specified,2
+1690,564,adult,demo only,2
+1691,564,adult,demo only,3
+1692,564,child,not specified,2
+1693,565,adult,demo only,3
+1694,565,adult,demo only,1
+1695,565,child,follow product label,2
+1696,566,adult,follow product label,3
+1697,566,adult,demo only,1
+1698,566,child,not specified,1
+1699,567,adult,follow product label,2
+1700,567,adult,follow product label,1
+1701,567,child,not specified,2
+1702,568,adult,not specified,3
+1703,568,adult,follow product label,1
+1704,568,child,not specified,1
+1705,569,adult,demo only,3
+1706,569,adult,demo only,1
+1707,569,child,not specified,3
+1708,570,adult,follow product label,3
+1709,570,adult,demo only,2
+1710,570,child,follow product label,3
+1711,571,adult,demo only,3
+1712,571,adult,follow product label,3
+1713,571,child,demo only,1
+1714,572,adult,follow product label,3
+1715,572,adult,not specified,3
+1716,572,child,demo only,3
+1717,573,adult,follow product label,2
+1718,573,adult,follow product label,2
+1719,573,child,not specified,1
+1720,574,adult,not specified,3
+1721,574,adult,demo only,2
+1722,574,child,follow product label,1
+1723,575,adult,follow product label,2
+1724,575,adult,not specified,2
+1725,575,child,follow product label,1
+1726,576,adult,not specified,2
+1727,576,adult,not specified,3
+1728,576,child,not specified,3
+1729,577,adult,not specified,1
+1730,577,adult,not specified,1
+1731,577,child,follow product label,2
+1732,578,adult,demo only,3
+1733,578,adult,follow product label,1
+1734,578,child,not specified,3
+1735,579,adult,follow product label,2
+1736,579,adult,not specified,2
+1737,579,child,demo only,1
+1738,580,adult,follow product label,2
+1739,580,adult,follow product label,1
+1740,580,child,follow product label,1
+1741,581,adult,demo only,3
+1742,581,adult,demo only,2
+1743,581,child,demo only,3
+1744,582,adult,demo only,1
+1745,582,adult,not specified,1
+1746,582,child,follow product label,3
+1747,583,adult,follow product label,2
+1748,583,adult,follow product label,3
+1749,583,child,not specified,3
+1750,584,adult,follow product label,2
+1751,584,adult,not specified,3
+1752,584,child,follow product label,3
+1753,585,adult,not specified,1
+1754,585,adult,demo only,1
+1755,585,child,not specified,1
+1756,586,adult,not specified,3
+1757,586,adult,not specified,1
+1758,586,child,not specified,2
+1759,587,adult,follow product label,1
+1760,587,adult,not specified,2
+1761,587,child,demo only,2
+1762,588,adult,follow product label,1
+1763,588,adult,not specified,2
+1764,588,child,follow product label,3
+1765,589,adult,demo only,1
+1766,589,adult,demo only,2
+1767,589,child,not specified,3
+1768,590,adult,demo only,1
+1769,590,adult,demo only,1
+1770,590,child,follow product label,3
+1771,591,adult,demo only,3
+1772,591,adult,not specified,2
+1773,591,child,follow product label,3
+1774,592,adult,not specified,2
+1775,592,adult,not specified,1
+1776,592,child,follow product label,1
+1777,593,adult,not specified,1
+1778,593,adult,not specified,2
+1779,593,child,demo only,1
+1780,594,adult,follow product label,3
+1781,594,adult,not specified,2
+1782,594,child,follow product label,3
+1783,595,adult,follow product label,3
+1784,595,adult,demo only,3
+1785,595,child,demo only,2
+1786,596,adult,follow product label,1
+1787,596,adult,demo only,3
+1788,596,child,not specified,2
+1789,597,adult,not specified,1
+1790,597,adult,follow product label,3
+1791,597,child,not specified,3
+1792,598,adult,follow product label,1
+1793,598,adult,not specified,2
+1794,598,child,not specified,2
+1795,599,adult,not specified,3
+1796,599,adult,follow product label,2
+1797,599,child,follow product label,3
+1798,600,adult,follow product label,3
+1799,600,adult,follow product label,2
+1800,600,child,follow product label,1
+1801,601,adult,follow product label,1
+1802,601,adult,follow product label,2
+1803,601,child,demo only,2
+1804,602,adult,follow product label,3
+1805,602,adult,follow product label,1
+1806,602,child,not specified,3
+1807,603,adult,not specified,2
+1808,603,adult,not specified,1
+1809,603,child,follow product label,3
+1810,604,adult,demo only,2
+1811,604,adult,demo only,1
+1812,604,child,demo only,1
+1813,605,adult,demo only,1
+1814,605,adult,not specified,3
+1815,605,child,demo only,1
+1816,606,adult,demo only,1
+1817,606,adult,follow product label,2
+1818,606,child,not specified,3
+1819,607,adult,not specified,1
+1820,607,adult,demo only,3
+1821,607,child,demo only,2
+1822,608,adult,follow product label,1
+1823,608,adult,demo only,1
+1824,608,child,follow product label,3
+1825,609,adult,demo only,1
+1826,609,adult,follow product label,1
+1827,609,child,follow product label,2
+1828,610,adult,demo only,2
+1829,610,adult,follow product label,3
+1830,610,child,follow product label,1
+1831,611,adult,demo only,3
+1832,611,adult,follow product label,3
+1833,611,child,not specified,2
+1834,612,adult,demo only,3
+1835,612,adult,follow product label,2
+1836,612,child,follow product label,1
+1837,613,adult,not specified,1
+1838,613,adult,not specified,1
+1839,613,child,not specified,1
+1840,614,adult,not specified,3
+1841,614,adult,follow product label,1
+1842,614,child,follow product label,2
+1843,615,adult,not specified,1
+1844,615,adult,follow product label,3
+1845,615,child,follow product label,3
+1846,616,adult,demo only,3
+1847,616,adult,demo only,3
+1848,616,child,demo only,3
+1849,617,adult,demo only,3
+1850,617,adult,demo only,1
+1851,617,child,follow product label,2
+1852,618,adult,demo only,3
+1853,618,adult,follow product label,2
+1854,618,child,demo only,1
+1855,619,adult,not specified,3
+1856,619,adult,follow product label,1
+1857,619,child,demo only,3
+1858,620,adult,follow product label,2
+1859,620,adult,not specified,2
+1860,620,child,not specified,3
+1861,621,adult,demo only,2
+1862,621,adult,demo only,1
+1863,621,child,follow product label,2
+1864,622,adult,demo only,2
+1865,622,adult,follow product label,2
+1866,622,child,follow product label,2
+1867,623,adult,not specified,1
+1868,623,adult,follow product label,2
+1869,623,child,follow product label,1
+1870,624,adult,not specified,1
+1871,624,adult,not specified,2
+1872,624,child,demo only,1
+1873,625,adult,follow product label,2
+1874,625,adult,demo only,1
+1875,625,child,follow product label,2
+1876,626,adult,demo only,3
+1877,626,adult,not specified,1
+1878,626,child,demo only,2
+1879,627,adult,follow product label,1
+1880,627,adult,not specified,2
+1881,627,child,follow product label,1
+1882,628,adult,not specified,2
+1883,628,adult,not specified,3
+1884,628,child,follow product label,3
+1885,629,adult,demo only,3
+1886,629,adult,follow product label,3
+1887,629,child,follow product label,1
+1888,630,adult,follow product label,3
+1889,630,adult,demo only,1
+1890,630,child,follow product label,1
+1891,631,adult,demo only,3
+1892,631,adult,follow product label,1
+1893,631,child,follow product label,3
+1894,632,adult,not specified,2
+1895,632,adult,follow product label,2
+1896,632,child,not specified,2
+1897,633,adult,follow product label,1
+1898,633,adult,follow product label,2
+1899,633,child,follow product label,3
+1900,634,adult,demo only,1
+1901,634,adult,demo only,3
+1902,634,child,follow product label,2
+1903,635,adult,not specified,3
+1904,635,adult,demo only,2
+1905,635,child,follow product label,3
+1906,636,adult,demo only,3
+1907,636,adult,demo only,3
+1908,636,child,demo only,1
+1909,637,adult,follow product label,3
+1910,637,adult,follow product label,3
+1911,637,child,follow product label,3
+1912,638,adult,demo only,3
+1913,638,adult,demo only,2
+1914,638,child,demo only,3
+1915,639,adult,follow product label,1
+1916,639,adult,demo only,3
+1917,639,child,follow product label,3
+1918,640,adult,demo only,1
+1919,640,adult,follow product label,1
+1920,640,child,demo only,3
+1921,641,adult,not specified,2
+1922,641,adult,not specified,2
+1923,641,child,follow product label,2
+1924,642,adult,follow product label,1
+1925,642,adult,follow product label,2
+1926,642,child,demo only,2
+1927,643,adult,demo only,2
+1928,643,adult,follow product label,1
+1929,643,child,not specified,3
+1930,644,adult,demo only,1
+1931,644,adult,follow product label,2
+1932,644,child,demo only,3
+1933,645,adult,demo only,3
+1934,645,adult,not specified,3
+1935,645,child,follow product label,3
+1936,646,adult,not specified,1
+1937,646,adult,not specified,2
+1938,646,child,demo only,2
+1939,647,adult,follow product label,1
+1940,647,adult,not specified,1
+1941,647,child,follow product label,3
+1942,648,adult,not specified,1
+1943,648,adult,follow product label,3
+1944,648,child,not specified,2
+1945,649,adult,follow product label,2
+1946,649,adult,not specified,1
+1947,649,child,demo only,2
+1948,650,adult,not specified,3
+1949,650,adult,not specified,1
+1950,650,child,demo only,1
+1951,651,adult,follow product label,2
+1952,651,adult,demo only,2
+1953,651,child,follow product label,3
+1954,652,adult,not specified,3
+1955,652,adult,follow product label,3
+1956,652,child,demo only,1
+1957,653,adult,not specified,2
+1958,653,adult,demo only,2
+1959,653,child,follow product label,3
+1960,654,adult,not specified,2
+1961,654,adult,demo only,2
+1962,654,child,demo only,3
+1963,655,adult,not specified,3
+1964,655,adult,not specified,1
+1965,655,child,not specified,2
+1966,656,adult,demo only,1
+1967,656,adult,demo only,3
+1968,656,child,not specified,1
+1969,657,adult,not specified,3
+1970,657,adult,follow product label,2
+1971,657,child,follow product label,1
+1972,658,adult,follow product label,3
+1973,658,adult,not specified,1
+1974,658,child,demo only,3
+1975,659,adult,follow product label,2
+1976,659,adult,not specified,3
+1977,659,child,demo only,1
+1978,660,adult,demo only,2
+1979,660,adult,demo only,2
+1980,660,child,not specified,2
+1981,661,adult,not specified,3
+1982,661,adult,demo only,3
+1983,661,child,not specified,2
+1984,662,adult,follow product label,2
+1985,662,adult,not specified,1
+1986,662,child,follow product label,3
+1987,663,adult,demo only,2
+1988,663,adult,follow product label,2
+1989,663,child,follow product label,1
+1990,664,adult,follow product label,2
+1991,664,adult,follow product label,1
+1992,664,child,follow product label,2
+1993,665,adult,demo only,3
+1994,665,adult,not specified,1
+1995,665,child,demo only,1
+1996,666,adult,follow product label,3
+1997,666,adult,follow product label,2
+1998,666,child,not specified,2
+1999,667,adult,demo only,3
+2000,667,adult,follow product label,3
+2001,667,child,not specified,1
+2002,668,adult,not specified,3
+2003,668,adult,not specified,1
+2004,668,child,not specified,3
+2005,669,adult,demo only,3
+2006,669,adult,demo only,2
+2007,669,child,not specified,1
+2008,670,adult,follow product label,3
+2009,670,adult,demo only,3
+2010,670,child,demo only,1
+2011,671,adult,demo only,1
+2012,671,adult,not specified,1
+2013,671,child,demo only,3
+2014,672,adult,follow product label,2
+2015,672,adult,demo only,3
+2016,672,child,demo only,3
+2017,673,adult,follow product label,1
+2018,673,adult,not specified,1
+2019,673,child,follow product label,3
+2020,674,adult,demo only,3
+2021,674,adult,not specified,2
+2022,674,child,demo only,2
+2023,675,adult,follow product label,1
+2024,675,adult,follow product label,3
+2025,675,child,demo only,2
+2026,676,adult,demo only,1
+2027,676,adult,demo only,3
+2028,676,child,demo only,1
+2029,677,adult,follow product label,2
+2030,677,adult,demo only,1
+2031,677,child,demo only,3
+2032,678,adult,not specified,3
+2033,678,adult,demo only,1
+2034,678,child,not specified,2
+2035,679,adult,not specified,3
+2036,679,adult,demo only,1
+2037,679,child,follow product label,1
+2038,680,adult,demo only,2
+2039,680,adult,follow product label,3
+2040,680,child,follow product label,1
+2041,681,adult,demo only,1
+2042,681,adult,follow product label,3
+2043,681,child,demo only,2
+2044,682,adult,not specified,2
+2045,682,adult,not specified,3
+2046,682,child,follow product label,1
+2047,683,adult,demo only,2
+2048,683,adult,demo only,3
+2049,683,child,demo only,2
+2050,684,adult,demo only,3
+2051,684,adult,not specified,1
+2052,684,child,not specified,3
+2053,685,adult,demo only,1
+2054,685,adult,demo only,2
+2055,685,child,demo only,2
+2056,686,adult,follow product label,2
+2057,686,adult,follow product label,3
+2058,686,child,follow product label,3
+2059,687,adult,not specified,1
+2060,687,adult,follow product label,3
+2061,687,child,demo only,2
+2062,688,adult,follow product label,2
+2063,688,adult,follow product label,1
+2064,688,child,follow product label,1
+2065,689,adult,demo only,2
+2066,689,adult,not specified,2
+2067,689,child,demo only,1
+2068,690,adult,not specified,1
+2069,690,adult,follow product label,3
+2070,690,child,not specified,3
+2071,691,adult,not specified,3
+2072,691,adult,follow product label,3
+2073,691,child,demo only,1
+2074,692,adult,demo only,2
+2075,692,adult,not specified,2
+2076,692,child,follow product label,2
+2077,693,adult,follow product label,3
+2078,693,adult,follow product label,2
+2079,693,child,follow product label,2
+2080,694,adult,follow product label,3
+2081,694,adult,demo only,3
+2082,694,child,not specified,2
+2083,695,adult,demo only,1
+2084,695,adult,not specified,3
+2085,695,child,not specified,3
+2086,696,adult,demo only,1
+2087,696,adult,follow product label,2
+2088,696,child,follow product label,2
+2089,697,adult,not specified,1
+2090,697,adult,follow product label,2
+2091,697,child,follow product label,2
+2092,698,adult,demo only,2
+2093,698,adult,demo only,3
+2094,698,child,demo only,2
+2095,699,adult,demo only,2
+2096,699,adult,follow product label,1
+2097,699,child,not specified,1
+2098,700,adult,follow product label,2
+2099,700,adult,demo only,1
+2100,700,child,demo only,3
+2101,701,adult,demo only,2
+2102,701,adult,not specified,3
+2103,701,child,not specified,1
+2104,702,adult,not specified,3
+2105,702,adult,follow product label,1
+2106,702,child,not specified,2
+2107,703,adult,follow product label,2
+2108,703,adult,follow product label,2
+2109,703,child,demo only,1
+2110,704,adult,not specified,2
+2111,704,adult,not specified,2
+2112,704,child,not specified,1
+2113,705,adult,not specified,2
+2114,705,adult,demo only,1
+2115,705,child,follow product label,3
+2116,706,adult,not specified,1
+2117,706,adult,not specified,1
+2118,706,child,not specified,2
+2119,707,adult,not specified,3
+2120,707,adult,follow product label,2
+2121,707,child,not specified,1
+2122,708,adult,demo only,1
+2123,708,adult,demo only,3
+2124,708,child,not specified,2
+2125,709,adult,follow product label,2
+2126,709,adult,not specified,2
+2127,709,child,not specified,3
+2128,710,adult,not specified,2
+2129,710,adult,not specified,2
+2130,710,child,follow product label,3
+2131,711,adult,demo only,3
+2132,711,adult,follow product label,1
+2133,711,child,not specified,1
+2134,712,adult,follow product label,3
+2135,712,adult,demo only,1
+2136,712,child,follow product label,1
+2137,713,adult,not specified,1
+2138,713,adult,not specified,2
+2139,713,child,not specified,3
+2140,714,adult,demo only,3
+2141,714,adult,follow product label,1
+2142,714,child,demo only,2
+2143,715,adult,follow product label,1
+2144,715,adult,demo only,2
+2145,715,child,follow product label,1
+2146,716,adult,follow product label,1
+2147,716,adult,follow product label,3
+2148,716,child,not specified,3
+2149,717,adult,demo only,2
+2150,717,adult,demo only,2
+2151,717,child,demo only,3
+2152,718,adult,follow product label,2
+2153,718,adult,follow product label,2
+2154,718,child,not specified,1
+2155,719,adult,demo only,2
+2156,719,adult,follow product label,1
+2157,719,child,demo only,2
+2158,720,adult,not specified,3
+2159,720,adult,not specified,2
+2160,720,child,follow product label,1
+2161,721,adult,demo only,1
+2162,721,adult,follow product label,1
+2163,721,child,demo only,1
+2164,722,adult,demo only,2
+2165,722,adult,demo only,1
+2166,722,child,follow product label,1
+2167,723,adult,follow product label,1
+2168,723,adult,follow product label,2
+2169,723,child,not specified,2
+2170,724,adult,not specified,1
+2171,724,adult,demo only,1
+2172,724,child,demo only,3
+2173,725,adult,follow product label,3
+2174,725,adult,follow product label,3
+2175,725,child,follow product label,1
+2176,726,adult,demo only,3
+2177,726,adult,not specified,3
+2178,726,child,follow product label,1
+2179,727,adult,follow product label,2
+2180,727,adult,follow product label,2
+2181,727,child,not specified,3
+2182,728,adult,follow product label,3
+2183,728,adult,not specified,1
+2184,728,child,demo only,1
+2185,729,adult,not specified,3
+2186,729,adult,follow product label,2
+2187,729,child,follow product label,2
+2188,730,adult,not specified,1
+2189,730,adult,demo only,2
+2190,730,child,follow product label,2
+2191,731,adult,not specified,1
+2192,731,adult,follow product label,3
+2193,731,child,demo only,3
+2194,732,adult,demo only,1
+2195,732,adult,not specified,3
+2196,732,child,follow product label,2
+2197,733,adult,demo only,1
+2198,733,adult,demo only,2
+2199,733,child,not specified,1
+2200,734,adult,follow product label,3
+2201,734,adult,follow product label,2
+2202,734,child,not specified,2
+2203,735,adult,follow product label,2
+2204,735,adult,follow product label,2
+2205,735,child,demo only,2
+2206,736,adult,not specified,3
+2207,736,adult,not specified,1
+2208,736,child,not specified,1
+2209,737,adult,follow product label,2
+2210,737,adult,follow product label,3
+2211,737,child,follow product label,1
+2212,738,adult,not specified,1
+2213,738,adult,demo only,2
+2214,738,child,not specified,1
+2215,739,adult,demo only,3
+2216,739,adult,demo only,1
+2217,739,child,follow product label,1
+2218,740,adult,demo only,3
+2219,740,adult,demo only,1
+2220,740,child,follow product label,3
+2221,741,adult,follow product label,1
+2222,741,adult,demo only,2
+2223,741,child,demo only,1
+2224,742,adult,demo only,3
+2225,742,adult,not specified,2
+2226,742,child,demo only,2
+2227,743,adult,follow product label,2
+2228,743,adult,demo only,3
+2229,743,child,follow product label,3
+2230,744,adult,follow product label,3
+2231,744,adult,follow product label,2
+2232,744,child,follow product label,2
+2233,745,adult,demo only,1
+2234,745,adult,not specified,1
+2235,745,child,not specified,2
+2236,746,adult,not specified,3
+2237,746,adult,follow product label,1
+2238,746,child,follow product label,2
+2239,747,adult,not specified,1
+2240,747,adult,follow product label,1
+2241,747,child,follow product label,3
+2242,748,adult,demo only,3
+2243,748,adult,not specified,1
+2244,748,child,follow product label,1
+2245,749,adult,follow product label,2
+2246,749,adult,demo only,1
+2247,749,child,demo only,3
+2248,750,adult,demo only,3
+2249,750,adult,not specified,3
+2250,750,child,not specified,3
+2251,751,adult,follow product label,3
+2252,751,adult,follow product label,1
+2253,751,child,follow product label,1
+2254,752,adult,not specified,1
+2255,752,adult,demo only,1
+2256,752,child,not specified,2
+2257,753,adult,follow product label,2
+2258,753,adult,not specified,3
+2259,753,child,demo only,3
+2260,754,adult,follow product label,1
+2261,754,adult,not specified,2
+2262,754,child,demo only,2
+2263,755,adult,follow product label,1
+2264,755,adult,not specified,1
+2265,755,child,follow product label,3
+2266,756,adult,not specified,2
+2267,756,adult,demo only,3
+2268,756,child,not specified,2
+2269,757,adult,not specified,3
+2270,757,adult,demo only,1
+2271,757,child,follow product label,2
+2272,758,adult,demo only,3
+2273,758,adult,demo only,1
+2274,758,child,demo only,3
+2275,759,adult,demo only,1
+2276,759,adult,demo only,1
+2277,759,child,follow product label,2
+2278,760,adult,not specified,1
+2279,760,adult,demo only,1
+2280,760,child,demo only,2
+2281,761,adult,demo only,1
+2282,761,adult,follow product label,1
+2283,761,child,demo only,1
+2284,762,adult,demo only,2
+2285,762,adult,follow product label,2
+2286,762,child,not specified,1
+2287,763,adult,demo only,2
+2288,763,adult,demo only,3
+2289,763,child,not specified,1
+2290,764,adult,demo only,1
+2291,764,adult,not specified,2
+2292,764,child,not specified,3
+2293,765,adult,demo only,1
+2294,765,adult,demo only,1
+2295,765,child,demo only,2
+2296,766,adult,not specified,1
+2297,766,adult,follow product label,3
+2298,766,child,not specified,3
+2299,767,adult,not specified,2
+2300,767,adult,demo only,1
+2301,767,child,demo only,1
+2302,768,adult,demo only,1
+2303,768,adult,follow product label,3
+2304,768,child,not specified,1
+2305,769,adult,not specified,1
+2306,769,adult,demo only,3
+2307,769,child,follow product label,3
+2308,770,adult,follow product label,2
+2309,770,adult,follow product label,3
+2310,770,child,follow product label,1
+2311,771,adult,not specified,3
+2312,771,adult,follow product label,3
+2313,771,child,demo only,1
+2314,772,adult,demo only,1
+2315,772,adult,demo only,1
+2316,772,child,follow product label,3
+2317,773,adult,not specified,2
+2318,773,adult,follow product label,1
+2319,773,child,demo only,1
+2320,774,adult,demo only,1
+2321,774,adult,not specified,1
+2322,774,child,demo only,2
+2323,775,adult,follow product label,2
+2324,775,adult,follow product label,1
+2325,775,child,follow product label,2
+2326,776,adult,demo only,1
+2327,776,adult,demo only,1
+2328,776,child,follow product label,2
+2329,777,adult,demo only,1
+2330,777,adult,not specified,3
+2331,777,child,not specified,1
+2332,778,adult,demo only,1
+2333,778,adult,demo only,1
+2334,778,child,follow product label,2
+2335,779,adult,follow product label,2
+2336,779,adult,demo only,1
+2337,779,child,demo only,2
+2338,780,adult,not specified,3
+2339,780,adult,not specified,3
+2340,780,child,demo only,1
+2341,781,adult,not specified,1
+2342,781,adult,demo only,3
+2343,781,child,demo only,3
+2344,782,adult,follow product label,2
+2345,782,adult,follow product label,2
+2346,782,child,demo only,2
+2347,783,adult,not specified,2
+2348,783,adult,demo only,1
+2349,783,child,follow product label,2
+2350,784,adult,not specified,1
+2351,784,adult,follow product label,1
+2352,784,child,demo only,3
+2353,785,adult,not specified,2
+2354,785,adult,demo only,3
+2355,785,child,demo only,3
+2356,786,adult,demo only,3
+2357,786,adult,follow product label,1
+2358,786,child,not specified,2
+2359,787,adult,demo only,1
+2360,787,adult,follow product label,3
+2361,787,child,demo only,2
+2362,788,adult,not specified,3
+2363,788,adult,demo only,1
+2364,788,child,demo only,3
+2365,789,adult,not specified,3
+2366,789,adult,demo only,3
+2367,789,child,demo only,3
+2368,790,adult,demo only,2
+2369,790,adult,not specified,1
+2370,790,child,follow product label,1
+2371,791,adult,not specified,3
+2372,791,adult,follow product label,2
+2373,791,child,demo only,1
+2374,792,adult,not specified,2
+2375,792,adult,not specified,1
+2376,792,child,demo only,3
+2377,793,adult,follow product label,3
+2378,793,adult,not specified,1
+2379,793,child,demo only,1
+2380,794,adult,demo only,1
+2381,794,adult,not specified,1
+2382,794,child,demo only,1
+2383,795,adult,demo only,3
+2384,795,adult,not specified,2
+2385,795,child,not specified,3
+2386,796,adult,demo only,3
+2387,796,adult,not specified,1
+2388,796,child,follow product label,1
+2389,797,adult,demo only,3
+2390,797,adult,follow product label,2
+2391,797,child,demo only,2
+2392,798,adult,follow product label,1
+2393,798,adult,demo only,1
+2394,798,child,demo only,2
+2395,799,adult,demo only,1
+2396,799,adult,not specified,2
+2397,799,child,not specified,2
+2398,800,adult,follow product label,2
+2399,800,adult,demo only,1
+2400,800,child,demo only,3
+2401,801,adult,demo only,3
+2402,801,adult,not specified,1
+2403,801,child,demo only,3
+2404,802,adult,demo only,3
+2405,802,adult,follow product label,2
+2406,802,child,not specified,2
+2407,803,adult,follow product label,2
+2408,803,adult,not specified,3
+2409,803,child,demo only,1
+2410,804,adult,demo only,3
+2411,804,adult,follow product label,2
+2412,804,child,not specified,3
+2413,805,adult,follow product label,2
+2414,805,adult,follow product label,3
+2415,805,child,demo only,1
+2416,806,adult,demo only,2
+2417,806,adult,follow product label,1
+2418,806,child,follow product label,3
+2419,807,adult,follow product label,3
+2420,807,adult,not specified,3
+2421,807,child,not specified,1
+2422,808,adult,follow product label,2
+2423,808,adult,demo only,3
+2424,808,child,demo only,1
+2425,809,adult,not specified,1
+2426,809,adult,demo only,2
+2427,809,child,follow product label,3
+2428,810,adult,demo only,1
+2429,810,adult,demo only,1
+2430,810,child,demo only,1
+2431,811,adult,demo only,3
+2432,811,adult,follow product label,2
+2433,811,child,demo only,2
+2434,812,adult,not specified,3
+2435,812,adult,follow product label,1
+2436,812,child,demo only,1
+2437,813,adult,follow product label,2
+2438,813,adult,follow product label,3
+2439,813,child,follow product label,1
+2440,814,adult,not specified,3
+2441,814,adult,not specified,1
+2442,814,child,not specified,1
+2443,815,adult,follow product label,3
+2444,815,adult,demo only,2
+2445,815,child,not specified,2
+2446,816,adult,demo only,1
+2447,816,adult,demo only,2
+2448,816,child,not specified,3
+2449,817,adult,not specified,1
+2450,817,adult,follow product label,3
+2451,817,child,demo only,1
+2452,818,adult,follow product label,2
+2453,818,adult,demo only,3
+2454,818,child,not specified,1
+2455,819,adult,follow product label,2
+2456,819,adult,not specified,1
+2457,819,child,not specified,2
+2458,820,adult,not specified,2
+2459,820,adult,not specified,2
+2460,820,child,not specified,3
+2461,821,adult,follow product label,2
+2462,821,adult,follow product label,1
+2463,821,child,not specified,1
+2464,822,adult,demo only,3
+2465,822,adult,demo only,3
+2466,822,child,follow product label,3
+2467,823,adult,not specified,2
+2468,823,adult,follow product label,3
+2469,823,child,demo only,3
+2470,824,adult,demo only,2
+2471,824,adult,follow product label,3
+2472,824,child,follow product label,2
+2473,825,adult,not specified,1
+2474,825,adult,follow product label,1
+2475,825,child,not specified,2
+2476,826,adult,not specified,2
+2477,826,adult,follow product label,3
+2478,826,child,demo only,1
+2479,827,adult,not specified,2
+2480,827,adult,not specified,3
+2481,827,child,follow product label,1
+2482,828,adult,follow product label,1
+2483,828,adult,follow product label,2
+2484,828,child,demo only,3
+2485,829,adult,demo only,3
+2486,829,adult,demo only,1
+2487,829,child,follow product label,1
+2488,830,adult,demo only,2
+2489,830,adult,not specified,1
+2490,830,child,not specified,1
+2491,831,adult,not specified,1
+2492,831,adult,not specified,1
+2493,831,child,follow product label,2
+2494,832,adult,demo only,2
+2495,832,adult,not specified,1
+2496,832,child,follow product label,3
+2497,833,adult,follow product label,1
+2498,833,adult,not specified,2
+2499,833,child,demo only,3
+2500,834,adult,demo only,3
+2501,834,adult,demo only,1
+2502,834,child,demo only,2
+2503,835,adult,demo only,2
+2504,835,adult,not specified,3
+2505,835,child,demo only,2
+2506,836,adult,follow product label,2
+2507,836,adult,not specified,2
+2508,836,child,not specified,2
+2509,837,adult,follow product label,3
+2510,837,adult,not specified,3
+2511,837,child,follow product label,3
+2512,838,adult,demo only,1
+2513,838,adult,not specified,1
+2514,838,child,demo only,1
+2515,839,adult,demo only,1
+2516,839,adult,not specified,2
+2517,839,child,demo only,3
+2518,840,adult,follow product label,3
+2519,840,adult,demo only,1
+2520,840,child,not specified,1
+2521,841,adult,not specified,1
+2522,841,adult,not specified,3
+2523,841,child,not specified,3
+2524,842,adult,demo only,3
+2525,842,adult,follow product label,2
+2526,842,child,not specified,1
+2527,843,adult,demo only,2
+2528,843,adult,not specified,2
+2529,843,child,follow product label,3
+2530,844,adult,follow product label,3
+2531,844,adult,demo only,3
+2532,844,child,not specified,2
+2533,845,adult,not specified,2
+2534,845,adult,follow product label,3
+2535,845,child,demo only,1
+2536,846,adult,not specified,2
+2537,846,adult,follow product label,1
+2538,846,child,demo only,3
+2539,847,adult,follow product label,3
+2540,847,adult,follow product label,3
+2541,847,child,not specified,3
+2542,848,adult,not specified,1
+2543,848,adult,demo only,2
+2544,848,child,not specified,2
+2545,849,adult,not specified,3
+2546,849,adult,not specified,1
+2547,849,child,demo only,1
+2548,850,adult,follow product label,2
+2549,850,adult,follow product label,1
+2550,850,child,not specified,3
+2551,851,adult,demo only,3
+2552,851,adult,demo only,1
+2553,851,child,not specified,3
+2554,852,adult,not specified,2
+2555,852,adult,demo only,2
+2556,852,child,follow product label,2
+2557,853,adult,demo only,2
+2558,853,adult,follow product label,1
+2559,853,child,not specified,2
+2560,854,adult,demo only,2
+2561,854,adult,follow product label,1
+2562,854,child,follow product label,1
+2563,855,adult,not specified,2
+2564,855,adult,demo only,1
+2565,855,child,not specified,3
+2566,856,adult,not specified,1
+2567,856,adult,not specified,3
+2568,856,child,not specified,3
+2569,857,adult,demo only,3
+2570,857,adult,demo only,2
+2571,857,child,not specified,1
+2572,858,adult,not specified,2
+2573,858,adult,demo only,3
+2574,858,child,not specified,3
+2575,859,adult,not specified,3
+2576,859,adult,demo only,3
+2577,859,child,follow product label,3
+2578,860,adult,not specified,3
+2579,860,adult,follow product label,2
+2580,860,child,demo only,1
+2581,861,adult,not specified,3
+2582,861,adult,follow product label,2
+2583,861,child,follow product label,3
+2584,862,adult,not specified,2
+2585,862,adult,demo only,1
+2586,862,child,demo only,1
+2587,863,adult,demo only,1
+2588,863,adult,follow product label,3
+2589,863,child,demo only,2
+2590,864,adult,demo only,3
+2591,864,adult,follow product label,3
+2592,864,child,follow product label,3
+2593,865,adult,follow product label,2
+2594,865,adult,demo only,2
+2595,865,child,demo only,3
+2596,866,adult,demo only,3
+2597,866,adult,not specified,3
+2598,866,child,not specified,1
+2599,867,adult,follow product label,1
+2600,867,adult,demo only,3
+2601,867,child,follow product label,1
+2602,868,adult,not specified,3
+2603,868,adult,not specified,3
+2604,868,child,not specified,2
+2605,869,adult,demo only,3
+2606,869,adult,follow product label,2
+2607,869,child,follow product label,2
+2608,870,adult,follow product label,1
+2609,870,adult,not specified,3
+2610,870,child,follow product label,2
+2611,871,adult,not specified,1
+2612,871,adult,not specified,2
+2613,871,child,not specified,2
+2614,872,adult,follow product label,1
+2615,872,adult,demo only,1
+2616,872,child,follow product label,2
+2617,873,adult,not specified,3
+2618,873,adult,follow product label,3
+2619,873,child,not specified,2
+2620,874,adult,follow product label,3
+2621,874,adult,demo only,1
+2622,874,child,not specified,3
+2623,875,adult,not specified,2
+2624,875,adult,follow product label,2
+2625,875,child,follow product label,2
+2626,876,adult,demo only,3
+2627,876,adult,follow product label,2
+2628,876,child,follow product label,3
+2629,877,adult,not specified,3
+2630,877,adult,follow product label,1
+2631,877,child,demo only,1
+2632,878,adult,follow product label,3
+2633,878,adult,demo only,3
+2634,878,child,demo only,1
+2635,879,adult,demo only,2
+2636,879,adult,demo only,2
+2637,879,child,demo only,2
+2638,880,adult,follow product label,2
+2639,880,adult,not specified,3
+2640,880,child,follow product label,3
+2641,881,adult,follow product label,1
+2642,881,adult,not specified,1
+2643,881,child,demo only,2
+2644,882,adult,not specified,2
+2645,882,adult,not specified,1
+2646,882,child,follow product label,2
+2647,883,adult,not specified,2
+2648,883,adult,demo only,1
+2649,883,child,demo only,2
+2650,884,adult,not specified,3
+2651,884,adult,demo only,2
+2652,884,child,not specified,2
+2653,885,adult,follow product label,1
+2654,885,adult,follow product label,1
+2655,885,child,not specified,2
+2656,886,adult,follow product label,3
+2657,886,adult,follow product label,2
+2658,886,child,not specified,3
+2659,887,adult,follow product label,1
+2660,887,adult,demo only,2
+2661,887,child,follow product label,1
+2662,888,adult,demo only,1
+2663,888,adult,not specified,2
+2664,888,child,not specified,3
+2665,889,adult,not specified,2
+2666,889,adult,demo only,2
+2667,889,child,demo only,1
+2668,890,adult,not specified,3
+2669,890,adult,demo only,2
+2670,890,child,demo only,1
+2671,891,adult,follow product label,1
+2672,891,adult,follow product label,1
+2673,891,child,not specified,1
+2674,892,adult,demo only,2
+2675,892,adult,demo only,3
+2676,892,child,demo only,2
+2677,893,adult,demo only,3
+2678,893,adult,demo only,1
+2679,893,child,not specified,3
+2680,894,adult,not specified,3
+2681,894,adult,demo only,2
+2682,894,child,follow product label,3
+2683,895,adult,follow product label,2
+2684,895,adult,follow product label,2
+2685,895,child,not specified,3
+2686,896,adult,follow product label,2
+2687,896,adult,demo only,3
+2688,896,child,not specified,1
+2689,897,adult,follow product label,2
+2690,897,adult,follow product label,1
+2691,897,child,not specified,3
+2692,898,adult,follow product label,3
+2693,898,adult,demo only,3
+2694,898,child,not specified,1
+2695,899,adult,demo only,3
+2696,899,adult,demo only,1
+2697,899,child,follow product label,3
+2698,900,adult,not specified,3
+2699,900,adult,demo only,2
+2700,900,child,follow product label,3
+2701,901,adult,not specified,2
+2702,901,adult,follow product label,2
+2703,901,child,follow product label,2
+2704,902,adult,not specified,3
+2705,902,adult,not specified,1
+2706,902,child,follow product label,3
+2707,903,adult,follow product label,3
+2708,903,adult,follow product label,1
+2709,903,child,not specified,3
+2710,904,adult,not specified,2
+2711,904,adult,not specified,3
+2712,904,child,not specified,3
+2713,905,adult,not specified,1
+2714,905,adult,follow product label,2
+2715,905,child,demo only,3
+2716,906,adult,follow product label,1
+2717,906,adult,follow product label,1
+2718,906,child,follow product label,3
+2719,907,adult,demo only,3
+2720,907,adult,not specified,2
+2721,907,child,follow product label,2
+2722,908,adult,follow product label,3
+2723,908,adult,not specified,2
+2724,908,child,follow product label,1
+2725,909,adult,follow product label,1
+2726,909,adult,follow product label,2
+2727,909,child,follow product label,2
+2728,910,adult,demo only,3
+2729,910,adult,follow product label,3
+2730,910,child,demo only,2
+2731,911,adult,follow product label,2
+2732,911,adult,demo only,1
+2733,911,child,follow product label,2
+2734,912,adult,not specified,2
+2735,912,adult,follow product label,3
+2736,912,child,not specified,3
+2737,913,adult,not specified,2
+2738,913,adult,not specified,2
+2739,913,child,follow product label,1
+2740,914,adult,not specified,2
+2741,914,adult,demo only,1
+2742,914,child,not specified,3
+2743,915,adult,not specified,2
+2744,915,adult,demo only,3
+2745,915,child,demo only,3
+2746,916,adult,not specified,1
+2747,916,adult,follow product label,1
+2748,916,child,not specified,3
+2749,917,adult,follow product label,3
+2750,917,adult,not specified,2
+2751,917,child,not specified,1
+2752,918,adult,not specified,1
+2753,918,adult,follow product label,1
+2754,918,child,not specified,1
+2755,919,adult,follow product label,2
+2756,919,adult,follow product label,3
+2757,919,child,demo only,1
+2758,920,adult,not specified,1
+2759,920,adult,not specified,3
+2760,920,child,not specified,2
+2761,921,adult,demo only,3
+2762,921,adult,demo only,2
+2763,921,child,not specified,2
+2764,922,adult,demo only,2
+2765,922,adult,demo only,3
+2766,922,child,demo only,2
+2767,923,adult,not specified,2
+2768,923,adult,not specified,1
+2769,923,child,follow product label,3
+2770,924,adult,demo only,2
+2771,924,adult,not specified,3
+2772,924,child,demo only,3
+2773,925,adult,not specified,2
+2774,925,adult,demo only,3
+2775,925,child,demo only,3
+2776,926,adult,not specified,1
+2777,926,adult,not specified,1
+2778,926,child,demo only,3
+2779,927,adult,follow product label,2
+2780,927,adult,not specified,3
+2781,927,child,demo only,1
+2782,928,adult,not specified,3
+2783,928,adult,demo only,3
+2784,928,child,demo only,2
+2785,929,adult,not specified,1
+2786,929,adult,not specified,3
+2787,929,child,demo only,1
+2788,930,adult,follow product label,3
+2789,930,adult,not specified,2
+2790,930,child,not specified,1
+2791,931,adult,follow product label,1
+2792,931,adult,not specified,1
+2793,931,child,follow product label,2
+2794,932,adult,not specified,2
+2795,932,adult,demo only,1
+2796,932,child,follow product label,3
+2797,933,adult,not specified,1
+2798,933,adult,demo only,3
+2799,933,child,follow product label,1
+2800,934,adult,not specified,3
+2801,934,adult,follow product label,2
+2802,934,child,demo only,3
+2803,935,adult,follow product label,2
+2804,935,adult,follow product label,1
+2805,935,child,demo only,1
+2806,936,adult,not specified,2
+2807,936,adult,follow product label,3
+2808,936,child,follow product label,2
+2809,937,adult,not specified,1
+2810,937,adult,demo only,2
+2811,937,child,not specified,1
+2812,938,adult,not specified,2
+2813,938,adult,not specified,3
+2814,938,child,demo only,3
+2815,939,adult,demo only,3
+2816,939,adult,not specified,2
+2817,939,child,follow product label,3
+2818,940,adult,not specified,3
+2819,940,adult,demo only,3
+2820,940,child,demo only,2
+2821,941,adult,follow product label,2
+2822,941,adult,demo only,1
+2823,941,child,follow product label,2
+2824,942,adult,not specified,1
+2825,942,adult,demo only,2
+2826,942,child,not specified,3
+2827,943,adult,demo only,3
+2828,943,adult,follow product label,3
+2829,943,child,follow product label,1
+2830,944,adult,follow product label,1
+2831,944,adult,follow product label,3
+2832,944,child,follow product label,3
+2833,945,adult,not specified,1
+2834,945,adult,not specified,2
+2835,945,child,not specified,2
+2836,946,adult,demo only,3
+2837,946,adult,demo only,1
+2838,946,child,demo only,3
+2839,947,adult,not specified,1
+2840,947,adult,follow product label,1
+2841,947,child,demo only,1
+2842,948,adult,follow product label,3
+2843,948,adult,demo only,2
+2844,948,child,not specified,3
+2845,949,adult,demo only,2
+2846,949,adult,demo only,3
+2847,949,child,not specified,1
+2848,950,adult,demo only,3
+2849,950,adult,demo only,2
+2850,950,child,not specified,2
+2851,951,adult,not specified,3
+2852,951,adult,follow product label,3
+2853,951,child,follow product label,3
+2854,952,adult,follow product label,2
+2855,952,adult,demo only,1
+2856,952,child,demo only,3
+2857,953,adult,demo only,2
+2858,953,adult,follow product label,2
+2859,953,child,not specified,1
+2860,954,adult,follow product label,3
+2861,954,adult,demo only,2
+2862,954,child,demo only,2
+2863,955,adult,follow product label,2
+2864,955,adult,demo only,1
+2865,955,child,not specified,2
+2866,956,adult,not specified,1
+2867,956,adult,follow product label,3
+2868,956,child,follow product label,2
+2869,957,adult,follow product label,3
+2870,957,adult,not specified,2
+2871,957,child,demo only,2
+2872,958,adult,demo only,2
+2873,958,adult,not specified,3
+2874,958,child,follow product label,3
+2875,959,adult,not specified,1
+2876,959,adult,demo only,3
+2877,959,child,demo only,2
+2878,960,adult,follow product label,3
+2879,960,adult,demo only,3
+2880,960,child,follow product label,3
+2881,961,adult,not specified,3
+2882,961,adult,follow product label,2
+2883,961,child,not specified,3
+2884,962,adult,demo only,1
+2885,962,adult,not specified,3
+2886,962,child,demo only,2
+2887,963,adult,demo only,3
+2888,963,adult,follow product label,3
+2889,963,child,demo only,2
+2890,964,adult,demo only,1
+2891,964,adult,follow product label,1
+2892,964,child,demo only,3
+2893,965,adult,not specified,3
+2894,965,adult,not specified,3
+2895,965,child,not specified,1
+2896,966,adult,not specified,2
+2897,966,adult,follow product label,1
+2898,966,child,not specified,3
+2899,967,adult,follow product label,2
+2900,967,adult,not specified,3
+2901,967,child,follow product label,1
+2902,968,adult,follow product label,2
+2903,968,adult,follow product label,3
+2904,968,child,demo only,1
+2905,969,adult,not specified,1
+2906,969,adult,follow product label,3
+2907,969,child,not specified,2
+2908,970,adult,not specified,1
+2909,970,adult,follow product label,2
+2910,970,child,follow product label,3
+2911,971,adult,not specified,2
+2912,971,adult,follow product label,1
+2913,971,child,follow product label,3
+2914,972,adult,demo only,3
+2915,972,adult,follow product label,1
+2916,972,child,follow product label,1
+2917,973,adult,not specified,2
+2918,973,adult,demo only,3
+2919,973,child,follow product label,3
+2920,974,adult,not specified,1
+2921,974,adult,follow product label,3
+2922,974,child,follow product label,3
+2923,975,adult,demo only,3
+2924,975,adult,follow product label,3
+2925,975,child,follow product label,2
+2926,976,adult,demo only,1
+2927,976,adult,not specified,3
+2928,976,child,demo only,2
+2929,977,adult,demo only,2
+2930,977,adult,follow product label,2
+2931,977,child,follow product label,1
+2932,978,adult,demo only,1
+2933,978,adult,not specified,1
+2934,978,child,not specified,2
+2935,979,adult,follow product label,2
+2936,979,adult,not specified,1
+2937,979,child,follow product label,3
+2938,980,adult,not specified,3
+2939,980,adult,demo only,2
+2940,980,child,not specified,2
+2941,981,adult,follow product label,3
+2942,981,adult,follow product label,2
+2943,981,child,demo only,3
+2944,982,adult,demo only,2
+2945,982,adult,demo only,2
+2946,982,child,not specified,1
+2947,983,adult,demo only,1
+2948,983,adult,demo only,1
+2949,983,child,demo only,2
+2950,984,adult,follow product label,2
+2951,984,adult,follow product label,1
+2952,984,child,demo only,1
+2953,985,adult,demo only,2
+2954,985,adult,not specified,3
+2955,985,child,demo only,2
+2956,986,adult,demo only,3
+2957,986,adult,follow product label,1
+2958,986,child,not specified,2
+2959,987,adult,not specified,1
+2960,987,adult,follow product label,1
+2961,987,child,demo only,3
+2962,988,adult,demo only,1
+2963,988,adult,demo only,1
+2964,988,child,follow product label,1
+2965,989,adult,not specified,1
+2966,989,adult,follow product label,2
+2967,989,child,follow product label,3
+2968,990,adult,demo only,1
+2969,990,adult,follow product label,2
+2970,990,child,demo only,2
+2971,991,adult,follow product label,2
+2972,991,adult,demo only,2
+2973,991,child,follow product label,2
+2974,992,adult,not specified,1
+2975,992,adult,not specified,3
+2976,992,child,demo only,2
+2977,993,adult,follow product label,2
+2978,993,adult,not specified,2
+2979,993,child,follow product label,2
+2980,994,adult,follow product label,2
+2981,994,adult,not specified,1
+2982,994,child,demo only,1
+2983,995,adult,follow product label,2
+2984,995,adult,demo only,1
+2985,995,child,not specified,3
+2986,996,adult,demo only,2
+2987,996,adult,not specified,3
+2988,996,child,follow product label,1
+2989,997,adult,follow product label,3
+2990,997,adult,not specified,3
+2991,997,child,not specified,1
+2992,998,adult,follow product label,1
+2993,998,adult,follow product label,3
+2994,998,child,follow product label,1
+2995,999,adult,not specified,3
+2996,999,adult,demo only,3
+2997,999,child,follow product label,2
+2998,1000,adult,follow product label,2
+2999,1000,adult,not specified,2
+3000,1000,child,follow product label,2
+3001,1001,adult,follow product label,2
+3002,1001,adult,not specified,3
+3003,1001,child,follow product label,2
+3004,1002,adult,demo only,2
+3005,1002,adult,not specified,1
+3006,1002,child,demo only,3
+3007,1003,adult,not specified,1
+3008,1003,adult,follow product label,2
+3009,1003,child,not specified,1
+3010,1004,adult,follow product label,3
+3011,1004,adult,demo only,3
+3012,1004,child,not specified,2
+3013,1005,adult,follow product label,3
+3014,1005,adult,follow product label,1
+3015,1005,child,follow product label,3
+3016,1006,adult,not specified,3
+3017,1006,adult,not specified,1
+3018,1006,child,follow product label,2
+3019,1007,adult,demo only,1
+3020,1007,adult,demo only,2
+3021,1007,child,not specified,1
+3022,1008,adult,not specified,2
+3023,1008,adult,not specified,3
+3024,1008,child,demo only,3
+3025,1009,adult,not specified,3
+3026,1009,adult,demo only,2
+3027,1009,child,demo only,3
+3028,1010,adult,follow product label,2
+3029,1010,adult,not specified,3
+3030,1010,child,demo only,1
+3031,1011,adult,follow product label,3
+3032,1011,adult,demo only,3
+3033,1011,child,not specified,2
+3034,1012,adult,not specified,3
+3035,1012,adult,demo only,1
+3036,1012,child,not specified,3
+3037,1013,adult,not specified,3
+3038,1013,adult,demo only,2
+3039,1013,child,demo only,1
+3040,1014,adult,not specified,2
+3041,1014,adult,follow product label,3
+3042,1014,child,follow product label,2
+3043,1015,adult,not specified,2
+3044,1015,adult,follow product label,3
+3045,1015,child,not specified,2
+3046,1016,adult,demo only,1
+3047,1016,adult,demo only,3
+3048,1016,child,demo only,3
+3049,1017,adult,follow product label,1
+3050,1017,adult,demo only,2
+3051,1017,child,not specified,1
+3052,1018,adult,demo only,1
+3053,1018,adult,not specified,1
+3054,1018,child,demo only,3
+3055,1019,adult,follow product label,1
+3056,1019,adult,not specified,2
+3057,1019,child,not specified,3
+3058,1020,adult,demo only,3
+3059,1020,adult,demo only,3
+3060,1020,child,not specified,2
+3061,1021,adult,not specified,1
+3062,1021,adult,not specified,1
+3063,1021,child,not specified,1
+3064,1022,adult,demo only,2
+3065,1022,adult,demo only,3
+3066,1022,child,follow product label,1
+3067,1023,adult,demo only,3
+3068,1023,adult,not specified,2
+3069,1023,child,not specified,1
+3070,1024,adult,demo only,1
+3071,1024,adult,follow product label,2
+3072,1024,child,not specified,3
+3073,1025,adult,not specified,2
+3074,1025,adult,follow product label,1
+3075,1025,child,demo only,3
+3076,1026,adult,not specified,3
+3077,1026,adult,follow product label,2
+3078,1026,child,follow product label,3
+3079,1027,adult,follow product label,3
+3080,1027,adult,follow product label,3
+3081,1027,child,follow product label,2
+3082,1028,adult,demo only,1
+3083,1028,adult,follow product label,2
+3084,1028,child,not specified,3
+3085,1029,adult,not specified,2
+3086,1029,adult,follow product label,1
+3087,1029,child,follow product label,3
+3088,1030,adult,demo only,3
+3089,1030,adult,demo only,2
+3090,1030,child,demo only,2
+3091,1031,adult,not specified,3
+3092,1031,adult,follow product label,1
+3093,1031,child,demo only,1
+3094,1032,adult,not specified,2
+3095,1032,adult,not specified,3
+3096,1032,child,not specified,2
+3097,1033,adult,demo only,3
+3098,1033,adult,not specified,2
+3099,1033,child,follow product label,1
+3100,1034,adult,follow product label,2
+3101,1034,adult,demo only,2
+3102,1034,child,demo only,2
+3103,1035,adult,demo only,1
+3104,1035,adult,demo only,3
+3105,1035,child,not specified,1
+3106,1036,adult,not specified,1
+3107,1036,adult,demo only,1
+3108,1036,child,not specified,2
+3109,1037,adult,demo only,2
+3110,1037,adult,not specified,1
+3111,1037,child,not specified,3
+3112,1038,adult,follow product label,3
+3113,1038,adult,demo only,1
+3114,1038,child,demo only,3
+3115,1039,adult,demo only,2
+3116,1039,adult,follow product label,3
+3117,1039,child,demo only,3
+3118,1040,adult,follow product label,2
+3119,1040,adult,follow product label,1
+3120,1040,child,follow product label,3
+3121,1041,adult,demo only,2
+3122,1041,adult,not specified,2
+3123,1041,child,demo only,2
+3124,1042,adult,follow product label,1
+3125,1042,adult,not specified,1
+3126,1042,child,not specified,3
+3127,1043,adult,follow product label,1
+3128,1043,adult,not specified,2
+3129,1043,child,demo only,1
+3130,1044,adult,follow product label,1
+3131,1044,adult,follow product label,1
+3132,1044,child,not specified,2
+3133,1045,adult,demo only,2
+3134,1045,adult,follow product label,3
+3135,1045,child,follow product label,2
+3136,1046,adult,demo only,2
+3137,1046,adult,demo only,1
+3138,1046,child,demo only,2
+3139,1047,adult,not specified,3
+3140,1047,adult,follow product label,3
+3141,1047,child,not specified,2
+3142,1048,adult,not specified,3
+3143,1048,adult,demo only,2
+3144,1048,child,demo only,1
+3145,1049,adult,follow product label,3
+3146,1049,adult,not specified,2
+3147,1049,child,not specified,3
+3148,1050,adult,follow product label,2
+3149,1050,adult,not specified,2
+3150,1050,child,demo only,3
+3151,1051,adult,not specified,1
+3152,1051,adult,demo only,3
+3153,1051,child,not specified,2
+3154,1052,adult,demo only,1
+3155,1052,adult,follow product label,3
+3156,1052,child,demo only,2
+3157,1053,adult,not specified,1
+3158,1053,adult,follow product label,2
+3159,1053,child,follow product label,2
+3160,1054,adult,demo only,2
+3161,1054,adult,follow product label,1
+3162,1054,child,demo only,1
+3163,1055,adult,demo only,1
+3164,1055,adult,demo only,3
+3165,1055,child,follow product label,1
+3166,1056,adult,demo only,1
+3167,1056,adult,demo only,2
+3168,1056,child,demo only,2
+3169,1057,adult,follow product label,1
+3170,1057,adult,follow product label,2
+3171,1057,child,demo only,2
+3172,1058,adult,follow product label,2
+3173,1058,adult,not specified,2
+3174,1058,child,demo only,1
+3175,1059,adult,not specified,3
+3176,1059,adult,demo only,2
+3177,1059,child,follow product label,2
+3178,1060,adult,not specified,2
+3179,1060,adult,not specified,3
+3180,1060,child,follow product label,2
+3181,1061,adult,not specified,3
+3182,1061,adult,not specified,3
+3183,1061,child,demo only,1
+3184,1062,adult,follow product label,2
+3185,1062,adult,follow product label,3
+3186,1062,child,not specified,1
+3187,1063,adult,demo only,2
+3188,1063,adult,not specified,2
+3189,1063,child,demo only,2
+3190,1064,adult,not specified,1
+3191,1064,adult,demo only,1
+3192,1064,child,demo only,2
+3193,1065,adult,demo only,1
+3194,1065,adult,follow product label,2
+3195,1065,child,follow product label,1
+3196,1066,adult,demo only,2
+3197,1066,adult,demo only,2
+3198,1066,child,not specified,1
+3199,1067,adult,not specified,3
+3200,1067,adult,not specified,3
+3201,1067,child,follow product label,1
+3202,1068,adult,not specified,1
+3203,1068,adult,follow product label,3
+3204,1068,child,not specified,1
+3205,1069,adult,demo only,2
+3206,1069,adult,not specified,1
+3207,1069,child,follow product label,3
+3208,1070,adult,demo only,1
+3209,1070,adult,demo only,2
+3210,1070,child,demo only,3
+3211,1071,adult,demo only,1
+3212,1071,adult,not specified,2
+3213,1071,child,not specified,2
+3214,1072,adult,demo only,1
+3215,1072,adult,not specified,1
+3216,1072,child,demo only,1
+3217,1073,adult,demo only,2
+3218,1073,adult,follow product label,3
+3219,1073,child,follow product label,2
+3220,1074,adult,demo only,2
+3221,1074,adult,not specified,2
+3222,1074,child,demo only,3
+3223,1075,adult,not specified,3
+3224,1075,adult,demo only,3
+3225,1075,child,follow product label,1
+3226,1076,adult,not specified,3
+3227,1076,adult,follow product label,2
+3228,1076,child,not specified,3
+3229,1077,adult,demo only,1
+3230,1077,adult,demo only,3
+3231,1077,child,demo only,1
+3232,1078,adult,demo only,2
+3233,1078,adult,demo only,1
+3234,1078,child,demo only,1
+3235,1079,adult,not specified,1
+3236,1079,adult,follow product label,2
+3237,1079,child,follow product label,2
+3238,1080,adult,demo only,2
+3239,1080,adult,demo only,1
+3240,1080,child,not specified,1
+3241,1081,adult,not specified,2
+3242,1081,adult,not specified,1
+3243,1081,child,follow product label,1
+3244,1082,adult,follow product label,3
+3245,1082,adult,demo only,1
+3246,1082,child,demo only,1
+3247,1083,adult,follow product label,2
+3248,1083,adult,demo only,1
+3249,1083,child,follow product label,1
+3250,1084,adult,demo only,1
+3251,1084,adult,not specified,2
+3252,1084,child,follow product label,3
+3253,1085,adult,not specified,3
+3254,1085,adult,follow product label,2
+3255,1085,child,not specified,1
+3256,1086,adult,not specified,1
+3257,1086,adult,demo only,1
+3258,1086,child,follow product label,3
+3259,1087,adult,follow product label,2
+3260,1087,adult,not specified,3
+3261,1087,child,not specified,1
+3262,1088,adult,not specified,1
+3263,1088,adult,not specified,2
+3264,1088,child,follow product label,2
+3265,1089,adult,demo only,3
+3266,1089,adult,not specified,1
+3267,1089,child,not specified,3
+3268,1090,adult,demo only,2
+3269,1090,adult,not specified,2
+3270,1090,child,demo only,1
+3271,1091,adult,follow product label,1
+3272,1091,adult,follow product label,1
+3273,1091,child,demo only,3
+3274,1092,adult,follow product label,3
+3275,1092,adult,not specified,3
+3276,1092,child,not specified,2
+3277,1093,adult,follow product label,3
+3278,1093,adult,not specified,2
+3279,1093,child,follow product label,1
+3280,1094,adult,not specified,2
+3281,1094,adult,demo only,3
+3282,1094,child,follow product label,2
+3283,1095,adult,follow product label,3
+3284,1095,adult,follow product label,2
+3285,1095,child,follow product label,2
+3286,1096,adult,follow product label,2
+3287,1096,adult,follow product label,1
+3288,1096,child,not specified,1
+3289,1097,adult,demo only,2
+3290,1097,adult,not specified,1
+3291,1097,child,not specified,3
+3292,1098,adult,not specified,1
+3293,1098,adult,follow product label,2
+3294,1098,child,demo only,1
+3295,1099,adult,follow product label,2
+3296,1099,adult,demo only,3
+3297,1099,child,not specified,1
+3298,1100,adult,demo only,2
+3299,1100,adult,not specified,3
+3300,1100,child,not specified,1
+3301,1101,adult,not specified,3
+3302,1101,adult,follow product label,1
+3303,1101,child,not specified,1
+3304,1102,adult,follow product label,3
+3305,1102,adult,follow product label,1
+3306,1102,child,not specified,1
+3307,1103,adult,follow product label,2
+3308,1103,adult,not specified,3
+3309,1103,child,follow product label,1
+3310,1104,adult,demo only,2
+3311,1104,adult,follow product label,1
+3312,1104,child,demo only,2
+3313,1105,adult,follow product label,3
+3314,1105,adult,not specified,1
+3315,1105,child,demo only,1
+3316,1106,adult,demo only,1
+3317,1106,adult,not specified,2
+3318,1106,child,follow product label,1
+3319,1107,adult,follow product label,1
+3320,1107,adult,demo only,3
+3321,1107,child,not specified,3
+3322,1108,adult,follow product label,1
+3323,1108,adult,follow product label,2
+3324,1108,child,not specified,3
+3325,1109,adult,demo only,3
+3326,1109,adult,demo only,1
+3327,1109,child,demo only,2
+3328,1110,adult,demo only,3
+3329,1110,adult,not specified,1
+3330,1110,child,demo only,2
+3331,1111,adult,follow product label,3
+3332,1111,adult,follow product label,1
+3333,1111,child,not specified,1
+3334,1112,adult,demo only,2
+3335,1112,adult,follow product label,3
+3336,1112,child,follow product label,3
+3337,1113,adult,not specified,3
+3338,1113,adult,follow product label,3
+3339,1113,child,follow product label,2
+3340,1114,adult,follow product label,2
+3341,1114,adult,not specified,2
+3342,1114,child,not specified,2
+3343,1115,adult,follow product label,2
+3344,1115,adult,not specified,1
+3345,1115,child,follow product label,2
+3346,1116,adult,follow product label,2
+3347,1116,adult,follow product label,1
+3348,1116,child,not specified,2
+3349,1117,adult,not specified,2
+3350,1117,adult,not specified,2
+3351,1117,child,follow product label,2
+3352,1118,adult,follow product label,2
+3353,1118,adult,follow product label,2
+3354,1118,child,follow product label,3
+3355,1119,adult,demo only,1
+3356,1119,adult,follow product label,3
+3357,1119,child,not specified,3
+3358,1120,adult,follow product label,2
+3359,1120,adult,not specified,1
+3360,1120,child,demo only,2
+3361,1121,adult,not specified,1
+3362,1121,adult,follow product label,3
+3363,1121,child,follow product label,2
+3364,1122,adult,follow product label,3
+3365,1122,adult,follow product label,2
+3366,1122,child,follow product label,3
+3367,1123,adult,not specified,2
+3368,1123,adult,follow product label,3
+3369,1123,child,not specified,3
+3370,1124,adult,demo only,1
+3371,1124,adult,not specified,3
+3372,1124,child,follow product label,1
+3373,1125,adult,demo only,3
+3374,1125,adult,follow product label,1
+3375,1125,child,not specified,3
+3376,1126,adult,not specified,1
+3377,1126,adult,not specified,3
+3378,1126,child,demo only,1
+3379,1127,adult,not specified,2
+3380,1127,adult,not specified,1
+3381,1127,child,demo only,3
+3382,1128,adult,demo only,1
+3383,1128,adult,demo only,2
+3384,1128,child,follow product label,3
+3385,1129,adult,not specified,2
+3386,1129,adult,demo only,1
+3387,1129,child,follow product label,3
+3388,1130,adult,follow product label,3
+3389,1130,adult,demo only,3
+3390,1130,child,not specified,1
+3391,1131,adult,demo only,2
+3392,1131,adult,not specified,1
+3393,1131,child,not specified,3
+3394,1132,adult,follow product label,3
+3395,1132,adult,not specified,3
+3396,1132,child,demo only,2
+3397,1133,adult,follow product label,1
+3398,1133,adult,follow product label,3
+3399,1133,child,demo only,2
+3400,1134,adult,follow product label,2
+3401,1134,adult,not specified,1
+3402,1134,child,follow product label,2
+3403,1135,adult,not specified,1
+3404,1135,adult,follow product label,3
+3405,1135,child,follow product label,1
+3406,1136,adult,demo only,1
+3407,1136,adult,not specified,1
+3408,1136,child,follow product label,1
+3409,1137,adult,follow product label,1
+3410,1137,adult,demo only,2
+3411,1137,child,demo only,3
+3412,1138,adult,follow product label,2
+3413,1138,adult,demo only,1
+3414,1138,child,not specified,2
+3415,1139,adult,not specified,3
+3416,1139,adult,demo only,3
+3417,1139,child,demo only,2
+3418,1140,adult,follow product label,1
+3419,1140,adult,not specified,2
+3420,1140,child,demo only,2
+3421,1141,adult,demo only,2
+3422,1141,adult,not specified,3
+3423,1141,child,follow product label,3
+3424,1142,adult,follow product label,1
+3425,1142,adult,not specified,2
+3426,1142,child,follow product label,1
+3427,1143,adult,follow product label,1
+3428,1143,adult,follow product label,3
+3429,1143,child,demo only,3
+3430,1144,adult,demo only,3
+3431,1144,adult,demo only,1
+3432,1144,child,demo only,2
+3433,1145,adult,not specified,2
+3434,1145,adult,follow product label,1
+3435,1145,child,demo only,1
+3436,1146,adult,follow product label,2
+3437,1146,adult,not specified,3
+3438,1146,child,demo only,2
+3439,1147,adult,follow product label,1
+3440,1147,adult,not specified,2
+3441,1147,child,demo only,3
+3442,1148,adult,follow product label,1
+3443,1148,adult,not specified,1
+3444,1148,child,demo only,1
+3445,1149,adult,demo only,1
+3446,1149,adult,not specified,2
+3447,1149,child,demo only,2
+3448,1150,adult,not specified,3
+3449,1150,adult,follow product label,2
+3450,1150,child,demo only,2
+3451,1151,adult,not specified,3
+3452,1151,adult,demo only,2
+3453,1151,child,not specified,2
+3454,1152,adult,not specified,3
+3455,1152,adult,not specified,3
+3456,1152,child,not specified,1
+3457,1153,adult,not specified,2
+3458,1153,adult,not specified,2
+3459,1153,child,not specified,2
+3460,1154,adult,follow product label,1
+3461,1154,adult,demo only,2
+3462,1154,child,demo only,2
+3463,1155,adult,follow product label,3
+3464,1155,adult,follow product label,3
+3465,1155,child,not specified,2
+3466,1156,adult,follow product label,3
+3467,1156,adult,follow product label,2
+3468,1156,child,not specified,3
+3469,1157,adult,not specified,1
+3470,1157,adult,not specified,3
+3471,1157,child,follow product label,3
+3472,1158,adult,demo only,2
+3473,1158,adult,not specified,1
+3474,1158,child,follow product label,2
+3475,1159,adult,follow product label,1
+3476,1159,adult,follow product label,1
+3477,1159,child,demo only,2
+3478,1160,adult,follow product label,2
+3479,1160,adult,demo only,1
+3480,1160,child,demo only,1
+3481,1161,adult,not specified,2
+3482,1161,adult,follow product label,1
+3483,1161,child,follow product label,3
+3484,1162,adult,follow product label,3
+3485,1162,adult,follow product label,2
+3486,1162,child,not specified,3
+3487,1163,adult,not specified,2
+3488,1163,adult,not specified,2
+3489,1163,child,demo only,2
+3490,1164,adult,follow product label,1
+3491,1164,adult,follow product label,1
+3492,1164,child,demo only,3
+3493,1165,adult,not specified,2
+3494,1165,adult,follow product label,1
+3495,1165,child,follow product label,1
+3496,1166,adult,demo only,1
+3497,1166,adult,not specified,3
+3498,1166,child,follow product label,2
+3499,1167,adult,follow product label,2
+3500,1167,adult,not specified,2
+3501,1167,child,demo only,3
+3502,1168,adult,demo only,2
+3503,1168,adult,not specified,3
+3504,1168,child,not specified,2
+3505,1169,adult,demo only,2
+3506,1169,adult,demo only,2
+3507,1169,child,demo only,1
+3508,1170,adult,follow product label,2
+3509,1170,adult,not specified,3
+3510,1170,child,demo only,2
+3511,1171,adult,not specified,3
+3512,1171,adult,not specified,1
+3513,1171,child,not specified,2
+3514,1172,adult,not specified,1
+3515,1172,adult,not specified,3
+3516,1172,child,follow product label,3
+3517,1173,adult,not specified,2
+3518,1173,adult,demo only,3
+3519,1173,child,follow product label,2
+3520,1174,adult,not specified,1
+3521,1174,adult,not specified,1
+3522,1174,child,not specified,2
+3523,1175,adult,follow product label,3
+3524,1175,adult,demo only,3
+3525,1175,child,demo only,1
+3526,1176,adult,follow product label,3
+3527,1176,adult,follow product label,3
+3528,1176,child,follow product label,3
+3529,1177,adult,follow product label,3
+3530,1177,adult,follow product label,2
+3531,1177,child,demo only,3
+3532,1178,adult,follow product label,2
+3533,1178,adult,not specified,2
+3534,1178,child,follow product label,3
+3535,1179,adult,not specified,3
+3536,1179,adult,demo only,3
+3537,1179,child,demo only,2
+3538,1180,adult,demo only,2
+3539,1180,adult,not specified,2
+3540,1180,child,not specified,2
+3541,1181,adult,demo only,1
+3542,1181,adult,demo only,2
+3543,1181,child,follow product label,2
+3544,1182,adult,demo only,2
+3545,1182,adult,not specified,3
+3546,1182,child,not specified,2
+3547,1183,adult,follow product label,3
+3548,1183,adult,demo only,1
+3549,1183,child,not specified,1
+3550,1184,adult,not specified,1
+3551,1184,adult,not specified,3
+3552,1184,child,not specified,2
+3553,1185,adult,not specified,3
+3554,1185,adult,follow product label,3
+3555,1185,child,follow product label,1
+3556,1186,adult,not specified,3
+3557,1186,adult,follow product label,2
+3558,1186,child,demo only,2
+3559,1187,adult,follow product label,2
+3560,1187,adult,not specified,3
+3561,1187,child,follow product label,2
+3562,1188,adult,demo only,3
+3563,1188,adult,follow product label,2
+3564,1188,child,not specified,2
+3565,1189,adult,demo only,3
+3566,1189,adult,not specified,2
+3567,1189,child,follow product label,2
+3568,1190,adult,demo only,2
+3569,1190,adult,follow product label,3
+3570,1190,child,follow product label,2
+3571,1191,adult,demo only,2
+3572,1191,adult,demo only,1
+3573,1191,child,demo only,3
+3574,1192,adult,follow product label,2
+3575,1192,adult,follow product label,2
+3576,1192,child,demo only,2
+3577,1193,adult,follow product label,3
+3578,1193,adult,follow product label,1
+3579,1193,child,demo only,2
+3580,1194,adult,follow product label,3
+3581,1194,adult,demo only,2
+3582,1194,child,not specified,1
+3583,1195,adult,demo only,1
+3584,1195,adult,demo only,3
+3585,1195,child,follow product label,1
+3586,1196,adult,follow product label,1
+3587,1196,adult,demo only,2
+3588,1196,child,follow product label,2
+3589,1197,adult,demo only,3
+3590,1197,adult,demo only,1
+3591,1197,child,follow product label,1
+3592,1198,adult,not specified,1
+3593,1198,adult,demo only,1
+3594,1198,child,follow product label,1
+3595,1199,adult,demo only,1
+3596,1199,adult,not specified,1
+3597,1199,child,demo only,2
+3598,1200,adult,not specified,3
+3599,1200,adult,demo only,3
+3600,1200,child,not specified,3
+3601,1201,adult,follow product label,3
+3602,1201,adult,not specified,3
+3603,1201,child,demo only,2
+3604,1202,adult,follow product label,1
+3605,1202,adult,follow product label,3
+3606,1202,child,demo only,1
+3607,1203,adult,not specified,2
+3608,1203,adult,follow product label,2
+3609,1203,child,follow product label,2
+3610,1204,adult,follow product label,3
+3611,1204,adult,not specified,1
+3612,1204,child,not specified,3
+3613,1205,adult,demo only,1
+3614,1205,adult,not specified,3
+3615,1205,child,follow product label,1
+3616,1206,adult,not specified,2
+3617,1206,adult,not specified,3
+3618,1206,child,follow product label,1
+3619,1207,adult,not specified,3
+3620,1207,adult,not specified,3
+3621,1207,child,demo only,3
+3622,1208,adult,not specified,1
+3623,1208,adult,follow product label,2
+3624,1208,child,not specified,1
+3625,1209,adult,demo only,2
+3626,1209,adult,follow product label,3
+3627,1209,child,follow product label,3
+3628,1210,adult,demo only,3
+3629,1210,adult,not specified,2
+3630,1210,child,demo only,1
+3631,1211,adult,demo only,2
+3632,1211,adult,not specified,1
+3633,1211,child,demo only,1
+3634,1212,adult,demo only,2
+3635,1212,adult,not specified,2
+3636,1212,child,follow product label,1
+3637,1213,adult,not specified,1
+3638,1213,adult,not specified,3
+3639,1213,child,follow product label,1
+3640,1214,adult,demo only,3
+3641,1214,adult,follow product label,3
+3642,1214,child,demo only,2
+3643,1215,adult,not specified,3
+3644,1215,adult,follow product label,1
+3645,1215,child,demo only,1
+3646,1216,adult,demo only,2
+3647,1216,adult,demo only,3
+3648,1216,child,follow product label,2
+3649,1217,adult,follow product label,3
+3650,1217,adult,demo only,1
+3651,1217,child,not specified,3
+3652,1218,adult,follow product label,1
+3653,1218,adult,demo only,3
+3654,1218,child,demo only,1
+3655,1219,adult,not specified,3
+3656,1219,adult,follow product label,3
+3657,1219,child,not specified,1
+3658,1220,adult,demo only,3
+3659,1220,adult,demo only,2
+3660,1220,child,not specified,2
+3661,1221,adult,demo only,2
+3662,1221,adult,follow product label,1
+3663,1221,child,not specified,3
+3664,1222,adult,demo only,2
+3665,1222,adult,not specified,3
+3666,1222,child,follow product label,1
+3667,1223,adult,not specified,3
+3668,1223,adult,demo only,2
+3669,1223,child,not specified,3
+3670,1224,adult,not specified,1
+3671,1224,adult,demo only,3
+3672,1224,child,follow product label,3
+3673,1225,adult,not specified,1
+3674,1225,adult,demo only,3
+3675,1225,child,follow product label,2
+3676,1226,adult,follow product label,3
+3677,1226,adult,not specified,3
+3678,1226,child,not specified,2
+3679,1227,adult,demo only,1
+3680,1227,adult,demo only,3
+3681,1227,child,demo only,3
+3682,1228,adult,not specified,1
+3683,1228,adult,follow product label,2
+3684,1228,child,follow product label,1
+3685,1229,adult,demo only,2
+3686,1229,adult,demo only,2
+3687,1229,child,not specified,1
+3688,1230,adult,demo only,3
+3689,1230,adult,follow product label,3
+3690,1230,child,not specified,3
+3691,1231,adult,follow product label,2
+3692,1231,adult,demo only,1
+3693,1231,child,not specified,3
+3694,1232,adult,demo only,1
+3695,1232,adult,not specified,1
+3696,1232,child,follow product label,3
+3697,1233,adult,demo only,3
+3698,1233,adult,demo only,2
+3699,1233,child,follow product label,3
+3700,1234,adult,demo only,2
+3701,1234,adult,not specified,3
+3702,1234,child,not specified,1
+3703,1235,adult,follow product label,3
+3704,1235,adult,demo only,3
+3705,1235,child,follow product label,1
+3706,1236,adult,demo only,1
+3707,1236,adult,demo only,3
+3708,1236,child,demo only,3
+3709,1237,adult,demo only,1
+3710,1237,adult,follow product label,1
+3711,1237,child,not specified,2
+3712,1238,adult,demo only,3
+3713,1238,adult,demo only,1
+3714,1238,child,follow product label,1
+3715,1239,adult,not specified,1
+3716,1239,adult,demo only,1
+3717,1239,child,not specified,3
+3718,1240,adult,follow product label,3
+3719,1240,adult,not specified,3
+3720,1240,child,demo only,2
+3721,1241,adult,demo only,3
+3722,1241,adult,not specified,3
+3723,1241,child,demo only,1
+3724,1242,adult,not specified,1
+3725,1242,adult,not specified,1
+3726,1242,child,demo only,1
+3727,1243,adult,follow product label,3
+3728,1243,adult,follow product label,3
+3729,1243,child,demo only,1
+3730,1244,adult,demo only,1
+3731,1244,adult,not specified,3
+3732,1244,child,follow product label,2
+3733,1245,adult,not specified,1
+3734,1245,adult,not specified,2
+3735,1245,child,follow product label,3
+3736,1246,adult,follow product label,2
+3737,1246,adult,not specified,3
+3738,1246,child,demo only,3
+3739,1247,adult,follow product label,3
+3740,1247,adult,follow product label,2
+3741,1247,child,not specified,2
+3742,1248,adult,demo only,2
+3743,1248,adult,demo only,2
+3744,1248,child,demo only,2
+3745,1249,adult,demo only,1
+3746,1249,adult,not specified,1
+3747,1249,child,follow product label,3
+3748,1250,adult,follow product label,1
+3749,1250,adult,not specified,1
+3750,1250,child,not specified,2
+3751,1251,adult,demo only,2
+3752,1251,adult,demo only,1
+3753,1251,child,demo only,2
+3754,1252,adult,follow product label,2
+3755,1252,adult,not specified,3
+3756,1252,child,demo only,2
+3757,1253,adult,demo only,2
+3758,1253,adult,follow product label,1
+3759,1253,child,demo only,1
+3760,1254,adult,not specified,1
+3761,1254,adult,not specified,1
+3762,1254,child,not specified,1
+3763,1255,adult,demo only,3
+3764,1255,adult,follow product label,2
+3765,1255,child,demo only,3
+3766,1256,adult,demo only,2
+3767,1256,adult,demo only,1
+3768,1256,child,not specified,1
+3769,1257,adult,follow product label,3
+3770,1257,adult,demo only,3
+3771,1257,child,demo only,1
+3772,1258,adult,not specified,2
+3773,1258,adult,follow product label,3
+3774,1258,child,demo only,3
+3775,1259,adult,demo only,1
+3776,1259,adult,demo only,3
+3777,1259,child,follow product label,2
+3778,1260,adult,not specified,1
+3779,1260,adult,demo only,3
+3780,1260,child,demo only,1
+3781,1261,adult,not specified,1
+3782,1261,adult,follow product label,3
+3783,1261,child,follow product label,3
+3784,1262,adult,not specified,1
+3785,1262,adult,not specified,2
+3786,1262,child,demo only,1
+3787,1263,adult,not specified,3
+3788,1263,adult,demo only,2
+3789,1263,child,follow product label,3
+3790,1264,adult,follow product label,1
+3791,1264,adult,not specified,1
+3792,1264,child,demo only,1
+3793,1265,adult,follow product label,2
+3794,1265,adult,not specified,1
+3795,1265,child,not specified,2
+3796,1266,adult,follow product label,2
+3797,1266,adult,not specified,3
+3798,1266,child,follow product label,3
+3799,1267,adult,demo only,3
+3800,1267,adult,not specified,1
+3801,1267,child,not specified,1
+3802,1268,adult,demo only,3
+3803,1268,adult,follow product label,3
+3804,1268,child,demo only,2
+3805,1269,adult,follow product label,2
+3806,1269,adult,demo only,2
+3807,1269,child,follow product label,2
+3808,1270,adult,demo only,1
+3809,1270,adult,demo only,1
+3810,1270,child,demo only,2
+3811,1271,adult,not specified,3
+3812,1271,adult,demo only,1
+3813,1271,child,demo only,3
+3814,1272,adult,not specified,3
+3815,1272,adult,not specified,2
+3816,1272,child,follow product label,2
+3817,1273,adult,not specified,1
+3818,1273,adult,not specified,3
+3819,1273,child,follow product label,1
+3820,1274,adult,follow product label,2
+3821,1274,adult,follow product label,1
+3822,1274,child,follow product label,2
+3823,1275,adult,demo only,3
+3824,1275,adult,demo only,1
+3825,1275,child,demo only,3
+3826,1276,adult,not specified,1
+3827,1276,adult,not specified,2
+3828,1276,child,follow product label,3
+3829,1277,adult,not specified,2
+3830,1277,adult,follow product label,1
+3831,1277,child,not specified,1
+3832,1278,adult,follow product label,3
+3833,1278,adult,demo only,1
+3834,1278,child,demo only,1
+3835,1279,adult,demo only,3
+3836,1279,adult,follow product label,2
+3837,1279,child,demo only,3
+3838,1280,adult,not specified,2
+3839,1280,adult,not specified,1
+3840,1280,child,not specified,1
+3841,1281,adult,demo only,1
+3842,1281,adult,demo only,2
+3843,1281,child,follow product label,1
+3844,1282,adult,demo only,1
+3845,1282,adult,not specified,2
+3846,1282,child,follow product label,2
+3847,1283,adult,demo only,3
+3848,1283,adult,not specified,2
+3849,1283,child,not specified,1
+3850,1284,adult,demo only,1
+3851,1284,adult,demo only,2
+3852,1284,child,not specified,3
+3853,1285,adult,not specified,2
+3854,1285,adult,follow product label,3
+3855,1285,child,follow product label,2
+3856,1286,adult,demo only,2
+3857,1286,adult,follow product label,1
+3858,1286,child,demo only,2
+3859,1287,adult,follow product label,2
+3860,1287,adult,demo only,1
+3861,1287,child,demo only,3
+3862,1288,adult,not specified,1
+3863,1288,adult,follow product label,2
+3864,1288,child,follow product label,2
+3865,1289,adult,follow product label,2
+3866,1289,adult,follow product label,1
+3867,1289,child,follow product label,1
+3868,1290,adult,not specified,2
+3869,1290,adult,not specified,1
+3870,1290,child,demo only,3
+3871,1291,adult,not specified,2
+3872,1291,adult,demo only,2
+3873,1291,child,demo only,2
+3874,1292,adult,follow product label,3
+3875,1292,adult,follow product label,3
+3876,1292,child,demo only,3
+3877,1293,adult,not specified,1
+3878,1293,adult,demo only,2
+3879,1293,child,demo only,3
+3880,1294,adult,demo only,2
+3881,1294,adult,demo only,3
+3882,1294,child,demo only,3
+3883,1295,adult,not specified,2
+3884,1295,adult,not specified,2
+3885,1295,child,demo only,1
+3886,1296,adult,not specified,3
+3887,1296,adult,demo only,1
+3888,1296,child,demo only,1
+3889,1297,adult,not specified,2
+3890,1297,adult,demo only,2
+3891,1297,child,not specified,3
+3892,1298,adult,demo only,1
+3893,1298,adult,not specified,1
+3894,1298,child,follow product label,2
+3895,1299,adult,demo only,3
+3896,1299,adult,demo only,3
+3897,1299,child,not specified,3
+3898,1300,adult,follow product label,3
+3899,1300,adult,follow product label,2
+3900,1300,child,demo only,2
+3901,1301,adult,not specified,1
+3902,1301,adult,demo only,1
+3903,1301,child,follow product label,1
+3904,1302,adult,not specified,2
+3905,1302,adult,follow product label,1
+3906,1302,child,demo only,3
+3907,1303,adult,not specified,2
+3908,1303,adult,follow product label,1
+3909,1303,child,demo only,2
+3910,1304,adult,demo only,2
+3911,1304,adult,not specified,1
+3912,1304,child,follow product label,3
+3913,1305,adult,not specified,3
+3914,1305,adult,demo only,3
+3915,1305,child,demo only,2
+3916,1306,adult,demo only,3
+3917,1306,adult,demo only,1
+3918,1306,child,demo only,3
+3919,1307,adult,follow product label,1
+3920,1307,adult,not specified,1
+3921,1307,child,follow product label,1
+3922,1308,adult,demo only,1
+3923,1308,adult,demo only,1
+3924,1308,child,not specified,1
+3925,1309,adult,not specified,1
+3926,1309,adult,not specified,1
+3927,1309,child,demo only,3
+3928,1310,adult,demo only,3
+3929,1310,adult,not specified,3
+3930,1310,child,demo only,3
+3931,1311,adult,demo only,3
+3932,1311,adult,follow product label,1
+3933,1311,child,follow product label,1
+3934,1312,adult,not specified,3
+3935,1312,adult,demo only,3
+3936,1312,child,demo only,3
+3937,1313,adult,demo only,3
+3938,1313,adult,follow product label,1
+3939,1313,child,follow product label,1
+3940,1314,adult,demo only,1
+3941,1314,adult,demo only,2
+3942,1314,child,not specified,3
+3943,1315,adult,not specified,1
+3944,1315,adult,demo only,3
+3945,1315,child,demo only,3
+3946,1316,adult,demo only,1
+3947,1316,adult,follow product label,1
+3948,1316,child,not specified,1
+3949,1317,adult,not specified,3
+3950,1317,adult,follow product label,2
+3951,1317,child,not specified,2
+3952,1318,adult,demo only,3
+3953,1318,adult,demo only,3
+3954,1318,child,not specified,2
+3955,1319,adult,demo only,2
+3956,1319,adult,demo only,3
+3957,1319,child,follow product label,3
+3958,1320,adult,follow product label,1
+3959,1320,adult,demo only,3
+3960,1320,child,not specified,1
+3961,1321,adult,not specified,1
+3962,1321,adult,demo only,3
+3963,1321,child,follow product label,2
+3964,1322,adult,follow product label,2
+3965,1322,adult,demo only,1
+3966,1322,child,follow product label,1
+3967,1323,adult,follow product label,1
+3968,1323,adult,demo only,1
+3969,1323,child,not specified,2
+3970,1324,adult,demo only,3
+3971,1324,adult,not specified,2
+3972,1324,child,demo only,2
+3973,1325,adult,follow product label,3
+3974,1325,adult,demo only,2
+3975,1325,child,follow product label,3
+3976,1326,adult,follow product label,3
+3977,1326,adult,not specified,3
+3978,1326,child,not specified,2
+3979,1327,adult,demo only,2
+3980,1327,adult,follow product label,3
+3981,1327,child,not specified,1
+3982,1328,adult,demo only,2
+3983,1328,adult,demo only,1
+3984,1328,child,follow product label,3
+3985,1329,adult,demo only,1
+3986,1329,adult,follow product label,1
+3987,1329,child,follow product label,2
+3988,1330,adult,demo only,3
+3989,1330,adult,follow product label,3
+3990,1330,child,demo only,3
+3991,1331,adult,not specified,3
+3992,1331,adult,not specified,2
+3993,1331,child,follow product label,1
+3994,1332,adult,demo only,2
+3995,1332,adult,not specified,3
+3996,1332,child,demo only,1
+3997,1333,adult,follow product label,2
+3998,1333,adult,not specified,3
+3999,1333,child,follow product label,1
+4000,1334,adult,not specified,2
+4001,1334,adult,follow product label,2
+4002,1334,child,follow product label,2
+4003,1335,adult,follow product label,1
+4004,1335,adult,not specified,1
+4005,1335,child,demo only,2
+4006,1336,adult,follow product label,2
+4007,1336,adult,not specified,1
+4008,1336,child,follow product label,2
+4009,1337,adult,not specified,3
+4010,1337,adult,demo only,3
+4011,1337,child,demo only,1
+4012,1338,adult,follow product label,3
+4013,1338,adult,not specified,3
+4014,1338,child,follow product label,3
+4015,1339,adult,follow product label,3
+4016,1339,adult,demo only,2
+4017,1339,child,demo only,2
+4018,1340,adult,demo only,1
+4019,1340,adult,demo only,3
+4020,1340,child,not specified,2
+4021,1341,adult,follow product label,2
+4022,1341,adult,demo only,1
+4023,1341,child,follow product label,2
+4024,1342,adult,follow product label,3
+4025,1342,adult,not specified,3
+4026,1342,child,not specified,3
+4027,1343,adult,demo only,3
+4028,1343,adult,demo only,2
+4029,1343,child,demo only,1
+4030,1344,adult,demo only,1
+4031,1344,adult,follow product label,1
+4032,1344,child,follow product label,3
+4033,1345,adult,follow product label,1
+4034,1345,adult,demo only,2
+4035,1345,child,demo only,2
+4036,1346,adult,not specified,2
+4037,1346,adult,follow product label,1
+4038,1346,child,demo only,1
+4039,1347,adult,demo only,1
+4040,1347,adult,not specified,3
+4041,1347,child,demo only,1
+4042,1348,adult,demo only,2
+4043,1348,adult,follow product label,3
+4044,1348,child,demo only,2
+4045,1349,adult,follow product label,1
+4046,1349,adult,not specified,1
+4047,1349,child,follow product label,1
+4048,1350,adult,demo only,2
+4049,1350,adult,demo only,2
+4050,1350,child,not specified,1
+4051,1351,adult,follow product label,2
+4052,1351,adult,demo only,1
+4053,1351,child,not specified,2
+4054,1352,adult,demo only,1
+4055,1352,adult,not specified,2
+4056,1352,child,follow product label,1
+4057,1353,adult,not specified,3
+4058,1353,adult,follow product label,3
+4059,1353,child,follow product label,3
+4060,1354,adult,not specified,3
+4061,1354,adult,demo only,2
+4062,1354,child,follow product label,3
+4063,1355,adult,follow product label,3
+4064,1355,adult,follow product label,3
+4065,1355,child,not specified,2
+4066,1356,adult,follow product label,3
+4067,1356,adult,demo only,3
+4068,1356,child,demo only,3
+4069,1357,adult,not specified,2
+4070,1357,adult,demo only,1
+4071,1357,child,demo only,3
+4072,1358,adult,demo only,2
+4073,1358,adult,not specified,1
+4074,1358,child,follow product label,3
+4075,1359,adult,not specified,2
+4076,1359,adult,follow product label,2
+4077,1359,child,demo only,1
+4078,1360,adult,follow product label,3
+4079,1360,adult,follow product label,1
+4080,1360,child,follow product label,2
+4081,1361,adult,not specified,3
+4082,1361,adult,demo only,2
+4083,1361,child,follow product label,1
+4084,1362,adult,not specified,1
+4085,1362,adult,not specified,1
+4086,1362,child,not specified,3
+4087,1363,adult,follow product label,2
+4088,1363,adult,demo only,1
+4089,1363,child,not specified,2
+4090,1364,adult,not specified,2
+4091,1364,adult,not specified,1
+4092,1364,child,demo only,3
+4093,1365,adult,demo only,3
+4094,1365,adult,not specified,2
+4095,1365,child,demo only,2
+4096,1366,adult,follow product label,2
+4097,1366,adult,follow product label,2
+4098,1366,child,demo only,2
+4099,1367,adult,follow product label,1
+4100,1367,adult,not specified,3
+4101,1367,child,not specified,3
+4102,1368,adult,follow product label,2
+4103,1368,adult,not specified,3
+4104,1368,child,not specified,3
+4105,1369,adult,follow product label,3
+4106,1369,adult,not specified,2
+4107,1369,child,demo only,2
+4108,1370,adult,not specified,3
+4109,1370,adult,not specified,2
+4110,1370,child,not specified,2
+4111,1371,adult,demo only,1
+4112,1371,adult,not specified,1
+4113,1371,child,not specified,2
+4114,1372,adult,follow product label,3
+4115,1372,adult,demo only,3
+4116,1372,child,demo only,3
+4117,1373,adult,not specified,2
+4118,1373,adult,demo only,1
+4119,1373,child,follow product label,2
+4120,1374,adult,not specified,3
+4121,1374,adult,follow product label,3
+4122,1374,child,not specified,2
+4123,1375,adult,demo only,2
+4124,1375,adult,follow product label,1
+4125,1375,child,follow product label,1
+4126,1376,adult,demo only,3
+4127,1376,adult,demo only,1
+4128,1376,child,demo only,2
+4129,1377,adult,not specified,2
+4130,1377,adult,demo only,3
+4131,1377,child,follow product label,1
+4132,1378,adult,not specified,1
+4133,1378,adult,follow product label,2
+4134,1378,child,not specified,2
+4135,1379,adult,follow product label,1
+4136,1379,adult,follow product label,3
+4137,1379,child,not specified,2
+4138,1380,adult,not specified,3
+4139,1380,adult,not specified,2
+4140,1380,child,follow product label,3
+4141,1381,adult,demo only,2
+4142,1381,adult,not specified,2
+4143,1381,child,demo only,3
+4144,1382,adult,follow product label,3
+4145,1382,adult,not specified,2
+4146,1382,child,demo only,2
+4147,1383,adult,demo only,3
+4148,1383,adult,demo only,2
+4149,1383,child,not specified,3
+4150,1384,adult,follow product label,1
+4151,1384,adult,not specified,2
+4152,1384,child,not specified,3
+4153,1385,adult,not specified,3
+4154,1385,adult,demo only,1
+4155,1385,child,follow product label,1
+4156,1386,adult,follow product label,1
+4157,1386,adult,not specified,3
+4158,1386,child,follow product label,1
+4159,1387,adult,not specified,1
+4160,1387,adult,demo only,1
+4161,1387,child,not specified,2
+4162,1388,adult,not specified,2
+4163,1388,adult,not specified,3
+4164,1388,child,follow product label,3
+4165,1389,adult,demo only,3
+4166,1389,adult,not specified,2
+4167,1389,child,demo only,2
+4168,1390,adult,not specified,3
+4169,1390,adult,not specified,1
+4170,1390,child,follow product label,3
+4171,1391,adult,demo only,2
+4172,1391,adult,demo only,2
+4173,1391,child,follow product label,3
+4174,1392,adult,demo only,3
+4175,1392,adult,demo only,2
+4176,1392,child,follow product label,2
+4177,1393,adult,follow product label,1
+4178,1393,adult,not specified,2
+4179,1393,child,follow product label,1
+4180,1394,adult,demo only,1
+4181,1394,adult,not specified,3
+4182,1394,child,demo only,3
+4183,1395,adult,follow product label,3
+4184,1395,adult,demo only,3
+4185,1395,child,follow product label,3
+4186,1396,adult,not specified,3
+4187,1396,adult,not specified,2
+4188,1396,child,not specified,1
+4189,1397,adult,follow product label,2
+4190,1397,adult,not specified,1
+4191,1397,child,follow product label,1
+4192,1398,adult,demo only,2
+4193,1398,adult,demo only,1
+4194,1398,child,not specified,3
+4195,1399,adult,follow product label,1
+4196,1399,adult,demo only,3
+4197,1399,child,demo only,1
+4198,1400,adult,not specified,1
+4199,1400,adult,not specified,2
+4200,1400,child,follow product label,3
+4201,1401,adult,not specified,2
+4202,1401,adult,demo only,1
+4203,1401,child,demo only,2
+4204,1402,adult,demo only,3
+4205,1402,adult,follow product label,1
+4206,1402,child,follow product label,1
+4207,1403,adult,demo only,2
+4208,1403,adult,not specified,1
+4209,1403,child,demo only,3
+4210,1404,adult,demo only,2
+4211,1404,adult,not specified,3
+4212,1404,child,demo only,2
+4213,1405,adult,demo only,3
+4214,1405,adult,not specified,2
+4215,1405,child,not specified,1
+4216,1406,adult,not specified,3
+4217,1406,adult,follow product label,3
+4218,1406,child,follow product label,1
+4219,1407,adult,follow product label,1
+4220,1407,adult,follow product label,1
+4221,1407,child,demo only,2
+4222,1408,adult,follow product label,3
+4223,1408,adult,demo only,1
+4224,1408,child,demo only,1
+4225,1409,adult,not specified,1
+4226,1409,adult,demo only,1
+4227,1409,child,follow product label,1
+4228,1410,adult,follow product label,3
+4229,1410,adult,demo only,3
+4230,1410,child,demo only,2
+4231,1411,adult,follow product label,3
+4232,1411,adult,demo only,1
+4233,1411,child,follow product label,1
+4234,1412,adult,follow product label,3
+4235,1412,adult,follow product label,1
+4236,1412,child,follow product label,3
+4237,1413,adult,not specified,2
+4238,1413,adult,follow product label,1
+4239,1413,child,demo only,2
+4240,1414,adult,follow product label,3
+4241,1414,adult,demo only,3
+4242,1414,child,demo only,2
+4243,1415,adult,not specified,2
+4244,1415,adult,not specified,2
+4245,1415,child,demo only,2
+4246,1416,adult,demo only,3
+4247,1416,adult,not specified,3
+4248,1416,child,follow product label,1
+4249,1417,adult,demo only,3
+4250,1417,adult,demo only,1
+4251,1417,child,not specified,1
+4252,1418,adult,follow product label,3
+4253,1418,adult,not specified,3
+4254,1418,child,demo only,3
+4255,1419,adult,not specified,1
+4256,1419,adult,follow product label,1
+4257,1419,child,demo only,3
+4258,1420,adult,demo only,2
+4259,1420,adult,demo only,1
+4260,1420,child,follow product label,1
+4261,1421,adult,demo only,1
+4262,1421,adult,not specified,3
+4263,1421,child,demo only,2
+4264,1422,adult,demo only,1
+4265,1422,adult,not specified,1
+4266,1422,child,not specified,3
+4267,1423,adult,demo only,1
+4268,1423,adult,follow product label,3
+4269,1423,child,demo only,1
+4270,1424,adult,demo only,3
+4271,1424,adult,not specified,2
+4272,1424,child,not specified,2
+4273,1425,adult,demo only,2
+4274,1425,adult,follow product label,3
+4275,1425,child,follow product label,1
+4276,1426,adult,not specified,2
+4277,1426,adult,follow product label,3
+4278,1426,child,not specified,1
+4279,1427,adult,not specified,3
+4280,1427,adult,demo only,1
+4281,1427,child,follow product label,3
+4282,1428,adult,follow product label,3
+4283,1428,adult,follow product label,3
+4284,1428,child,follow product label,2
+4285,1429,adult,not specified,2
+4286,1429,adult,not specified,1
+4287,1429,child,not specified,2
+4288,1430,adult,not specified,2
+4289,1430,adult,not specified,3
+4290,1430,child,demo only,3
+4291,1431,adult,follow product label,2
+4292,1431,adult,follow product label,1
+4293,1431,child,demo only,2
+4294,1432,adult,not specified,1
+4295,1432,adult,not specified,2
+4296,1432,child,demo only,1
+4297,1433,adult,follow product label,2
+4298,1433,adult,not specified,2
+4299,1433,child,follow product label,1
+4300,1434,adult,follow product label,3
+4301,1434,adult,not specified,3
+4302,1434,child,demo only,2
+4303,1435,adult,follow product label,2
+4304,1435,adult,demo only,3
+4305,1435,child,not specified,1
+4306,1436,adult,not specified,1
+4307,1436,adult,demo only,3
+4308,1436,child,not specified,3
+4309,1437,adult,follow product label,2
+4310,1437,adult,follow product label,2
+4311,1437,child,not specified,3
+4312,1438,adult,not specified,2
+4313,1438,adult,demo only,2
+4314,1438,child,follow product label,2
+4315,1439,adult,demo only,2
+4316,1439,adult,follow product label,1
+4317,1439,child,follow product label,1
+4318,1440,adult,not specified,3
+4319,1440,adult,follow product label,1
+4320,1440,child,not specified,1
+4321,1441,adult,not specified,1
+4322,1441,adult,follow product label,1
+4323,1441,child,not specified,2
+4324,1442,adult,not specified,3
+4325,1442,adult,follow product label,1
+4326,1442,child,follow product label,2
+4327,1443,adult,not specified,2
+4328,1443,adult,demo only,3
+4329,1443,child,follow product label,1
+4330,1444,adult,follow product label,1
+4331,1444,adult,follow product label,2
+4332,1444,child,follow product label,1
+4333,1445,adult,follow product label,3
+4334,1445,adult,not specified,1
+4335,1445,child,demo only,1
+4336,1446,adult,demo only,3
+4337,1446,adult,follow product label,1
+4338,1446,child,demo only,2
+4339,1447,adult,follow product label,3
+4340,1447,adult,follow product label,3
+4341,1447,child,not specified,2
+4342,1448,adult,not specified,1
+4343,1448,adult,not specified,3
+4344,1448,child,follow product label,2
+4345,1449,adult,not specified,2
+4346,1449,adult,not specified,2
+4347,1449,child,not specified,3
+4348,1450,adult,not specified,3
+4349,1450,adult,follow product label,2
+4350,1450,child,demo only,2
+4351,1451,adult,demo only,1
+4352,1451,adult,not specified,1
+4353,1451,child,follow product label,3
+4354,1452,adult,not specified,3
+4355,1452,adult,follow product label,3
+4356,1452,child,not specified,2
+4357,1453,adult,not specified,1
+4358,1453,adult,follow product label,1
+4359,1453,child,demo only,2
+4360,1454,adult,demo only,2
+4361,1454,adult,follow product label,2
+4362,1454,child,follow product label,2
+4363,1455,adult,not specified,3
+4364,1455,adult,demo only,3
+4365,1455,child,not specified,3
+4366,1456,adult,demo only,2
+4367,1456,adult,demo only,2
+4368,1456,child,demo only,2
+4369,1457,adult,follow product label,1
+4370,1457,adult,not specified,1
+4371,1457,child,demo only,2
+4372,1458,adult,follow product label,3
+4373,1458,adult,follow product label,2
+4374,1458,child,follow product label,3
+4375,1459,adult,not specified,1
+4376,1459,adult,not specified,3
+4377,1459,child,not specified,1
+4378,1460,adult,not specified,1
+4379,1460,adult,follow product label,1
+4380,1460,child,demo only,1
+4381,1461,adult,follow product label,3
+4382,1461,adult,not specified,3
+4383,1461,child,demo only,3
+4384,1462,adult,follow product label,2
+4385,1462,adult,follow product label,2
+4386,1462,child,follow product label,3
+4387,1463,adult,demo only,1
+4388,1463,adult,follow product label,3
+4389,1463,child,not specified,2
+4390,1464,adult,demo only,2
+4391,1464,adult,demo only,1
+4392,1464,child,follow product label,2
+4393,1465,adult,not specified,2
+4394,1465,adult,demo only,3
+4395,1465,child,follow product label,3
+4396,1466,adult,not specified,2
+4397,1466,adult,follow product label,3
+4398,1466,child,follow product label,3
+4399,1467,adult,not specified,1
+4400,1467,adult,not specified,1
+4401,1467,child,demo only,1
+4402,1468,adult,demo only,1
+4403,1468,adult,follow product label,2
+4404,1468,child,demo only,2
+4405,1469,adult,not specified,1
+4406,1469,adult,demo only,3
+4407,1469,child,follow product label,3
+4408,1470,adult,demo only,2
+4409,1470,adult,demo only,2
+4410,1470,child,follow product label,3
+4411,1471,adult,demo only,2
+4412,1471,adult,demo only,2
+4413,1471,child,demo only,2
+4414,1472,adult,not specified,1
+4415,1472,adult,not specified,2
+4416,1472,child,not specified,3
+4417,1473,adult,demo only,2
+4418,1473,adult,follow product label,2
+4419,1473,child,demo only,1
+4420,1474,adult,follow product label,1
+4421,1474,adult,not specified,1
+4422,1474,child,follow product label,3
+4423,1475,adult,not specified,1
+4424,1475,adult,demo only,1
+4425,1475,child,follow product label,1
+4426,1476,adult,follow product label,2
+4427,1476,adult,not specified,1
+4428,1476,child,not specified,3
+4429,1477,adult,demo only,2
+4430,1477,adult,not specified,3
+4431,1477,child,not specified,1
+4432,1478,adult,not specified,3
+4433,1478,adult,not specified,2
+4434,1478,child,not specified,1
+4435,1479,adult,follow product label,1
+4436,1479,adult,follow product label,2
+4437,1479,child,demo only,2
+4438,1480,adult,follow product label,1
+4439,1480,adult,demo only,1
+4440,1480,child,not specified,3
+4441,1481,adult,demo only,3
+4442,1481,adult,follow product label,1
+4443,1481,child,demo only,3
+4444,1482,adult,not specified,1
+4445,1482,adult,demo only,2
+4446,1482,child,demo only,1
+4447,1483,adult,demo only,3
+4448,1483,adult,follow product label,3
+4449,1483,child,not specified,2
+4450,1484,adult,demo only,1
+4451,1484,adult,not specified,3
+4452,1484,child,demo only,3
+4453,1485,adult,follow product label,2
+4454,1485,adult,demo only,1
+4455,1485,child,demo only,3
+4456,1486,adult,demo only,1
+4457,1486,adult,demo only,1
+4458,1486,child,not specified,2
+4459,1487,adult,demo only,1
+4460,1487,adult,not specified,1
+4461,1487,child,demo only,3
+4462,1488,adult,follow product label,3
+4463,1488,adult,demo only,3
+4464,1488,child,follow product label,3
+4465,1489,adult,follow product label,2
+4466,1489,adult,not specified,3
+4467,1489,child,demo only,1
+4468,1490,adult,follow product label,1
+4469,1490,adult,demo only,3
+4470,1490,child,follow product label,1
+4471,1491,adult,not specified,3
+4472,1491,adult,not specified,1
+4473,1491,child,follow product label,1
+4474,1492,adult,demo only,1
+4475,1492,adult,demo only,1
+4476,1492,child,not specified,1
+4477,1493,adult,demo only,3
+4478,1493,adult,not specified,2
+4479,1493,child,demo only,3
+4480,1494,adult,follow product label,2
+4481,1494,adult,not specified,3
+4482,1494,child,not specified,3
+4483,1495,adult,follow product label,1
+4484,1495,adult,follow product label,1
+4485,1495,child,not specified,2
+4486,1496,adult,demo only,3
+4487,1496,adult,demo only,2
+4488,1496,child,demo only,1
+4489,1497,adult,follow product label,1
+4490,1497,adult,follow product label,3
+4491,1497,child,demo only,1
+4492,1498,adult,follow product label,1
+4493,1498,adult,follow product label,3
+4494,1498,child,follow product label,3
+4495,1499,adult,demo only,2
+4496,1499,adult,not specified,2
+4497,1499,child,demo only,2
+4498,1500,adult,follow product label,3
+4499,1500,adult,demo only,3
+4500,1500,child,follow product label,3
+4501,1501,adult,follow product label,2
+4502,1501,adult,not specified,1
+4503,1501,child,follow product label,3
+4504,1502,adult,follow product label,3
+4505,1502,adult,demo only,1
+4506,1502,child,demo only,3
+4507,1503,adult,not specified,1
+4508,1503,adult,not specified,3
+4509,1503,child,demo only,2
+4510,1504,adult,not specified,2
+4511,1504,adult,not specified,2
+4512,1504,child,not specified,2
+4513,1505,adult,not specified,2
+4514,1505,adult,follow product label,1
+4515,1505,child,demo only,1
+4516,1506,adult,demo only,1
+4517,1506,adult,demo only,3
+4518,1506,child,demo only,1
+4519,1507,adult,follow product label,1
+4520,1507,adult,follow product label,1
+4521,1507,child,demo only,3
+4522,1508,adult,demo only,3
+4523,1508,adult,follow product label,3
+4524,1508,child,follow product label,1
+4525,1509,adult,follow product label,1
+4526,1509,adult,follow product label,1
+4527,1509,child,not specified,3
+4528,1510,adult,follow product label,1
+4529,1510,adult,follow product label,2
+4530,1510,child,demo only,3
+4531,1511,adult,follow product label,3
+4532,1511,adult,not specified,1
+4533,1511,child,not specified,1
+4534,1512,adult,follow product label,1
+4535,1512,adult,follow product label,1
+4536,1512,child,follow product label,3
+4537,1513,adult,not specified,3
+4538,1513,adult,not specified,1
+4539,1513,child,follow product label,2
+4540,1514,adult,not specified,1
+4541,1514,adult,follow product label,1
+4542,1514,child,demo only,1
+4543,1515,adult,follow product label,2
+4544,1515,adult,demo only,3
+4545,1515,child,follow product label,3
+4546,1516,adult,not specified,3
+4547,1516,adult,demo only,2
+4548,1516,child,not specified,1
+4549,1517,adult,not specified,3
+4550,1517,adult,not specified,3
+4551,1517,child,follow product label,2
+4552,1518,adult,follow product label,3
+4553,1518,adult,follow product label,2
+4554,1518,child,demo only,3
+4555,1519,adult,not specified,1
+4556,1519,adult,demo only,1
+4557,1519,child,not specified,2
+4558,1520,adult,follow product label,3
+4559,1520,adult,demo only,3
+4560,1520,child,demo only,3
+4561,1521,adult,not specified,2
+4562,1521,adult,follow product label,3
+4563,1521,child,not specified,3
+4564,1522,adult,follow product label,3
+4565,1522,adult,not specified,1
+4566,1522,child,follow product label,3
+4567,1523,adult,demo only,3
+4568,1523,adult,follow product label,2
+4569,1523,child,not specified,3
+4570,1524,adult,not specified,2
+4571,1524,adult,not specified,1
+4572,1524,child,not specified,3
+4573,1525,adult,follow product label,1
+4574,1525,adult,follow product label,3
+4575,1525,child,not specified,1
+4576,1526,adult,not specified,2
+4577,1526,adult,follow product label,2
+4578,1526,child,follow product label,3
+4579,1527,adult,not specified,2
+4580,1527,adult,not specified,3
+4581,1527,child,not specified,1
+4582,1528,adult,follow product label,1
+4583,1528,adult,follow product label,1
+4584,1528,child,demo only,3
+4585,1529,adult,demo only,3
+4586,1529,adult,follow product label,1
+4587,1529,child,follow product label,2
+4588,1530,adult,follow product label,1
+4589,1530,adult,demo only,3
+4590,1530,child,demo only,1
+4591,1531,adult,not specified,2
+4592,1531,adult,not specified,2
+4593,1531,child,not specified,3
+4594,1532,adult,demo only,2
+4595,1532,adult,not specified,1
+4596,1532,child,not specified,1
+4597,1533,adult,follow product label,1
+4598,1533,adult,not specified,3
+4599,1533,child,demo only,2
+4600,1534,adult,not specified,3
+4601,1534,adult,follow product label,3
+4602,1534,child,not specified,2
+4603,1535,adult,follow product label,3
+4604,1535,adult,follow product label,1
+4605,1535,child,not specified,1
+4606,1536,adult,not specified,1
+4607,1536,adult,demo only,2
+4608,1536,child,follow product label,1
+4609,1537,adult,follow product label,3
+4610,1537,adult,follow product label,3
+4611,1537,child,demo only,3
+4612,1538,adult,not specified,1
+4613,1538,adult,not specified,2
+4614,1538,child,demo only,3
+4615,1539,adult,not specified,1
+4616,1539,adult,not specified,1
+4617,1539,child,not specified,2
+4618,1540,adult,demo only,1
+4619,1540,adult,demo only,3
+4620,1540,child,demo only,3
+4621,1541,adult,demo only,2
+4622,1541,adult,follow product label,3
+4623,1541,child,demo only,1
+4624,1542,adult,follow product label,3
+4625,1542,adult,demo only,1
+4626,1542,child,not specified,1
+4627,1543,adult,demo only,1
+4628,1543,adult,demo only,1
+4629,1543,child,demo only,2
+4630,1544,adult,demo only,1
+4631,1544,adult,demo only,2
+4632,1544,child,follow product label,3
+4633,1545,adult,demo only,3
+4634,1545,adult,demo only,2
+4635,1545,child,demo only,2
+4636,1546,adult,not specified,1
+4637,1546,adult,demo only,1
+4638,1546,child,follow product label,2
+4639,1547,adult,demo only,3
+4640,1547,adult,not specified,3
+4641,1547,child,demo only,3
+4642,1548,adult,follow product label,2
+4643,1548,adult,follow product label,3
+4644,1548,child,demo only,2
+4645,1549,adult,not specified,3
+4646,1549,adult,demo only,2
+4647,1549,child,demo only,1
+4648,1550,adult,demo only,3
+4649,1550,adult,demo only,2
+4650,1550,child,demo only,3
+4651,1551,adult,demo only,3
+4652,1551,adult,not specified,2
+4653,1551,child,demo only,1
+4654,1552,adult,demo only,3
+4655,1552,adult,follow product label,2
+4656,1552,child,demo only,2
+4657,1553,adult,follow product label,1
+4658,1553,adult,not specified,2
+4659,1553,child,not specified,2
+4660,1554,adult,follow product label,2
+4661,1554,adult,follow product label,2
+4662,1554,child,follow product label,3
+4663,1555,adult,demo only,2
+4664,1555,adult,demo only,1
+4665,1555,child,demo only,2
+4666,1556,adult,follow product label,1
+4667,1556,adult,not specified,2
+4668,1556,child,not specified,2
+4669,1557,adult,follow product label,1
+4670,1557,adult,follow product label,1
+4671,1557,child,demo only,2
+4672,1558,adult,not specified,2
+4673,1558,adult,follow product label,3
+4674,1558,child,not specified,1
+4675,1559,adult,not specified,2
+4676,1559,adult,follow product label,3
+4677,1559,child,demo only,2
+4678,1560,adult,demo only,1
+4679,1560,adult,follow product label,3
+4680,1560,child,not specified,2
+4681,1561,adult,demo only,3
+4682,1561,adult,follow product label,1
+4683,1561,child,demo only,3
+4684,1562,adult,follow product label,2
+4685,1562,adult,follow product label,3
+4686,1562,child,not specified,1
+4687,1563,adult,follow product label,1
+4688,1563,adult,not specified,2
+4689,1563,child,not specified,3
+4690,1564,adult,not specified,3
+4691,1564,adult,demo only,2
+4692,1564,child,follow product label,1
+4693,1565,adult,demo only,2
+4694,1565,adult,demo only,1
+4695,1565,child,follow product label,3
+4696,1566,adult,demo only,3
+4697,1566,adult,follow product label,3
+4698,1566,child,follow product label,2
+4699,1567,adult,follow product label,2
+4700,1567,adult,follow product label,3
+4701,1567,child,demo only,2
+4702,1568,adult,follow product label,2
+4703,1568,adult,demo only,2
+4704,1568,child,not specified,2
+4705,1569,adult,demo only,3
+4706,1569,adult,not specified,3
+4707,1569,child,not specified,2
+4708,1570,adult,demo only,3
+4709,1570,adult,not specified,3
+4710,1570,child,follow product label,1
+4711,1571,adult,not specified,1
+4712,1571,adult,not specified,2
+4713,1571,child,follow product label,3
+4714,1572,adult,demo only,3
+4715,1572,adult,not specified,1
+4716,1572,child,not specified,1
+4717,1573,adult,not specified,2
+4718,1573,adult,follow product label,1
+4719,1573,child,not specified,2
+4720,1574,adult,not specified,3
+4721,1574,adult,follow product label,3
+4722,1574,child,follow product label,2
+4723,1575,adult,follow product label,1
+4724,1575,adult,not specified,3
+4725,1575,child,not specified,2
+4726,1576,adult,follow product label,1
+4727,1576,adult,demo only,3
+4728,1576,child,follow product label,3
+4729,1577,adult,follow product label,3
+4730,1577,adult,demo only,2
+4731,1577,child,demo only,2
+4732,1578,adult,follow product label,1
+4733,1578,adult,follow product label,2
+4734,1578,child,not specified,2
+4735,1579,adult,not specified,2
+4736,1579,adult,follow product label,1
+4737,1579,child,demo only,3
+4738,1580,adult,follow product label,2
+4739,1580,adult,follow product label,3
+4740,1580,child,demo only,1
+4741,1581,adult,demo only,3
+4742,1581,adult,demo only,2
+4743,1581,child,follow product label,3
+4744,1582,adult,demo only,1
+4745,1582,adult,follow product label,1
+4746,1582,child,follow product label,2
+4747,1583,adult,follow product label,1
+4748,1583,adult,not specified,3
+4749,1583,child,follow product label,1
+4750,1584,adult,not specified,2
+4751,1584,adult,demo only,2
+4752,1584,child,not specified,1
+4753,1585,adult,demo only,3
+4754,1585,adult,follow product label,3
+4755,1585,child,follow product label,2
+4756,1586,adult,not specified,1
+4757,1586,adult,follow product label,2
+4758,1586,child,follow product label,1
+4759,1587,adult,not specified,2
+4760,1587,adult,not specified,1
+4761,1587,child,follow product label,1
+4762,1588,adult,not specified,3
+4763,1588,adult,demo only,2
+4764,1588,child,demo only,2
+4765,1589,adult,follow product label,3
+4766,1589,adult,demo only,1
+4767,1589,child,not specified,1
+4768,1590,adult,demo only,2
+4769,1590,adult,demo only,1
+4770,1590,child,demo only,1
+4771,1591,adult,demo only,1
+4772,1591,adult,demo only,3
+4773,1591,child,follow product label,2
+4774,1592,adult,not specified,1
+4775,1592,adult,follow product label,2
+4776,1592,child,not specified,1
+4777,1593,adult,follow product label,1
+4778,1593,adult,not specified,1
+4779,1593,child,demo only,1
+4780,1594,adult,follow product label,3
+4781,1594,adult,demo only,1
+4782,1594,child,follow product label,3
+4783,1595,adult,follow product label,1
+4784,1595,adult,follow product label,2
+4785,1595,child,follow product label,3
+4786,1596,adult,not specified,2
+4787,1596,adult,demo only,2
+4788,1596,child,demo only,1
+4789,1597,adult,not specified,2
+4790,1597,adult,demo only,3
+4791,1597,child,demo only,3
+4792,1598,adult,not specified,3
+4793,1598,adult,not specified,1
+4794,1598,child,follow product label,2
+4795,1599,adult,follow product label,2
+4796,1599,adult,follow product label,3
+4797,1599,child,not specified,1
+4798,1600,adult,demo only,1
+4799,1600,adult,not specified,2
+4800,1600,child,not specified,2
+4801,1601,adult,follow product label,1
+4802,1601,adult,demo only,1
+4803,1601,child,not specified,2
+4804,1602,adult,not specified,1
+4805,1602,adult,follow product label,1
+4806,1602,child,demo only,3
+4807,1603,adult,demo only,1
+4808,1603,adult,demo only,2
+4809,1603,child,not specified,1
+4810,1604,adult,demo only,3
+4811,1604,adult,follow product label,1
+4812,1604,child,not specified,1
+4813,1605,adult,not specified,3
+4814,1605,adult,follow product label,3
+4815,1605,child,follow product label,2
+4816,1606,adult,not specified,1
+4817,1606,adult,not specified,2
+4818,1606,child,not specified,3
+4819,1607,adult,follow product label,3
+4820,1607,adult,not specified,3
+4821,1607,child,demo only,2
+4822,1608,adult,not specified,3
+4823,1608,adult,demo only,1
+4824,1608,child,not specified,3
+4825,1609,adult,not specified,1
+4826,1609,adult,not specified,3
+4827,1609,child,follow product label,1
+4828,1610,adult,follow product label,2
+4829,1610,adult,not specified,2
+4830,1610,child,follow product label,1
+4831,1611,adult,demo only,1
+4832,1611,adult,not specified,2
+4833,1611,child,follow product label,1
+4834,1612,adult,demo only,3
+4835,1612,adult,demo only,3
+4836,1612,child,demo only,1
+4837,1613,adult,not specified,1
+4838,1613,adult,demo only,3
+4839,1613,child,not specified,3
+4840,1614,adult,not specified,3
+4841,1614,adult,not specified,1
+4842,1614,child,demo only,1
+4843,1615,adult,not specified,3
+4844,1615,adult,demo only,3
+4845,1615,child,demo only,3
+4846,1616,adult,demo only,1
+4847,1616,adult,not specified,1
+4848,1616,child,follow product label,2
+4849,1617,adult,not specified,1
+4850,1617,adult,not specified,1
+4851,1617,child,follow product label,1
+4852,1618,adult,demo only,3
+4853,1618,adult,not specified,1
+4854,1618,child,demo only,1
+4855,1619,adult,follow product label,1
+4856,1619,adult,not specified,3
+4857,1619,child,not specified,1
+4858,1620,adult,demo only,3
+4859,1620,adult,demo only,1
+4860,1620,child,demo only,3
+4861,1621,adult,demo only,1
+4862,1621,adult,follow product label,3
+4863,1621,child,demo only,1
+4864,1622,adult,demo only,2
+4865,1622,adult,not specified,3
+4866,1622,child,not specified,2
+4867,1623,adult,demo only,1
+4868,1623,adult,not specified,2
+4869,1623,child,follow product label,2
+4870,1624,adult,demo only,2
+4871,1624,adult,demo only,1
+4872,1624,child,follow product label,1
+4873,1625,adult,demo only,2
+4874,1625,adult,follow product label,3
+4875,1625,child,not specified,3
+4876,1626,adult,follow product label,3
+4877,1626,adult,not specified,3
+4878,1626,child,follow product label,2
+4879,1627,adult,follow product label,3
+4880,1627,adult,not specified,2
+4881,1627,child,follow product label,1
+4882,1628,adult,follow product label,1
+4883,1628,adult,follow product label,3
+4884,1628,child,not specified,1
+4885,1629,adult,follow product label,1
+4886,1629,adult,not specified,2
+4887,1629,child,demo only,1
+4888,1630,adult,follow product label,2
+4889,1630,adult,not specified,3
+4890,1630,child,demo only,2
+4891,1631,adult,not specified,2
+4892,1631,adult,follow product label,1
+4893,1631,child,demo only,1
+4894,1632,adult,demo only,2
+4895,1632,adult,not specified,2
+4896,1632,child,follow product label,2
+4897,1633,adult,demo only,3
+4898,1633,adult,not specified,2
+4899,1633,child,not specified,1
+4900,1634,adult,not specified,2
+4901,1634,adult,not specified,2
+4902,1634,child,demo only,3
+4903,1635,adult,demo only,1
+4904,1635,adult,not specified,2
+4905,1635,child,not specified,3
+4906,1636,adult,follow product label,2
+4907,1636,adult,follow product label,1
+4908,1636,child,follow product label,1
+4909,1637,adult,not specified,2
+4910,1637,adult,follow product label,2
+4911,1637,child,not specified,3
+4912,1638,adult,demo only,1
+4913,1638,adult,demo only,3
+4914,1638,child,follow product label,1
+4915,1639,adult,follow product label,2
+4916,1639,adult,demo only,3
+4917,1639,child,follow product label,2
+4918,1640,adult,not specified,1
+4919,1640,adult,follow product label,3
+4920,1640,child,demo only,2
+4921,1641,adult,follow product label,1
+4922,1641,adult,demo only,2
+4923,1641,child,not specified,1
+4924,1642,adult,demo only,2
+4925,1642,adult,not specified,1
+4926,1642,child,demo only,3
+4927,1643,adult,demo only,1
+4928,1643,adult,demo only,1
+4929,1643,child,not specified,3
+4930,1644,adult,demo only,2
+4931,1644,adult,not specified,3
+4932,1644,child,follow product label,3
+4933,1645,adult,demo only,1
+4934,1645,adult,demo only,3
+4935,1645,child,not specified,3
+4936,1646,adult,not specified,3
+4937,1646,adult,demo only,1
+4938,1646,child,not specified,1
+4939,1647,adult,follow product label,3
+4940,1647,adult,follow product label,3
+4941,1647,child,demo only,3
+4942,1648,adult,follow product label,1
+4943,1648,adult,not specified,1
+4944,1648,child,not specified,3
+4945,1649,adult,demo only,3
+4946,1649,adult,demo only,3
+4947,1649,child,follow product label,3
+4948,1650,adult,not specified,1
+4949,1650,adult,not specified,2
+4950,1650,child,follow product label,1
+4951,1651,adult,not specified,1
+4952,1651,adult,demo only,1
+4953,1651,child,demo only,1
+4954,1652,adult,demo only,2
+4955,1652,adult,demo only,2
+4956,1652,child,follow product label,2
+4957,1653,adult,follow product label,2
+4958,1653,adult,follow product label,1
+4959,1653,child,not specified,1
+4960,1654,adult,not specified,3
+4961,1654,adult,not specified,1
+4962,1654,child,follow product label,3
+4963,1655,adult,follow product label,2
+4964,1655,adult,follow product label,3
+4965,1655,child,follow product label,3
+4966,1656,adult,not specified,1
+4967,1656,adult,follow product label,3
+4968,1656,child,not specified,2
+4969,1657,adult,not specified,2
+4970,1657,adult,follow product label,3
+4971,1657,child,follow product label,2
+4972,1658,adult,not specified,2
+4973,1658,adult,follow product label,1
+4974,1658,child,not specified,1
+4975,1659,adult,demo only,3
+4976,1659,adult,demo only,1
+4977,1659,child,demo only,1
+4978,1660,adult,follow product label,3
+4979,1660,adult,follow product label,1
+4980,1660,child,demo only,1
+4981,1661,adult,not specified,1
+4982,1661,adult,follow product label,1
+4983,1661,child,follow product label,3
+4984,1662,adult,follow product label,3
+4985,1662,adult,demo only,1
+4986,1662,child,demo only,2
+4987,1663,adult,demo only,3
+4988,1663,adult,not specified,3
+4989,1663,child,demo only,3
+4990,1664,adult,demo only,2
+4991,1664,adult,follow product label,3
+4992,1664,child,not specified,3
+4993,1665,adult,demo only,3
+4994,1665,adult,follow product label,1
+4995,1665,child,follow product label,1
+4996,1666,adult,follow product label,2
+4997,1666,adult,demo only,1
+4998,1666,child,demo only,1
+4999,1667,adult,not specified,3
+5000,1667,adult,demo only,1
+5001,1667,child,not specified,3
+5002,1668,adult,demo only,1
+5003,1668,adult,follow product label,1
+5004,1668,child,not specified,3
+5005,1669,adult,follow product label,3
+5006,1669,adult,follow product label,3
+5007,1669,child,not specified,1
+5008,1670,adult,demo only,3
+5009,1670,adult,follow product label,1
+5010,1670,child,demo only,2
+5011,1671,adult,demo only,2
+5012,1671,adult,not specified,1
+5013,1671,child,not specified,3
+5014,1672,adult,not specified,1
+5015,1672,adult,not specified,3
+5016,1672,child,follow product label,1
+5017,1673,adult,not specified,2
+5018,1673,adult,not specified,1
+5019,1673,child,follow product label,1
+5020,1674,adult,demo only,1
+5021,1674,adult,not specified,3
+5022,1674,child,follow product label,3
+5023,1675,adult,not specified,2
+5024,1675,adult,not specified,2
+5025,1675,child,follow product label,1
+5026,1676,adult,not specified,2
+5027,1676,adult,follow product label,3
+5028,1676,child,follow product label,1
+5029,1677,adult,not specified,2
+5030,1677,adult,not specified,1
+5031,1677,child,follow product label,3
+5032,1678,adult,demo only,1
+5033,1678,adult,demo only,3
+5034,1678,child,follow product label,2
+5035,1679,adult,follow product label,2
+5036,1679,adult,demo only,1
+5037,1679,child,not specified,1
+5038,1680,adult,follow product label,1
+5039,1680,adult,not specified,1
+5040,1680,child,not specified,1
+5041,1681,adult,not specified,3
+5042,1681,adult,demo only,1
+5043,1681,child,not specified,1
+5044,1682,adult,demo only,2
+5045,1682,adult,follow product label,3
+5046,1682,child,demo only,3
+5047,1683,adult,not specified,1
+5048,1683,adult,follow product label,2
+5049,1683,child,demo only,1
+5050,1684,adult,not specified,1
+5051,1684,adult,follow product label,3
+5052,1684,child,not specified,1
+5053,1685,adult,demo only,3
+5054,1685,adult,follow product label,1
+5055,1685,child,demo only,2
+5056,1686,adult,follow product label,2
+5057,1686,adult,demo only,2
+5058,1686,child,follow product label,2
+5059,1687,adult,not specified,3
+5060,1687,adult,follow product label,1
+5061,1687,child,demo only,1
+5062,1688,adult,not specified,1
+5063,1688,adult,follow product label,2
+5064,1688,child,follow product label,2
+5065,1689,adult,follow product label,2
+5066,1689,adult,follow product label,1
+5067,1689,child,demo only,3
+5068,1690,adult,follow product label,1
+5069,1690,adult,demo only,2
+5070,1690,child,follow product label,3
+5071,1691,adult,not specified,2
+5072,1691,adult,not specified,1
+5073,1691,child,follow product label,2
+5074,1692,adult,not specified,3
+5075,1692,adult,follow product label,3
+5076,1692,child,follow product label,3
+5077,1693,adult,follow product label,1
+5078,1693,adult,follow product label,2
+5079,1693,child,follow product label,2
+5080,1694,adult,not specified,1
+5081,1694,adult,not specified,2
+5082,1694,child,not specified,1
+5083,1695,adult,demo only,1
+5084,1695,adult,not specified,3
+5085,1695,child,follow product label,2
+5086,1696,adult,not specified,2
+5087,1696,adult,not specified,2
+5088,1696,child,demo only,3
+5089,1697,adult,not specified,3
+5090,1697,adult,follow product label,1
+5091,1697,child,demo only,2
+5092,1698,adult,follow product label,2
+5093,1698,adult,follow product label,3
+5094,1698,child,follow product label,3
+5095,1699,adult,follow product label,2
+5096,1699,adult,not specified,2
+5097,1699,child,demo only,3
+5098,1700,adult,not specified,3
+5099,1700,adult,not specified,2
+5100,1700,child,not specified,1
+5101,1701,adult,demo only,2
+5102,1701,adult,follow product label,2
+5103,1701,child,not specified,2
+5104,1702,adult,follow product label,3
+5105,1702,adult,not specified,2
+5106,1702,child,demo only,1
+5107,1703,adult,demo only,3
+5108,1703,adult,demo only,3
+5109,1703,child,follow product label,2
+5110,1704,adult,not specified,1
+5111,1704,adult,follow product label,3
+5112,1704,child,follow product label,3
+5113,1705,adult,follow product label,1
+5114,1705,adult,demo only,1
+5115,1705,child,not specified,1
+5116,1706,adult,not specified,2
+5117,1706,adult,demo only,3
+5118,1706,child,not specified,3
+5119,1707,adult,demo only,1
+5120,1707,adult,follow product label,3
+5121,1707,child,not specified,1
+5122,1708,adult,follow product label,3
+5123,1708,adult,follow product label,3
+5124,1708,child,demo only,2
+5125,1709,adult,demo only,3
+5126,1709,adult,demo only,2
+5127,1709,child,demo only,2
+5128,1710,adult,demo only,3
+5129,1710,adult,follow product label,3
+5130,1710,child,demo only,1
+5131,1711,adult,not specified,2
+5132,1711,adult,not specified,2
+5133,1711,child,not specified,1
+5134,1712,adult,demo only,2
+5135,1712,adult,not specified,1
+5136,1712,child,not specified,2
+5137,1713,adult,not specified,1
+5138,1713,adult,demo only,3
+5139,1713,child,not specified,3
+5140,1714,adult,follow product label,2
+5141,1714,adult,follow product label,2
+5142,1714,child,not specified,3
+5143,1715,adult,not specified,3
+5144,1715,adult,demo only,1
+5145,1715,child,follow product label,2
+5146,1716,adult,follow product label,1
+5147,1716,adult,follow product label,2
+5148,1716,child,demo only,1
+5149,1717,adult,not specified,2
+5150,1717,adult,not specified,3
+5151,1717,child,follow product label,1
+5152,1718,adult,not specified,2
+5153,1718,adult,not specified,2
+5154,1718,child,not specified,2
+5155,1719,adult,not specified,2
+5156,1719,adult,not specified,3
+5157,1719,child,follow product label,3
+5158,1720,adult,not specified,2
+5159,1720,adult,follow product label,3
+5160,1720,child,not specified,2
+5161,1721,adult,follow product label,2
+5162,1721,adult,demo only,2
+5163,1721,child,demo only,2
+5164,1722,adult,demo only,3
+5165,1722,adult,follow product label,3
+5166,1722,child,not specified,2
+5167,1723,adult,demo only,3
+5168,1723,adult,demo only,2
+5169,1723,child,demo only,3
+5170,1724,adult,demo only,2
+5171,1724,adult,follow product label,3
+5172,1724,child,follow product label,1
+5173,1725,adult,demo only,2
+5174,1725,adult,follow product label,2
+5175,1725,child,demo only,3
+5176,1726,adult,demo only,1
+5177,1726,adult,follow product label,3
+5178,1726,child,follow product label,3
+5179,1727,adult,demo only,2
+5180,1727,adult,follow product label,1
+5181,1727,child,not specified,2
+5182,1728,adult,demo only,3
+5183,1728,adult,follow product label,1
+5184,1728,child,follow product label,2
+5185,1729,adult,follow product label,2
+5186,1729,adult,follow product label,1
+5187,1729,child,demo only,2
+5188,1730,adult,not specified,1
+5189,1730,adult,follow product label,3
+5190,1730,child,not specified,2
+5191,1731,adult,demo only,2
+5192,1731,adult,follow product label,1
+5193,1731,child,follow product label,3
+5194,1732,adult,demo only,2
+5195,1732,adult,not specified,1
+5196,1732,child,follow product label,1
+5197,1733,adult,follow product label,2
+5198,1733,adult,demo only,2
+5199,1733,child,follow product label,1
+5200,1734,adult,not specified,3
+5201,1734,adult,demo only,2
+5202,1734,child,follow product label,1
+5203,1735,adult,demo only,2
+5204,1735,adult,follow product label,2
+5205,1735,child,not specified,1
+5206,1736,adult,demo only,2
+5207,1736,adult,not specified,1
+5208,1736,child,demo only,3
+5209,1737,adult,demo only,2
+5210,1737,adult,not specified,1
+5211,1737,child,not specified,2
+5212,1738,adult,demo only,3
+5213,1738,adult,not specified,2
+5214,1738,child,not specified,2
+5215,1739,adult,not specified,3
+5216,1739,adult,not specified,2
+5217,1739,child,follow product label,2
+5218,1740,adult,demo only,1
+5219,1740,adult,demo only,3
+5220,1740,child,follow product label,3
+5221,1741,adult,not specified,3
+5222,1741,adult,not specified,2
+5223,1741,child,follow product label,2
+5224,1742,adult,follow product label,3
+5225,1742,adult,demo only,2
+5226,1742,child,demo only,3
+5227,1743,adult,follow product label,1
+5228,1743,adult,follow product label,2
+5229,1743,child,follow product label,3
+5230,1744,adult,follow product label,3
+5231,1744,adult,not specified,3
+5232,1744,child,not specified,2
+5233,1745,adult,follow product label,2
+5234,1745,adult,follow product label,2
+5235,1745,child,not specified,1
+5236,1746,adult,follow product label,1
+5237,1746,adult,not specified,1
+5238,1746,child,follow product label,2
+5239,1747,adult,not specified,2
+5240,1747,adult,follow product label,3
+5241,1747,child,not specified,3
+5242,1748,adult,follow product label,2
+5243,1748,adult,follow product label,1
+5244,1748,child,demo only,1
+5245,1749,adult,follow product label,3
+5246,1749,adult,demo only,2
+5247,1749,child,not specified,3
+5248,1750,adult,not specified,3
+5249,1750,adult,follow product label,1
+5250,1750,child,not specified,3
+5251,1751,adult,not specified,2
+5252,1751,adult,demo only,1
+5253,1751,child,not specified,2
+5254,1752,adult,not specified,1
+5255,1752,adult,demo only,1
+5256,1752,child,demo only,3
+5257,1753,adult,demo only,3
+5258,1753,adult,demo only,1
+5259,1753,child,not specified,3
+5260,1754,adult,follow product label,1
+5261,1754,adult,demo only,3
+5262,1754,child,demo only,1
+5263,1755,adult,demo only,2
+5264,1755,adult,demo only,1
+5265,1755,child,demo only,1
+5266,1756,adult,demo only,1
+5267,1756,adult,demo only,2
+5268,1756,child,follow product label,2
+5269,1757,adult,not specified,1
+5270,1757,adult,demo only,2
+5271,1757,child,follow product label,1
+5272,1758,adult,demo only,2
+5273,1758,adult,not specified,2
+5274,1758,child,demo only,2
+5275,1759,adult,follow product label,1
+5276,1759,adult,follow product label,1
+5277,1759,child,not specified,2
+5278,1760,adult,follow product label,1
+5279,1760,adult,not specified,1
+5280,1760,child,follow product label,1
+5281,1761,adult,follow product label,3
+5282,1761,adult,not specified,1
+5283,1761,child,not specified,3
+5284,1762,adult,not specified,3
+5285,1762,adult,demo only,3
+5286,1762,child,not specified,2
+5287,1763,adult,not specified,1
+5288,1763,adult,not specified,2
+5289,1763,child,follow product label,3
+5290,1764,adult,follow product label,1
+5291,1764,adult,demo only,1
+5292,1764,child,follow product label,2
+5293,1765,adult,demo only,1
+5294,1765,adult,demo only,1
+5295,1765,child,follow product label,2
+5296,1766,adult,not specified,2
+5297,1766,adult,follow product label,1
+5298,1766,child,demo only,3
+5299,1767,adult,follow product label,1
+5300,1767,adult,demo only,1
+5301,1767,child,follow product label,1
+5302,1768,adult,follow product label,3
+5303,1768,adult,follow product label,2
+5304,1768,child,follow product label,3
+5305,1769,adult,follow product label,2
+5306,1769,adult,demo only,2
+5307,1769,child,follow product label,1
+5308,1770,adult,follow product label,3
+5309,1770,adult,demo only,3
+5310,1770,child,demo only,3
+5311,1771,adult,demo only,3
+5312,1771,adult,demo only,3
+5313,1771,child,follow product label,1
+5314,1772,adult,demo only,1
+5315,1772,adult,not specified,1
+5316,1772,child,follow product label,3
+5317,1773,adult,demo only,2
+5318,1773,adult,follow product label,2
+5319,1773,child,not specified,3
+5320,1774,adult,follow product label,3
+5321,1774,adult,not specified,1
+5322,1774,child,follow product label,1
+5323,1775,adult,demo only,3
+5324,1775,adult,demo only,1
+5325,1775,child,not specified,1
+5326,1776,adult,follow product label,3
+5327,1776,adult,follow product label,1
+5328,1776,child,not specified,2
+5329,1777,adult,not specified,1
+5330,1777,adult,follow product label,1
+5331,1777,child,follow product label,2
+5332,1778,adult,follow product label,3
+5333,1778,adult,demo only,1
+5334,1778,child,demo only,2
+5335,1779,adult,not specified,3
+5336,1779,adult,demo only,1
+5337,1779,child,not specified,1
+5338,1780,adult,demo only,2
+5339,1780,adult,follow product label,2
+5340,1780,child,not specified,1
+5341,1781,adult,follow product label,1
+5342,1781,adult,not specified,3
+5343,1781,child,not specified,3
+5344,1782,adult,not specified,2
+5345,1782,adult,demo only,1
+5346,1782,child,demo only,3
+5347,1783,adult,follow product label,3
+5348,1783,adult,follow product label,2
+5349,1783,child,not specified,3
+5350,1784,adult,follow product label,3
+5351,1784,adult,not specified,1
+5352,1784,child,not specified,1
+5353,1785,adult,not specified,1
+5354,1785,adult,demo only,2
+5355,1785,child,follow product label,3
+5356,1786,adult,follow product label,2
+5357,1786,adult,demo only,1
+5358,1786,child,not specified,1
+5359,1787,adult,follow product label,1
+5360,1787,adult,follow product label,1
+5361,1787,child,demo only,3
+5362,1788,adult,follow product label,3
+5363,1788,adult,follow product label,1
+5364,1788,child,follow product label,1
+5365,1789,adult,demo only,3
+5366,1789,adult,not specified,3
+5367,1789,child,demo only,3
+5368,1790,adult,demo only,2
+5369,1790,adult,follow product label,1
+5370,1790,child,not specified,1
+5371,1791,adult,follow product label,1
+5372,1791,adult,not specified,2
+5373,1791,child,not specified,1
+5374,1792,adult,not specified,3
+5375,1792,adult,not specified,3
+5376,1792,child,demo only,3
+5377,1793,adult,not specified,1
+5378,1793,adult,demo only,2
+5379,1793,child,follow product label,2
+5380,1794,adult,follow product label,1
+5381,1794,adult,follow product label,3
+5382,1794,child,not specified,3
+5383,1795,adult,demo only,1
+5384,1795,adult,demo only,2
+5385,1795,child,not specified,1
+5386,1796,adult,follow product label,3
+5387,1796,adult,follow product label,1
+5388,1796,child,not specified,3
+5389,1797,adult,follow product label,1
+5390,1797,adult,follow product label,2
+5391,1797,child,not specified,3
+5392,1798,adult,demo only,3
+5393,1798,adult,follow product label,2
+5394,1798,child,demo only,3
+5395,1799,adult,not specified,1
+5396,1799,adult,follow product label,2
+5397,1799,child,demo only,2
+5398,1800,adult,demo only,2
+5399,1800,adult,follow product label,1
+5400,1800,child,demo only,3
+5401,1801,adult,follow product label,1
+5402,1801,adult,demo only,1
+5403,1801,child,follow product label,3
+5404,1802,adult,follow product label,3
+5405,1802,adult,follow product label,2
+5406,1802,child,follow product label,3
+5407,1803,adult,demo only,2
+5408,1803,adult,demo only,1
+5409,1803,child,demo only,1
+5410,1804,adult,not specified,2
+5411,1804,adult,not specified,1
+5412,1804,child,demo only,1
+5413,1805,adult,not specified,2
+5414,1805,adult,not specified,2
+5415,1805,child,demo only,3
+5416,1806,adult,follow product label,3
+5417,1806,adult,not specified,1
+5418,1806,child,demo only,2
+5419,1807,adult,not specified,1
+5420,1807,adult,not specified,3
+5421,1807,child,not specified,3
+5422,1808,adult,follow product label,1
+5423,1808,adult,follow product label,3
+5424,1808,child,not specified,2
+5425,1809,adult,not specified,2
+5426,1809,adult,not specified,3
+5427,1809,child,demo only,3
+5428,1810,adult,follow product label,3
+5429,1810,adult,not specified,2
+5430,1810,child,follow product label,2
+5431,1811,adult,follow product label,2
+5432,1811,adult,demo only,2
+5433,1811,child,follow product label,1
+5434,1812,adult,demo only,3
+5435,1812,adult,follow product label,1
+5436,1812,child,follow product label,1
+5437,1813,adult,follow product label,3
+5438,1813,adult,demo only,3
+5439,1813,child,not specified,1
+5440,1814,adult,not specified,2
+5441,1814,adult,not specified,1
+5442,1814,child,follow product label,3
+5443,1815,adult,not specified,1
+5444,1815,adult,follow product label,1
+5445,1815,child,not specified,3
+5446,1816,adult,follow product label,1
+5447,1816,adult,demo only,3
+5448,1816,child,not specified,3
+5449,1817,adult,follow product label,3
+5450,1817,adult,not specified,1
+5451,1817,child,follow product label,1
+5452,1818,adult,demo only,2
+5453,1818,adult,follow product label,1
+5454,1818,child,not specified,3
+5455,1819,adult,not specified,3
+5456,1819,adult,not specified,3
+5457,1819,child,not specified,1
+5458,1820,adult,follow product label,3
+5459,1820,adult,follow product label,2
+5460,1820,child,demo only,2
+5461,1821,adult,demo only,1
+5462,1821,adult,demo only,2
+5463,1821,child,not specified,3
+5464,1822,adult,not specified,3
+5465,1822,adult,not specified,3
+5466,1822,child,not specified,1
+5467,1823,adult,not specified,1
+5468,1823,adult,demo only,3
+5469,1823,child,demo only,1
+5470,1824,adult,demo only,1
+5471,1824,adult,not specified,3
+5472,1824,child,follow product label,3
+5473,1825,adult,demo only,1
+5474,1825,adult,not specified,2
+5475,1825,child,demo only,2
+5476,1826,adult,not specified,3
+5477,1826,adult,follow product label,2
+5478,1826,child,not specified,2
+5479,1827,adult,follow product label,2
+5480,1827,adult,not specified,1
+5481,1827,child,demo only,1
+5482,1828,adult,follow product label,1
+5483,1828,adult,not specified,1
+5484,1828,child,demo only,2
+5485,1829,adult,follow product label,1
+5486,1829,adult,follow product label,2
+5487,1829,child,demo only,2
+5488,1830,adult,not specified,3
+5489,1830,adult,demo only,1
+5490,1830,child,follow product label,1
+5491,1831,adult,demo only,3
+5492,1831,adult,follow product label,2
+5493,1831,child,follow product label,1
+5494,1832,adult,follow product label,2
+5495,1832,adult,demo only,1
+5496,1832,child,follow product label,2
+5497,1833,adult,demo only,3
+5498,1833,adult,not specified,1
+5499,1833,child,follow product label,1
+5500,1834,adult,demo only,3
+5501,1834,adult,follow product label,1
+5502,1834,child,not specified,1
+5503,1835,adult,not specified,2
+5504,1835,adult,demo only,1
+5505,1835,child,not specified,3
+5506,1836,adult,follow product label,2
+5507,1836,adult,demo only,2
+5508,1836,child,demo only,3
+5509,1837,adult,follow product label,1
+5510,1837,adult,demo only,3
+5511,1837,child,demo only,2
+5512,1838,adult,follow product label,2
+5513,1838,adult,not specified,2
+5514,1838,child,demo only,1
+5515,1839,adult,demo only,3
+5516,1839,adult,demo only,2
+5517,1839,child,not specified,3
+5518,1840,adult,not specified,3
+5519,1840,adult,demo only,3
+5520,1840,child,demo only,1
+5521,1841,adult,demo only,2
+5522,1841,adult,not specified,3
+5523,1841,child,follow product label,2
+5524,1842,adult,follow product label,2
+5525,1842,adult,demo only,1
+5526,1842,child,not specified,2
+5527,1843,adult,follow product label,3
+5528,1843,adult,not specified,2
+5529,1843,child,follow product label,1
+5530,1844,adult,demo only,1
+5531,1844,adult,demo only,1
+5532,1844,child,follow product label,3
+5533,1845,adult,follow product label,1
+5534,1845,adult,not specified,2
+5535,1845,child,demo only,1
+5536,1846,adult,not specified,3
+5537,1846,adult,demo only,1
+5538,1846,child,not specified,2
+5539,1847,adult,follow product label,3
+5540,1847,adult,follow product label,3
+5541,1847,child,not specified,3
+5542,1848,adult,follow product label,1
+5543,1848,adult,demo only,3
+5544,1848,child,follow product label,1
+5545,1849,adult,demo only,1
+5546,1849,adult,not specified,1
+5547,1849,child,not specified,1
+5548,1850,adult,demo only,2
+5549,1850,adult,demo only,1
+5550,1850,child,demo only,2
+5551,1851,adult,not specified,1
+5552,1851,adult,follow product label,2
+5553,1851,child,follow product label,3
+5554,1852,adult,demo only,2
+5555,1852,adult,follow product label,3
+5556,1852,child,demo only,1
+5557,1853,adult,follow product label,1
+5558,1853,adult,demo only,3
+5559,1853,child,follow product label,1
+5560,1854,adult,not specified,2
+5561,1854,adult,demo only,1
+5562,1854,child,not specified,2
+5563,1855,adult,follow product label,2
+5564,1855,adult,not specified,2
+5565,1855,child,not specified,1
+5566,1856,adult,follow product label,2
+5567,1856,adult,not specified,1
+5568,1856,child,demo only,3
+5569,1857,adult,demo only,1
+5570,1857,adult,follow product label,3
+5571,1857,child,demo only,1
+5572,1858,adult,not specified,2
+5573,1858,adult,demo only,3
+5574,1858,child,demo only,3
+5575,1859,adult,not specified,1
+5576,1859,adult,follow product label,2
+5577,1859,child,demo only,2
+5578,1860,adult,not specified,1
+5579,1860,adult,demo only,2
+5580,1860,child,not specified,1
+5581,1861,adult,follow product label,2
+5582,1861,adult,follow product label,2
+5583,1861,child,demo only,2
+5584,1862,adult,follow product label,3
+5585,1862,adult,not specified,2
+5586,1862,child,demo only,2
+5587,1863,adult,follow product label,2
+5588,1863,adult,not specified,1
+5589,1863,child,demo only,3
+5590,1864,adult,demo only,2
+5591,1864,adult,not specified,2
+5592,1864,child,follow product label,1
+5593,1865,adult,demo only,3
+5594,1865,adult,demo only,1
+5595,1865,child,follow product label,1
+5596,1866,adult,follow product label,2
+5597,1866,adult,not specified,2
+5598,1866,child,follow product label,1
+5599,1867,adult,follow product label,1
+5600,1867,adult,not specified,3
+5601,1867,child,follow product label,1
+5602,1868,adult,demo only,2
+5603,1868,adult,not specified,1
+5604,1868,child,demo only,3
+5605,1869,adult,follow product label,2
+5606,1869,adult,follow product label,2
+5607,1869,child,demo only,1
+5608,1870,adult,not specified,2
+5609,1870,adult,not specified,3
+5610,1870,child,not specified,3
+5611,1871,adult,not specified,2
+5612,1871,adult,demo only,1
+5613,1871,child,follow product label,2
+5614,1872,adult,not specified,2
+5615,1872,adult,not specified,3
+5616,1872,child,not specified,2
+5617,1873,adult,not specified,1
+5618,1873,adult,follow product label,2
+5619,1873,child,demo only,3
+5620,1874,adult,follow product label,1
+5621,1874,adult,follow product label,2
+5622,1874,child,not specified,3
+5623,1875,adult,follow product label,3
+5624,1875,adult,follow product label,3
+5625,1875,child,demo only,1
+5626,1876,adult,not specified,3
+5627,1876,adult,follow product label,1
+5628,1876,child,demo only,1
+5629,1877,adult,follow product label,1
+5630,1877,adult,follow product label,3
+5631,1877,child,not specified,2
+5632,1878,adult,follow product label,2
+5633,1878,adult,not specified,2
+5634,1878,child,follow product label,2
+5635,1879,adult,demo only,1
+5636,1879,adult,follow product label,1
+5637,1879,child,demo only,1
+5638,1880,adult,demo only,2
+5639,1880,adult,demo only,3
+5640,1880,child,follow product label,1
+5641,1881,adult,demo only,2
+5642,1881,adult,demo only,1
+5643,1881,child,demo only,3
+5644,1882,adult,follow product label,2
+5645,1882,adult,demo only,2
+5646,1882,child,not specified,3
+5647,1883,adult,not specified,3
+5648,1883,adult,follow product label,2
+5649,1883,child,follow product label,1
+5650,1884,adult,follow product label,1
+5651,1884,adult,demo only,3
+5652,1884,child,demo only,3
+5653,1885,adult,demo only,2
+5654,1885,adult,follow product label,3
+5655,1885,child,not specified,2
+5656,1886,adult,demo only,3
+5657,1886,adult,demo only,3
+5658,1886,child,demo only,2
+5659,1887,adult,not specified,3
+5660,1887,adult,not specified,3
+5661,1887,child,follow product label,2
+5662,1888,adult,not specified,1
+5663,1888,adult,not specified,3
+5664,1888,child,not specified,2
+5665,1889,adult,follow product label,1
+5666,1889,adult,follow product label,3
+5667,1889,child,demo only,2
+5668,1890,adult,not specified,3
+5669,1890,adult,follow product label,1
+5670,1890,child,follow product label,2
+5671,1891,adult,demo only,3
+5672,1891,adult,not specified,3
+5673,1891,child,not specified,3
+5674,1892,adult,demo only,1
+5675,1892,adult,not specified,1
+5676,1892,child,follow product label,2
+5677,1893,adult,follow product label,1
+5678,1893,adult,follow product label,3
+5679,1893,child,demo only,1
+5680,1894,adult,follow product label,1
+5681,1894,adult,demo only,3
+5682,1894,child,follow product label,3
+5683,1895,adult,not specified,1
+5684,1895,adult,follow product label,3
+5685,1895,child,follow product label,3
+5686,1896,adult,demo only,2
+5687,1896,adult,follow product label,2
+5688,1896,child,demo only,2
+5689,1897,adult,not specified,2
+5690,1897,adult,demo only,3
+5691,1897,child,follow product label,1
+5692,1898,adult,demo only,3
+5693,1898,adult,follow product label,2
+5694,1898,child,follow product label,3
+5695,1899,adult,follow product label,1
+5696,1899,adult,demo only,2
+5697,1899,child,follow product label,2
+5698,1900,adult,not specified,2
+5699,1900,adult,follow product label,1
+5700,1900,child,follow product label,3
+5701,1901,adult,follow product label,2
+5702,1901,adult,not specified,1
+5703,1901,child,follow product label,1
+5704,1902,adult,follow product label,2
+5705,1902,adult,demo only,3
+5706,1902,child,demo only,3
+5707,1903,adult,follow product label,2
+5708,1903,adult,not specified,2
+5709,1903,child,not specified,1
+5710,1904,adult,demo only,1
+5711,1904,adult,demo only,2
+5712,1904,child,follow product label,3
+5713,1905,adult,not specified,3
+5714,1905,adult,demo only,2
+5715,1905,child,demo only,3
+5716,1906,adult,demo only,1
+5717,1906,adult,demo only,3
+5718,1906,child,not specified,1
+5719,1907,adult,not specified,2
+5720,1907,adult,not specified,3
+5721,1907,child,demo only,2
+5722,1908,adult,demo only,3
+5723,1908,adult,follow product label,1
+5724,1908,child,not specified,3
+5725,1909,adult,demo only,2
+5726,1909,adult,follow product label,3
+5727,1909,child,not specified,3
+5728,1910,adult,not specified,1
+5729,1910,adult,not specified,1
+5730,1910,child,not specified,1
+5731,1911,adult,follow product label,3
+5732,1911,adult,follow product label,1
+5733,1911,child,not specified,3
+5734,1912,adult,follow product label,3
+5735,1912,adult,demo only,2
+5736,1912,child,demo only,2
+5737,1913,adult,not specified,1
+5738,1913,adult,demo only,1
+5739,1913,child,follow product label,1
+5740,1914,adult,follow product label,2
+5741,1914,adult,not specified,3
+5742,1914,child,follow product label,1
+5743,1915,adult,not specified,1
+5744,1915,adult,not specified,2
+5745,1915,child,follow product label,2
+5746,1916,adult,not specified,3
+5747,1916,adult,follow product label,2
+5748,1916,child,demo only,2
+5749,1917,adult,not specified,3
+5750,1917,adult,follow product label,3
+5751,1917,child,demo only,3
+5752,1918,adult,not specified,2
+5753,1918,adult,demo only,3
+5754,1918,child,not specified,1
+5755,1919,adult,not specified,1
+5756,1919,adult,follow product label,3
+5757,1919,child,not specified,1
+5758,1920,adult,demo only,2
+5759,1920,adult,follow product label,2
+5760,1920,child,not specified,2
+5761,1921,adult,demo only,2
+5762,1921,adult,not specified,1
+5763,1921,child,not specified,3
+5764,1922,adult,demo only,3
+5765,1922,adult,follow product label,3
+5766,1922,child,follow product label,3
+5767,1923,adult,demo only,3
+5768,1923,adult,demo only,3
+5769,1923,child,not specified,2
+5770,1924,adult,not specified,2
+5771,1924,adult,follow product label,2
+5772,1924,child,not specified,3
+5773,1925,adult,not specified,1
+5774,1925,adult,not specified,1
+5775,1925,child,demo only,1
+5776,1926,adult,not specified,3
+5777,1926,adult,not specified,3
+5778,1926,child,demo only,1
+5779,1927,adult,follow product label,3
+5780,1927,adult,not specified,3
+5781,1927,child,follow product label,1
+5782,1928,adult,follow product label,2
+5783,1928,adult,follow product label,1
+5784,1928,child,demo only,3
+5785,1929,adult,follow product label,3
+5786,1929,adult,follow product label,3
+5787,1929,child,not specified,3
+5788,1930,adult,not specified,1
+5789,1930,adult,follow product label,1
+5790,1930,child,demo only,3
+5791,1931,adult,follow product label,1
+5792,1931,adult,demo only,2
+5793,1931,child,demo only,2
+5794,1932,adult,follow product label,1
+5795,1932,adult,demo only,3
+5796,1932,child,not specified,1
+5797,1933,adult,demo only,3
+5798,1933,adult,demo only,1
+5799,1933,child,not specified,3
+5800,1934,adult,follow product label,2
+5801,1934,adult,not specified,3
+5802,1934,child,not specified,1
+5803,1935,adult,not specified,1
+5804,1935,adult,follow product label,1
+5805,1935,child,not specified,3
+5806,1936,adult,follow product label,2
+5807,1936,adult,follow product label,3
+5808,1936,child,follow product label,3
+5809,1937,adult,follow product label,2
+5810,1937,adult,demo only,3
+5811,1937,child,demo only,3
+5812,1938,adult,follow product label,1
+5813,1938,adult,not specified,3
+5814,1938,child,demo only,2
+5815,1939,adult,not specified,3
+5816,1939,adult,follow product label,1
+5817,1939,child,not specified,2
+5818,1940,adult,follow product label,3
+5819,1940,adult,follow product label,3
+5820,1940,child,follow product label,2
+5821,1941,adult,not specified,2
+5822,1941,adult,follow product label,3
+5823,1941,child,demo only,3
+5824,1942,adult,not specified,1
+5825,1942,adult,demo only,1
+5826,1942,child,demo only,3
+5827,1943,adult,follow product label,1
+5828,1943,adult,not specified,1
+5829,1943,child,demo only,3
+5830,1944,adult,not specified,1
+5831,1944,adult,follow product label,2
+5832,1944,child,not specified,1
+5833,1945,adult,not specified,1
+5834,1945,adult,follow product label,1
+5835,1945,child,follow product label,3
+5836,1946,adult,follow product label,3
+5837,1946,adult,demo only,3
+5838,1946,child,follow product label,1
+5839,1947,adult,not specified,3
+5840,1947,adult,follow product label,3
+5841,1947,child,not specified,1
+5842,1948,adult,not specified,1
+5843,1948,adult,not specified,2
+5844,1948,child,demo only,2
+5845,1949,adult,follow product label,3
+5846,1949,adult,not specified,2
+5847,1949,child,demo only,3
+5848,1950,adult,demo only,3
+5849,1950,adult,follow product label,2
+5850,1950,child,not specified,2
+5851,1951,adult,follow product label,2
+5852,1951,adult,not specified,1
+5853,1951,child,demo only,3
+5854,1952,adult,demo only,3
+5855,1952,adult,not specified,2
+5856,1952,child,demo only,3
+5857,1953,adult,demo only,2
+5858,1953,adult,not specified,1
+5859,1953,child,follow product label,2
+5860,1954,adult,follow product label,1
+5861,1954,adult,not specified,1
+5862,1954,child,follow product label,1
+5863,1955,adult,follow product label,3
+5864,1955,adult,not specified,3
+5865,1955,child,demo only,2
+5866,1956,adult,not specified,1
+5867,1956,adult,demo only,1
+5868,1956,child,demo only,3
+5869,1957,adult,not specified,1
+5870,1957,adult,demo only,2
+5871,1957,child,demo only,1
+5872,1958,adult,not specified,2
+5873,1958,adult,not specified,2
+5874,1958,child,follow product label,1
+5875,1959,adult,follow product label,2
+5876,1959,adult,not specified,1
+5877,1959,child,not specified,1
+5878,1960,adult,not specified,3
+5879,1960,adult,follow product label,3
+5880,1960,child,not specified,1
+5881,1961,adult,demo only,1
+5882,1961,adult,follow product label,1
+5883,1961,child,demo only,2
+5884,1962,adult,demo only,3
+5885,1962,adult,demo only,1
+5886,1962,child,demo only,1
+5887,1963,adult,demo only,2
+5888,1963,adult,follow product label,2
+5889,1963,child,demo only,1
+5890,1964,adult,follow product label,2
+5891,1964,adult,not specified,3
+5892,1964,child,follow product label,1
+5893,1965,adult,demo only,3
+5894,1965,adult,follow product label,3
+5895,1965,child,demo only,3
+5896,1966,adult,not specified,1
+5897,1966,adult,demo only,2
+5898,1966,child,follow product label,3
+5899,1967,adult,demo only,3
+5900,1967,adult,demo only,3
+5901,1967,child,follow product label,2
+5902,1968,adult,demo only,2
+5903,1968,adult,not specified,1
+5904,1968,child,demo only,3
+5905,1969,adult,not specified,2
+5906,1969,adult,demo only,2
+5907,1969,child,follow product label,1
+5908,1970,adult,follow product label,1
+5909,1970,adult,not specified,3
+5910,1970,child,not specified,1
+5911,1971,adult,follow product label,1
+5912,1971,adult,follow product label,1
+5913,1971,child,not specified,1
+5914,1972,adult,follow product label,2
+5915,1972,adult,follow product label,3
+5916,1972,child,demo only,3
+5917,1973,adult,not specified,3
+5918,1973,adult,not specified,1
+5919,1973,child,demo only,2
+5920,1974,adult,not specified,1
+5921,1974,adult,not specified,2
+5922,1974,child,follow product label,2
+5923,1975,adult,follow product label,1
+5924,1975,adult,demo only,1
+5925,1975,child,demo only,2
+5926,1976,adult,demo only,1
+5927,1976,adult,demo only,1
+5928,1976,child,demo only,1
+5929,1977,adult,follow product label,3
+5930,1977,adult,follow product label,2
+5931,1977,child,not specified,1
+5932,1978,adult,not specified,1
+5933,1978,adult,not specified,2
+5934,1978,child,not specified,3
+5935,1979,adult,demo only,1
+5936,1979,adult,follow product label,2
+5937,1979,child,demo only,1
+5938,1980,adult,demo only,3
+5939,1980,adult,not specified,2
+5940,1980,child,follow product label,1
+5941,1981,adult,demo only,3
+5942,1981,adult,not specified,2
+5943,1981,child,not specified,2
+5944,1982,adult,demo only,1
+5945,1982,adult,follow product label,2
+5946,1982,child,demo only,1
+5947,1983,adult,not specified,2
+5948,1983,adult,follow product label,1
+5949,1983,child,not specified,2
+5950,1984,adult,demo only,3
+5951,1984,adult,not specified,3
+5952,1984,child,follow product label,2
+5953,1985,adult,demo only,1
+5954,1985,adult,demo only,3
+5955,1985,child,not specified,3
+5956,1986,adult,follow product label,2
+5957,1986,adult,follow product label,2
+5958,1986,child,not specified,2
+5959,1987,adult,follow product label,2
+5960,1987,adult,not specified,1
+5961,1987,child,demo only,1
+5962,1988,adult,follow product label,2
+5963,1988,adult,not specified,3
+5964,1988,child,demo only,3
+5965,1989,adult,demo only,3
+5966,1989,adult,demo only,1
+5967,1989,child,demo only,3
+5968,1990,adult,demo only,3
+5969,1990,adult,not specified,2
+5970,1990,child,demo only,3
+5971,1991,adult,demo only,2
+5972,1991,adult,not specified,1
+5973,1991,child,demo only,1
+5974,1992,adult,follow product label,3
+5975,1992,adult,demo only,3
+5976,1992,child,follow product label,2
+5977,1993,adult,follow product label,3
+5978,1993,adult,demo only,1
+5979,1993,child,not specified,2
+5980,1994,adult,demo only,1
+5981,1994,adult,demo only,2
+5982,1994,child,follow product label,3
+5983,1995,adult,follow product label,1
+5984,1995,adult,follow product label,1
+5985,1995,child,not specified,3
+5986,1996,adult,demo only,1
+5987,1996,adult,demo only,1
+5988,1996,child,demo only,1
+5989,1997,adult,follow product label,1
+5990,1997,adult,not specified,2
+5991,1997,child,demo only,2
+5992,1998,adult,not specified,1
+5993,1998,adult,demo only,1
+5994,1998,child,demo only,1
+5995,1999,adult,follow product label,2
+5996,1999,adult,not specified,3
+5997,1999,child,demo only,2
+5998,2000,adult,demo only,2
+5999,2000,adult,follow product label,3
+6000,2000,child,not specified,3

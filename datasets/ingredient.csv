@@ -1,0 +1,251 @@
+﻿ingredient_id,ingredient_name,ingredient_value,ingredient_type
+1,Vitamin A,76.46,vitamin
+2,Vitamin B1,6.37,vitamin
+3,Vitamin B2,34.29,vitamin
+4,Vitamin B6,36.63,vitamin
+5,Vitamin B12,9.88,vitamin
+6,Vitamin C,56.99,vitamin
+7,Vitamin D3,61.0,vitamin
+8,Vitamin E,91.1,vitamin
+9,Vitamin K,91.61,vitamin
+10,Folic Acid,9.12,vitamin
+11,Biotin,98.45,vitamin
+12,Niacin,31.75,vitamin
+13,Calcium,40.69,mineral
+14,Magnesium,2.43,mineral
+15,Zinc,53.72,mineral
+16,Iron,85.81,mineral
+17,Potassium,51.24,mineral
+18,Selenium,91.26,mineral
+19,Lactobacillus Blend,75.27,probiotic
+20,Bifidobacterium Blend,20.82,probiotic
+21,Ginger Extract,8.44,herbal
+22,Peppermint Extract,29.38,herbal
+23,Chamomile Extract,86.37,herbal
+24,Electrolyte Blend,93.63,electrolyte
+25,Saline,34.36,solution
+26,Glycerin,18.4,skin-care
+27,Menthol,95.98,active-ingredient
+28,Plant Fiber Blend,71.18,fiber
+29,Oral Rehydration Salts,54.08,electrolyte
+30,Lactase Enzyme,58.03,enzyme
+31,Paracetamol,96.58,pain-relief
+32,Ibuprofen,25.94,anti-inflammatory
+33,Aspirin,7.5,pain-relief
+34,Naproxen,96.14,anti-inflammatory
+35,Loratadine,70.78,antihistamine
+36,Cetirizine,24.59,antihistamine
+37,Fexofenadine,23.29,antihistamine
+38,Diphenhydramine,50.88,antihistamine
+39,Chlorpheniramine,76.36,antihistamine
+40,Fluticasone,58.67,corticosteroid
+41,Hydrocortisone,43.11,corticosteroid
+42,Benzoyl Peroxide,55.6,skin-care
+43,Salicylic Acid,46.76,skin-care
+44,Urea,59.1,skin-care
+45,Zinc Oxide,43.62,skin-care
+46,Calamine,77.59,skin-care
+47,Petrolatum,33.73,skin-care
+48,Dimethicone,15.93,skin-care
+49,Clotrimazole,22.81,antifungal
+50,Terbinafine,48.78,antifungal
+51,Miconazole,82.85,antifungal
+52,Hydrogen Peroxide,22.87,antiseptic
+53,Benzalkonium Chloride,41.62,antiseptic
+54,Chlorhexidine,20.2,antiseptic
+55,Benzocaine,87.1,local-anesthetic
+56,Lidocaine,9.76,local-anesthetic
+57,Calcium Carbonate,95.99,antacid
+58,Magnesium Hydroxide,70.86,antacid
+59,Aluminum Hydroxide,29.92,antacid
+60,Simethicone,47.16,digestive
+61,Omeprazole,47.27,acid-reducer
+62,Famotidine,46.4,acid-reducer
+63,Loperamide,35.79,antidiarrheal
+64,Polyethylene Glycol,60.2,laxative
+65,Psyllium Husk,10.81,fiber
+66,Docusate Sodium,14.7,stool-softener
+67,Bisacodyl,83.31,laxative
+68,Senna Extract,52.26,laxative
+69,Domperidone,6.17,digestive
+70,Meclizine,76.27,antiemetic
+71,Dimenhydrinate,41.19,antiemetic
+72,Ondansetron,6.15,antiemetic
+73,Oral Rehydration Glucose,85.95,electrolyte
+74,Sodium Chloride,36.41,electrolyte
+75,Potassium Chloride,11.33,electrolyte
+76,Sodium Bicarbonate,27.93,buffer
+77,Citric Acid,63.22,buffer
+78,Glucose,6.26,sugar
+79,Fructose,38.37,sugar
+80,Lactose,29.87,excipient
+81,Microcrystalline Cellulose,24.5,excipient
+82,Corn Starch,68.2,excipient
+83,Lactose Monohydrate,91.62,excipient
+84,Magnesium Stearate,50.4,excipient
+85,Silicon Dioxide,99.8,excipient
+86,Hypromellose,82.3,excipient
+87,Povidone,78.73,excipient
+88,Croscarmellose Sodium,91.07,excipient
+89,Talc,40.46,excipient
+90,Titanium Dioxide,51.54,colorant
+91,Iron Oxide,38.17,colorant
+92,Carnauba Wax,28.04,coating-agent
+93,Beeswax,96.76,skin-care
+94,Shea Butter,35.09,skin-care
+95,Aloe Vera Extract,30.5,herbal
+96,Tea Tree Oil,52.5,herbal
+97,Eucalyptus Oil,34.94,herbal
+98,Thyme Extract,71.45,herbal
+99,Turmeric Extract,62.08,herbal
+100,Green Tea Extract,54.06,herbal
+101,Valerian Root Extract,45.88,herbal
+102,Melatonin,28.63,sleep-support
+103,L-Theanine,59.1,amino-acid
+104,Glycine,35.38,amino-acid
+105,L-Glutamine,65.19,amino-acid
+106,Collagen Peptides,71.98,protein
+107,Whey Protein,7.17,protein
+108,Casein,84.21,protein
+109,Inulin,39.54,prebiotic
+110,Fructooligosaccharides,6.66,prebiotic
+111,Bacillus Coagulans,57.47,probiotic
+112,Saccharomyces Boulardii,28.22,probiotic
+113,Lactobacillus Rhamnosus,38.55,probiotic
+114,Lactobacillus Acidophilus,10.8,probiotic
+115,Bifidobacterium Longum,76.41,probiotic
+116,Bifidobacterium Lactis,3.51,probiotic
+117,Coenzyme Q10,95.63,antioxidant
+118,Alpha Lipoic Acid,2.91,antioxidant
+119,Resveratrol,16.66,antioxidant
+120,Quercetin,42.63,antioxidant
+121,Astaxanthin,16.84,antioxidant
+122,Lutein,30.69,antioxidant
+123,Zeaxanthin,72.96,antioxidant
+124,Choline,32.46,nutrient
+125,Inositol,39.64,nutrient
+126,Phosphorus,13.77,mineral
+127,Copper,86.42,mineral
+128,Manganese,65.16,mineral
+129,Chromium,89.19,mineral
+130,Iodine,29.44,mineral
+131,Molybdenum,22.54,mineral
+132,Chloride,86.31,mineral
+133,Silica,18.71,mineral
+134,Boron,75.52,mineral
+135,Omega-3 Fish Oil,92.34,fatty-acid
+136,Flaxseed Oil,72.13,fatty-acid
+137,Evening Primrose Oil,78.42,fatty-acid
+138,Gamma Linolenic Acid,95.3,fatty-acid
+139,Docosahexaenoic Acid,86.94,fatty-acid
+140,Eicosapentaenoic Acid,6.92,fatty-acid
+141,Ascorbyl Palmitate,89.54,antioxidant
+142,Tocopherol,56.3,antioxidant
+143,Retinyl Palmitate,62.03,vitamin
+144,Cholecalciferol,15.48,vitamin
+145,Cyanocobalamin,27.24,vitamin
+146,Pyridoxine Hydrochloride,96.81,vitamin
+147,Thiamine Mononitrate,20.22,vitamin
+148,Riboflavin,35.88,vitamin
+149,Calcium Citrate,16.03,mineral
+150,Ferrous Fumarate,87.36,mineral
+151,Acetaminophen,24.93,pain-relief
+152,Diclofenac,39.21,anti-inflammatory
+153,Indomethacin,45.28,anti-inflammatory
+154,Ketoprofen,76.14,anti-inflammatory
+155,Methyl Salicylate,71.19,topical-analgesic
+156,Capsaicin,89.68,topical-analgesic
+157,Camphor,41.49,topical-analgesic
+158,Allantoin,67.52,skin-care
+159,Dexpanthenol,67.97,skin-care
+160,Panthenol,76.7,skin-care
+161,Coal Tar,2.6,skin-care
+162,Salicylic Acid Solution,85.61,skin-care
+163,Adapalene,99.06,skin-care
+164,Azelaic Acid,71.05,skin-care
+165,Niacinamide,82.01,skin-care
+166,Retinol,36.44,skin-care
+167,Sodium Hyaluronate,15.3,skin-care
+168,Ceramide Blend,97.84,skin-care
+169,Lanolin,95.74,skin-care
+170,Dimethicone Cream Base,16.23,excipient
+171,Carbomer,33.15,thickener
+172,Xanthan Gum,47.71,thickener
+173,Guar Gum,47.89,thickener
+174,Pectin,93.74,fiber
+175,Agar,77.54,thickener
+176,Sodium Alginate,81.25,thickener
+177,Potassium Sorbate,76.53,preservative
+178,Sodium Benzoate,56.91,preservative
+179,Methylparaben,3.2,preservative
+180,Propylparaben,63.72,preservative
+181,Benzyl Alcohol,50.72,preservative
+182,Phenoxyethanol,68.39,preservative
+183,Polysorbate 80,52.26,emulsifier
+184,Lecithin,6.61,emulsifier
+185,Sorbitol,66.06,sweetener
+186,Xylitol,35.16,sweetener
+187,Sucralose,3.32,sweetener
+188,Aspartame,66.92,sweetener
+189,Stevia Extract,10.52,sweetener
+190,Orange Flavor,9.77,flavoring
+191,Peppermint Flavor,61.03,flavoring
+192,Vanilla Flavor,42.0,flavoring
+193,Caramel Color,11.62,colorant
+194,Brilliant Blue Color,21.01,colorant
+195,Red Iron Oxide,76.57,colorant
+196,Yellow Iron Oxide,29.26,colorant
+197,Black Iron Oxide,16.45,colorant
+198,Chlorophyll,31.82,colorant
+199,Activated Charcoal,32.62,adsorbent
+200,Bentonite,60.14,adsorbent
+201,Kaolin,0.95,adsorbent
+202,Attapulgite,60.98,adsorbent
+203,Simethicone Emulsion,70.42,digestive
+204,Alpha Galactosidase,7.28,enzyme
+205,Pancreatin,14.36,enzyme
+206,Pepsin,11.47,enzyme
+207,Bromelain,33.92,enzyme
+208,Papain,64.07,enzyme
+209,Amylase,89.39,enzyme
+210,Lipase,60.78,enzyme
+211,Protease,63.86,enzyme
+212,Cellulase,79.32,enzyme
+213,Glucose Oxidase,84.65,enzyme
+214,Lysozyme,62.22,enzyme
+215,Hydrogen Peroxide Solution,15.38,antiseptic
+216,Povidone-Iodine,54.73,antiseptic
+217,Ethanol,41.5,solvent
+218,Isopropyl Alcohol,65.76,antiseptic
+219,Acetic Acid,34.07,active-ingredient
+220,Boric Acid,63.12,active-ingredient
+221,Sodium Fluoride,32.73,oral-care
+222,Potassium Nitrate,10.88,oral-care
+223,Stannous Fluoride,95.09,oral-care
+224,Triclosan,8.45,antimicrobial
+225,Cetylpyridinium Chloride,92.96,oral-care
+226,Chlorhexidine Gluconate,58.3,antiseptic
+227,Potassium Bicarbonate,54.75,buffer
+228,Calcium Phosphate,8.94,mineral
+229,Hydroxyapatite,10.84,oral-care
+230,Potassium Iodide,89.88,mineral
+231,Oxymetazoline,82.81,decongestant
+232,Pseudoephedrine,26.81,decongestant
+233,Guaifenesin,18.74,expectorant
+234,Dextromethorphan,39.76,cough-suppressant
+235,Acetylcysteine,97.01,mucolytic
+236,Bromhexine,73.71,mucolytic
+237,Benzonatate,54.64,cough-suppressant
+238,Salbutamol,11.4,bronchodilator
+239,Ipratropium Bromide,44.8,bronchodilator
+240,Sodium Cromoglicate,56.98,allergy-relief
+241,Artificial Tear Polymer,47.55,eye-care
+242,Carboxymethylcellulose Sodium,66.69,eye-care
+243,Polyethylene Glycol Eye Lubricant,72.12,eye-care
+244,Hypromellose Eye Lubricant,47.74,eye-care
+245,Sodium Hyaluronate Eye Lubricant,88.1,eye-care
+246,Potassium Phosphate,99.11,buffer
+247,Sodium Phosphate,93.2,buffer
+248,Magnesium Sulfate,31.23,mineral
+249,Zinc Sulfate,25.52,mineral
+250,Ferrous Sulfate,7.25,mineral

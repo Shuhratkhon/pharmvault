@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PharmaStock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ Screen 1: pharmacy name ============ -->
+  <section id="screen-welcome" class="screen active">
+    <div class="sky" aria-hidden="true"></div>
+    <div class="welcome-card">
+      <div class="logo-lg" data-logo></div>
+      <h1>PharmaStock</h1>
+      <p class="muted">Search · Explore · Manage</p>
+      <form id="pharmacy-form">
+        <label for="pharmacy-input">Pharmacy name</label>
+        <input id="pharmacy-input" list="pharmacy-list" placeholder="e.g. Riverside Pharmacy" autocomplete="off" required />
+        <datalist id="pharmacy-list"></datalist>
+        <button class="btn btn-primary btn-block" type="submit">Continue <i data-icon="arrowRight"></i></button>
+        <p class="form-error" id="pharmacy-error"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ Screen 2: introduction ============ -->
+  <section id="screen-intro" class="screen">
+    <div class="sky" aria-hidden="true"></div>
+    <div class="intro">
+      <div class="intro-head">
+        <div class="logo-lg" data-logo></div>
+        <div>
+          <p class="muted">Welcome, <strong id="intro-pharmacy"></strong></p>
+          <h1>PharmaStock</h1>
+        </div>
+      </div>
+      <p class="intro-lead">A searchable medicine database. Pick which stock you want to work with — you can switch at any time.</p>
+      <div class="intro-cards">
+        <button class="stock-card" data-pick="web">
+          <span class="stock-icon"><i data-icon="cloud"></i></span>
+          <h2>Web Stock</h2>
+          <p>Browse the ready-made medicines dataset: every medicine, pharma company, ingredient and illness in the database.</p>
+          <ul><li>Search &amp; explore the full catalogue</li><li>Add rows by hand</li></ul>
+          <span class="stock-go">Open Web Stock <i data-icon="arrowRight"></i></span>
+        </button>
+        <button class="stock-card" data-pick="local">
+          <span class="stock-icon"><i data-icon="database"></i></span>
+          <h2>Local Stock</h2>
+          <p>Your pharmacy's own inventory with local quantities, prices and expiry dates.</p>
+          <ul><li>Import Excel, CSV or text files</li><li>Download chosen tables</li><li>Add rows by hand</li></ul>
+          <span class="stock-go">Open Local Stock <i data-icon="arrowRight"></i></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Screen 3: dashboard ============ -->
+  <div id="app" class="screen">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo-sm" data-logo></div><span>PharmaStock</span></div>
+
+      <div class="segmented" role="tablist" aria-label="Stock">
+        <button data-stock="local">Local Stock</button>
+        <button data-stock="web">Web Stock</button>
+      </div>
+      <button class="btn btn-side" id="switch-stock"><i data-icon="switch"></i> Switch Stocks</button>
+
+      <div class="side-actions">
+        <button class="btn btn-side" id="btn-add"><i data-icon="plus"></i> <span id="btn-add-label">Add Medicine</span></button>
+        <button class="btn btn-side" id="btn-import"><i data-icon="upload"></i> Import Stock</button>
+        <button class="btn btn-side" id="btn-download"><i data-icon="download"></i> Download Stock</button>
+        <button class="btn btn-side" id="btn-history"><i data-icon="history"></i> History</button>
+        <button class="btn btn-side" id="btn-dashboard"><i data-icon="chart"></i> Dashboard</button>
+        <button class="btn btn-side btn-warn" id="btn-watch" aria-pressed="false"><i data-icon="alert"></i> Watchlist</button>
+        <button class="btn btn-side btn-danger" id="btn-delete"><i data-icon="trash"></i> Delete Stock</button>
+      </div>
+
+      <div class="category">
+        <h3>Category</h3>
+        <label for="show-by" class="muted small">Show by</label>
+        <div class="select-wrap">
+          <select id="show-by">
+            <option value="alphabet">Alphabet</option>
+            <option value="illness">Illness</option>
+            <option value="type">Type</option>
+            <option value="form">Form</option>
+            <option value="pharma">Pharma</option>
+            <option value="country">Country</option>
+            <option value="ingredients">Ingredients</option>
+            <option value="stock_status">Stock Status</option>
+            <option value="expiry_status">Expiry Status</option>
+            <option value="prescription">Prescription</option>
+          </select>
+          <i data-icon="chevronDown"></i>
+        </div>
+        <p class="muted small" id="category-note" hidden>Categories group the Medicine table.</p>
+        <ul class="cat-list" id="cat-list"></ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="banner">
+        <div class="banner-sky" aria-hidden="true">
+          <svg viewBox="0 0 1200 140" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="mtnBack" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#2f3578" stop-opacity=".75"/><stop offset="1" stop-color="#1a1f52" stop-opacity=".25"/>
+              </linearGradient>
+              <linearGradient id="mtnFront" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#3b428c" stop-opacity=".6"/><stop offset="1" stop-color="#1a1f52" stop-opacity=".15"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#mtnBack)" d="M0 140 L0 110 L120 70 L210 95 L330 40 L430 85 L520 55 L640 100 L760 35 L860 80 L960 50 L1080 90 L1200 60 L1200 140Z"/>
+            <path fill="url(#mtnFront)" d="M0 140 L0 125 L150 95 L260 118 L380 80 L500 115 L620 88 L740 120 L870 75 L990 112 L1100 92 L1200 110 L1200 140Z"/>
+          </svg>
+          <span class="moon"></span>
+        </div>
+        <div class="banner-title">
+          <div class="logo-md" data-logo="pill"></div>
+          <div>
+            <h1>PharmaStock</h1>
+            <p>Search <span>·</span> Explore <span>·</span> Manage</p>
+          </div>
+        </div>
+        <div class="banner-user">
+          <button class="pharmacy-btn" id="pharmacy-btn" aria-haspopup="true">
+            <i data-icon="store"></i> <span id="pharmacy-name"></span> <i data-icon="chevronDown"></i>
+          </button>
+          <div class="menu" id="pharmacy-menu" hidden>
+            <button id="change-pharmacy"><i data-icon="logout"></i> Change pharmacy</button>
+          </div>
+          <span class="avatar" id="avatar"></span>
+        </div>
+      </header>
+
+      <nav class="tabs" aria-label="Search in">
+        <button data-tab="med" class="active">Medicine</button>
+        <button data-tab="pharma">Pharma</button>
+        <button data-tab="ingredient">Ingredient</button>
+        <button data-tab="illness">Illness</button>
+      </nav>
+
+      <div class="search-row">
+        <label class="search">
+          <i data-icon="search"></i>
+          <input id="search" type="search" placeholder="Search medicines, names, ingredients…" autocomplete="off" />
+        </label>
+        <label class="order">
+          <span>Order by:</span>
+          <span class="select-wrap"><select id="order-by"></select><i data-icon="chevronDown"></i></span>
+        </label>
+      </div>
+
+      <section class="table-card">
+        <div class="table-head">
+          <h2><span class="title-icon" data-logo="cube"></span> <span id="table-title"></span></h2>
+          <span class="muted small" id="showing"></span>
+        </div>
+        <div class="filter-chip" id="filter-chip" hidden></div>
+        <div class="table-scroll">
+          <table>
+            <thead id="thead"></thead>
+            <tbody id="tbody"></tbody>
+          </table>
+          <div class="empty" id="empty" hidden></div>
+        </div>
+        <div class="pager" id="pager"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ============ Modals ============ -->
+  <div class="modal" id="modal-add" hidden>
+    <form class="modal-card" id="add-form">
+      <header><h3 id="add-title">Add Medicine</h3><button type="button" class="icon-btn" data-close><i data-icon="x"></i></button></header>
+      <p class="muted small" id="add-sub"></p>
+      <div class="form-grid" id="add-fields"></div>
+      <p class="form-error" id="add-error"></p>
+      <footer><button type="button" class="btn" data-close>Cancel</button><button class="btn btn-primary" type="submit">Save</button></footer>
+    </form>
+  </div>
+
+  <div class="modal" id="modal-import" hidden>
+    <form class="modal-card" id="import-form">
+      <header><h3>Import Stock</h3><button type="button" class="icon-btn" data-close><i data-icon="x"></i></button></header>
+      <p class="muted small">Upload an Excel (.xlsx), CSV or tab/semicolon-separated text file. The first row must be column names. Recognised columns:
+        <code>name, price, quantity, illness, type, form, pharma, country, ingredients, dosage, schedule, expiry_date, rx</code>.
+        Ingredients can be separated with <code>;</code>. Existing medicines are updated, new ones are added.</p>
+      <label class="drop" id="drop">
+        <input type="file" id="import-file" accept=".xlsx,.xlsm,.csv,.txt,.tsv" required />
+        <i data-icon="upload"></i>
+        <span id="drop-text">Choose a file or drop it here</span>
+      </label>
+      <div class="import-result" id="import-result" hidden></div>
+      <footer><button type="button" class="btn" data-close>Close</button><button class="btn btn-primary" type="submit" id="import-submit">Import</button></footer>
+    </form>
+  </div>
+
+  <div class="modal" id="modal-download" hidden>
+    <form class="modal-card" id="download-form">
+      <header><h3>Download Local Stock</h3><button type="button" class="icon-btn" data-close><i data-icon="x"></i></button></header>
+      <p class="muted small">Tick the mother tables to download. One table downloads as CSV; several download as a ZIP of CSVs.</p>
+      <div class="checks">
+        <label><input type="checkbox" name="t" value="med" checked> <span>Medicine</span></label>
+        <label class="check-warn"><input type="checkbox" name="t" value="watchlist"> <span>Watchlist</span></label>
+        <label><input type="checkbox" name="t" value="pharma"> <span>Pharma</span></label>
+        <label><input type="checkbox" name="t" value="ingredient"> <span>Ingredient</span></label>
+        <label><input type="checkbox" name="t" value="illness"> <span>Illness</span></label>
+      </div>
+      <p class="form-error" id="download-error"></p>
+      <footer><button type="button" class="btn" data-close>Cancel</button><button class="btn btn-primary" type="submit"><i data-icon="download"></i> Download</button></footer>
+    </form>
+  </div>
+
+  <div class="modal" id="modal-history" hidden>
+    <div class="modal-card">
+      <header><h3 id="history-title">History</h3><button type="button" class="icon-btn" data-close><i data-icon="x"></i></button></header>
+      <p class="muted small">Imports, downloads, rows added by hand, edits and deletes in this stock.</p>
+      <div class="h-filters" id="history-filters"></div>
+      <ul class="history-list" id="history-list"></ul>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-delete" hidden>
+    <form class="modal-card" id="delete-form">
+      <header><h3>Delete Local Stock</h3><button type="button" class="icon-btn" data-close><i data-icon="x"></i></button></header>
+      <div class="danger-note"><i data-icon="trash"></i>
+        <p>This removes <strong>every medicine</strong> from <strong id="delete-name"></strong>'s Local Stock. Pharma, ingredient and illness records stay in the database. This can't be undone — download a copy first if you need one.</p>
+      </div>
+      <label for="delete-confirm">Type the pharmacy name to confirm</label>
+      <input id="delete-confirm" autocomplete="off" />
+      <p class="form-error" id="delete-error"></p>
+      <footer><button type="button" class="btn" data-close>Cancel</button><button class="btn btn-danger-solid" type="submit" id="delete-submit" disabled><i data-icon="trash"></i> Delete Stock</button></footer>
+    </form>
+  </div>
+
+  <div class="modal" id="modal-watch" hidden>
+    <div class="modal-card modal-wide">
+      <header><h3>Watchlist</h3><button type="button" class="icon-btn" data-close aria-label="Close watchlist"><i data-icon="x"></i></button></header>
+      <p class="muted small">Medicines in your Local Stock that need attention, sorted by ID. Limits depend on each medicine's form.</p>
+      <div id="watch-body"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-dashboard" hidden>
+    <div class="modal-card modal-wide">
+      <header><h3 id="dash-title">Dashboard</h3><button type="button" class="icon-btn" data-close aria-label="Close dashboard"><i data-icon="x"></i></button></header>
+      <div class="dash-grid">
+        <section class="dash-tile dash-stat">
+          <span class="muted small">Total medicines</span>
+          <strong id="dash-total">—</strong>
+          <span class="muted small" id="dash-total-sub"></span>
+        </section>
+        <section class="dash-tile"><h4>Medicines per form</h4><div class="dash-pie"><canvas id="ch-form-count"></canvas></div></section>
+        <section class="dash-tile"><h4>Stock value per form ($)</h4><div class="dash-pie"><canvas id="ch-form-value"></canvas></div></section>
+        <section class="dash-tile dash-span"><h4>Expiry timeline — next 12 months</h4><p class="muted small" id="dash-expired"></p><div class="dash-line"><canvas id="ch-expiry"></canvas></div></section>
+        <section class="dash-tile"><h4>Top 10 illnesses covered</h4><div class="dash-bar"><canvas id="ch-illness"></canvas></div></section>
+        <section class="dash-tile"><h4>Medicines by type</h4><div class="dash-bar"><canvas id="ch-type"></canvas></div></section>
+      </div>
+      <p class="empty" id="dash-empty" hidden></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+﻿import_batch_id,source_name,source_type,record_count,import_date,notes
+1,local_demo_seed,synthetic_demo,2000,2026-10-25,Generated example dataset; not a medical reference
