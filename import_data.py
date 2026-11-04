@@ -35,7 +35,7 @@ def main():
     with psycopg.connect(**conninfo) as conn:
         with conn.cursor() as cur:
             for table, filename in TABLES:
-                path = ROOT / "datasets" / filename
+                path = ROOT / "datasets_local_stock" / filename
 
                 with path.open("r", encoding="utf-8-sig", newline="") as f:
                     reader = csv.reader(f)

@@ -85,11 +85,11 @@ def log(cur, pharmacy_id, stock, action, summary):
 
 
 def seed_local_stock(cur, pharmacy_id):
-    """Give a pharmacy its own copy of datasets/stock.csv the first time it enters (once only)."""
+    """Give a pharmacy its own copy of datasets_local_stock/stock.csv the first time it enters (once only)."""
     cur.execute("SELECT 1 FROM history WHERE pharmacy_id = %s AND action = 'seed'", (pharmacy_id,))
     if cur.fetchone():
         return
-    with (ROOT / "datasets" / "stock.csv").open(encoding="utf-8-sig", newline="") as f:
+    with (ROOT / "datasets_local_stock" / "stock.csv").open(encoding="utf-8-sig", newline="") as f:
         rows = [r for r in csv.DictReader(f) if r.get("stock_type", "local") == "local"]
     cur.execute("SELECT med_id FROM med")
     known = {r["med_id"] for r in cur.fetchall()}

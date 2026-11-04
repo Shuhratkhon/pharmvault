@@ -7,8 +7,8 @@ Sources (both US government, public domain):
                            (what US pharmacies pay per unit, in US dollars; only the newest week is used)
 
 Usage (from the pharmvault folder):
-  python scripts/web_stock.py build   # download newest data, write datasets/web/web_medicines.csv
-  python scripts/web_stock.py load    # load datasets/web/web_medicines.csv into the database (in_web = TRUE)
+  python scripts/web_stock.py build   # download newest data, write datasets_web_stock/web_medicines.csv
+  python scripts/web_stock.py load    # load datasets_web_stock/web_medicines.csv into the database (in_web = TRUE)
   python scripts/web_stock.py all     # both
 
 Raw downloads go to a temporary folder (or --raw DIR) and are never stored in the repository.
@@ -28,7 +28,7 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT_CSV = ROOT / "datasets" / "web" / "web_medicines.csv"
+OUT_CSV = ROOT / "datasets_web_stock" / "web_medicines.csv"
 FDA_ZIP_URL = "https://www.accessdata.fda.gov/cder/ndctext.zip"
 MEDICAID_API = "https://data.medicaid.gov/api/1"
 COLUMNS = ["med_name", "price", "type", "form", "pharma_name", "dosage_strength", "ingredients",
@@ -170,7 +170,7 @@ def build(raw):
         except ValueError:
             pass
 
-    best = {}  # one row per drug: same name + strength + form, cheapest pack wins
+    best = {}  # one row per drug per maker: same name + strength + form + labeler, cheapest pack wins
     matched = 0
     with nadac_path.open(encoding="utf-8-sig", newline="") as f:
         for n in csv.DictReader(f):
@@ -185,7 +185,7 @@ def build(raw):
             name = smart_title(" ".join(x for x in (p["PROPRIETARYNAME"], p["PROPRIETARYNAMESUFFIX"]) if x.strip()))[:250]
             form = map_form(p["DOSAGEFORMNAME"])
             strength = strength_text(p["ACTIVE_NUMERATOR_STRENGTH"], p["ACTIVE_INGRED_UNIT"])
-            key = (name.lower(), strength.lower(), form)
+            key = (name.lower(), strength.lower(), form, p["LABELERNAME"].strip().lower())
             row = {
                 "med_name": name,
                 "price": f"{price:.2f}",
@@ -204,7 +204,7 @@ def build(raw):
             if key not in best or price < float(best[key]["price"]):
                 best[key] = row
 
-    rows = sorted(best.values(), key=lambda r: (r["med_name"].lower(), r["dosage_strength"], r["form"]))
+    rows = sorted(best.values(), key=lambda r: (r["med_name"].lower(), r["dosage_strength"], r["form"], r["pharma_name"].lower()))
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
     with OUT_CSV.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=COLUMNS)
@@ -237,9 +237,10 @@ def load():
         pharma = {r["k"]: r["pharma_id"] for r in cur.fetchall()}
         cur.execute("SELECT ingredient_id, LOWER(ingredient_name) AS k FROM ingredient")
         ingred = {r["k"]: r["ingredient_id"] for r in cur.fetchall()}
-        cur.execute("SELECT med_id, LOWER(med_name) AS name, COALESCE(LOWER(dosage_strength), '') AS s, "
-                    "COALESCE(form, '') AS f FROM med WHERE in_web")
-        existing = {(r["name"], r["s"], r["f"]): r["med_id"] for r in cur.fetchall()}
+        cur.execute("SELECT m.med_id, LOWER(m.med_name) AS name, COALESCE(LOWER(m.dosage_strength), '') AS s, "
+                    "COALESCE(m.form, '') AS f, COALESCE(LOWER(p.pharma_name), '') AS maker "
+                    "FROM med m LEFT JOIN pharma p ON p.pharma_id = m.pharma_id WHERE m.in_web")
+        existing = {(r["name"], r["s"], r["f"], r["maker"]): r["med_id"] for r in cur.fetchall()}
 
         new_pharma, new_ingred = [], []
         pid, iid = next_id("pharma", "pharma_id"), next_id("ingredient", "ingredient_id")
@@ -260,7 +261,7 @@ def load():
         mid = next_id("med", "med_id")
         inserts, updates, links, seen = [], [], [], set()
         for r in rows:
-            key = (r["med_name"].lower(), r["dosage_strength"].lower(), r["form"])
+            key = (r["med_name"].lower(), r["dosage_strength"].lower(), r["form"], r["pharma_name"].lower())
             values = (r["price"], r["type"] or None, r["form"], pharma.get(r["pharma_name"].lower()),
                       r["dosage_strength"] or None, r["prescription_required"] == "true")
             if key in existing:
