@@ -1,4 +1,4 @@
-/* PharmaStock front-end — talks to the Flask API in app.py */
+/* PharmVault front-end — talks to the Flask API in app.py */
 (async () => {
   "use strict";
 

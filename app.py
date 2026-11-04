@@ -1,4 +1,4 @@
-"""PharmaStock — Flask backend serving the website and a JSON API over the PostgreSQL database."""
+"""PharmVault — Flask backend serving the website and a JSON API over the PostgreSQL database."""
 
 import csv
 import io

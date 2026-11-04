@@ -1,5 +1,5 @@
 
--- PharmaStock database
+-- PharmVault database
 
 CREATE TABLE pharmacy (
     pharmacy_id INTEGER PRIMARY KEY,
