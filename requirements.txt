@@ -1,5 +1,22 @@
-Flask==3.1.3
-psycopg[binary]==3.3.6
-python-dotenv==1.2.4
-openpyxl==3.1.5
-gunicorn==23.0.0
+# PharmVault — Python packages
+# Install with:  pip install -r requirements.txt
+#
+# Also needed to run PharmVault yourself (pip cannot install these):
+#   - Python 3.12
+#   - PostgreSQL 16 (local database), or a Neon database online
+# Website users need nothing but a browser: https://pharmvault-u5k0.onrender.com
+# Full setup steps: see README.md
+
+# Web app
+Flask==3.1.3              # web framework: serves the website and the JSON API (app.py)
+Werkzeug==3.1.9           # comes with Flask; used directly for password hashing (sign-in)
+
+# Database
+psycopg[binary]==3.3.6    # PostgreSQL driver (local database and Neon online)
+python-dotenv==1.2.4      # reads database settings and SECRET_KEY from the .env file
+
+# Import / export
+openpyxl==3.1.5           # reads Excel (.xlsx) files in Import Stock
+
+# Online hosting (Render)
+gunicorn==23.0.0          # production web server that runs the app on Render
