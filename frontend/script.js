@@ -298,7 +298,8 @@
       search: "Search US medicines, ingredients, makers, drug classes…",
       orders: [["id", "ID (Default)"], ["alphabet", "Alphabet"], ["price", "Price"]],
       cols: TABS.med.cols.map((c) => (
-        c[0] === "price" ? ["price", "Price ($)", (r) => money(r.price), "num"]
+        c[0] === "id" ? ["id", "ID", (r) => r.web_id ?? r.med_id]
+          : c[0] === "price" ? ["price", "Price ($)", (r) => money(r.price), "num"]
           : c[0] === "quantity" ? ["quantity", "Quantity", () => DASH, "num"]
             : c[0] === "expiry" ? ["expiry", "Expiry Date", () => DASH, "num"]
               : c[0] === "type" ? ["type", "Type", (r) => hl(r.type || "—"), "wrap"]
@@ -1048,16 +1049,16 @@
       const web = d.stock === "web";
       $("#dash-total").textContent = d.totals.medicines.toLocaleString();
       $("#dash-total-sub").textContent = web
-        ? `${d.rx.rx.toLocaleString()} prescription · ${d.rx.otc.toLocaleString()} over the counter`
+        ? `${d.rx.rx.toLocaleString()} prescription · ${d.rx.otc.toLocaleString()} no prescription`
         : `${d.totals.packs.toLocaleString()} packs · ${fmtMoney(d.totals.value)} stock value`;
-      $("#dash-h-pie2").textContent = web ? "Prescription vs over the counter" : "Stock value per form ($)";
+      $("#dash-h-pie2").textContent = web ? "Prescription vs no prescription" : "Stock value per form ($)";
       $("#dash-h-wide").textContent = web ? "Average pack price per form ($)" : "Expiry timeline — next 12 months";
       $("#dash-h-bar1").textContent = web ? "Top 10 pharma companies" : "Top 10 illnesses covered";
       $("#dash-h-bar2").textContent = web ? "Top drug classes" : "Medicines by type";
       $("#dash-expired").textContent = !web && d.expired ? `${d.expired} already expired (not shown)` : "";
       pie("ch-form-count", foldSlices(d.by_form, "count"), (v) => v.toLocaleString());
       if (web) {
-        pie("ch-form-value", [{ name: "Prescription", v: d.rx.rx }, { name: "Over the counter", v: d.rx.otc }], (v) => v.toLocaleString());
+        pie("ch-form-value", [{ name: "Prescription", v: d.rx.rx }, { name: "No prescription", v: d.rx.otc }], (v) => v.toLocaleString());
         vbar("ch-expiry", d.avg_price);
         hbar("ch-illness", d.pharma);
       } else {

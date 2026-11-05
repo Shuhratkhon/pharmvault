@@ -116,3 +116,6 @@ ALTER TABLE pharmacy ADD COLUMN IF NOT EXISTS password_hash VARCHAR(255);
 CREATE INDEX IF NOT EXISTS idx_med_in_web ON med (in_web) WHERE in_web;
 CREATE INDEX IF NOT EXISTS idx_dosage_med ON dosage (med_id);
 CREATE INDEX IF NOT EXISTS idx_med_ingredient_ing ON med_ingredient (ingredient_id);
+
+-- Web Stock's own numbering (1, 2, 3 ...), separate from the shared med_id
+ALTER TABLE med ADD COLUMN IF NOT EXISTS web_id INTEGER UNIQUE;

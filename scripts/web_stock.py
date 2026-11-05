@@ -288,6 +288,10 @@ def load():
         # medicines that dropped out of the national data leave Web Stock (local stocks keep them)
         cur.execute("UPDATE med SET in_web = FALSE WHERE in_web AND NOT (med_id = ANY(%s))", (list(seen),))
         removed = cur.rowcount
+        # Web Stock numbering: new catalogue medicines continue after the highest web_id (first load: 1, 2, 3 ...)
+        cur.execute("""WITH base AS (SELECT COALESCE(MAX(web_id), 0) AS b FROM med),
+     todo AS (SELECT med_id, ROW_NUMBER() OVER (ORDER BY med_id) AS rn FROM med WHERE in_web AND web_id IS NULL)
+UPDATE med m SET web_id = (SELECT b FROM base) + todo.rn FROM todo WHERE m.med_id = todo.med_id""")
         cur.execute(
             "INSERT INTO import_batch (import_batch_id, source_name, source_type, record_count, import_date, notes) "
             "VALUES ((SELECT COALESCE(MAX(import_batch_id), 0) + 1 FROM import_batch), %s, %s, %s, CURRENT_DATE, %s)",

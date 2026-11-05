@@ -434,7 +434,7 @@ def med_base(stock, pharmacy_id, show_by, age):
 
     dosage_filter = "AND d.age_group = %(age)s" if age else ""
     base = f"""
-        SELECT m.med_id, m.med_name, {price} AS price, {qty} AS quantity,
+        SELECT m.med_id, m.web_id, m.med_name, {price} AS price, {qty} AS quantity,
                il.illness_name, m.type, m.form, p.pharma_name, p.pharma_country,
                ing.ingredients, m.dosage_strength, {exp} AS expiry_date, m.prescription_required,
                ds.times_per_day, ds.age_groups, ing.ingredient_list
@@ -478,7 +478,7 @@ def med_filters():
         m = re.fullmatch(r"[mM]?0*(\d+)", q)
         if m:
             params["qid"] = int(m.group(1))
-            cond += " OR med_id = %(qid)s"
+            cond += " OR web_id = %(qid)s" if stock != "local" else " OR med_id = %(qid)s"
         where.append(f"({cond})")
     grp_expr = SHOW_BY[show_by]
     if group is not None and group != "":
@@ -506,6 +506,8 @@ def list_meds():
     sort = request.args.get("sort")
     direction = "DESC" if request.args.get("dir") == "desc" else "ASC"
     order_sql = MED_ORDER[order]
+    if order == "id" and request.args.get("stock") != "local":
+        order_sql = "web_id NULLS LAST, med_id"
     if sort in MED_SORT_COLS:
         order_sql = f"{MED_SORT_COLS[sort]} {direction} NULLS LAST, med_name"
 
@@ -815,11 +817,19 @@ def add_med():
         with db() as conn:
             cur = conn.cursor()
             status = save_med(cur, data, stock, pid)
+            if stock == "web":
+                cur.execute(WEB_NUMBER_SQL)
             log(cur, pid, stock, "add" if status == "added" else "edit",
                 f"{'Added' if status == 'added' else 'Updated'} medicine “{data.get('med_name', '').strip()}” by hand")
     except (ValueError, psycopg.Error) as e:
         return jsonify(error=str(e).split("\n")[0]), 400
     return jsonify(status=status)
+
+
+# Web Stock has its own numbering (1, 2, 3 ...) separate from the shared med_id.
+WEB_NUMBER_SQL = """WITH base AS (SELECT COALESCE(MAX(web_id), 0) AS b FROM med),
+     todo AS (SELECT med_id, ROW_NUMBER() OVER (ORDER BY med_id) AS rn FROM med WHERE in_web AND web_id IS NULL)
+UPDATE med m SET web_id = (SELECT b FROM base) + todo.rn FROM todo WHERE m.med_id = todo.med_id"""
 
 
 EDITABLE = {"price": "price", "quantity": "quantity", "expiry_date": "expiry_date"}
