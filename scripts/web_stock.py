@@ -224,9 +224,11 @@ def load():
     load_dotenv(ROOT / ".env")
     rows = list(csv.DictReader(OUT_CSV.open(encoding="utf-8", newline="")))
     print(f"loading {len(rows)} medicines from {OUT_CSV.relative_to(ROOT)}")
-    with psycopg.connect(host=os.getenv("DB_HOST", "localhost"), port=os.getenv("DB_PORT", "5432"),
-                         dbname=os.getenv("DB_NAME", "pharmvault"), user=os.getenv("DB_USER", "postgres"),
-                         password=os.getenv("DB_PASSWORD", ""), row_factory=dict_row) as conn:
+    conn_args = ({"conninfo": os.environ["DATABASE_URL"]} if os.getenv("DATABASE_URL") else
+                 {"host": os.getenv("DB_HOST", "localhost"), "port": os.getenv("DB_PORT", "5432"),
+                  "dbname": os.getenv("DB_NAME", "pharmvault"), "user": os.getenv("DB_USER", "postgres"),
+                  "password": os.getenv("DB_PASSWORD", "")})
+    with psycopg.connect(**conn_args, row_factory=dict_row) as conn:
         cur = conn.cursor()
 
         def next_id(table, col):

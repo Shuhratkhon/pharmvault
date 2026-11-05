@@ -1,0 +1,21 @@
+# Render Blueprint for PharmVault (https://render.com/docs/blueprint-spec)
+# The database lives on Neon; paste its connection string as DATABASE_URL when Render asks.
+services:
+  - type: web
+    name: pharmvault
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --workers 2 --timeout 60
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
+      - key: DATABASE_URL
+        sync: false          # secret: you enter it in the Render dashboard, it is never stored in GitHub
+      - key: SECRET_KEY
+        generateValue: true  # Render creates a random key that signs the sign-in cookie
+      - key: FLASK_DEBUG
+        value: "0"

@@ -37,6 +37,7 @@ app.config.update(
     PERMANENT_SESSION_LIFETIME=timedelta(days=30),  # stay signed in for 30 days
     SESSION_COOKIE_HTTPONLY=True,
     SESSION_COOKIE_SAMESITE="Lax",
+    SESSION_COOKIE_SECURE=bool(os.getenv("RENDER")),  # HTTPS-only cookie when running on Render
 )
 MIN_PASSWORD = 8
 
@@ -46,6 +47,9 @@ PAGE_SIZE_MAX = 100
 
 
 def db():
+    # Online (Render + Neon): one DATABASE_URL. Locally: the DB_* settings from .env.
+    if os.getenv("DATABASE_URL"):
+        return psycopg.connect(os.environ["DATABASE_URL"], row_factory=dict_row)
     return psycopg.connect(
         host=os.getenv("DB_HOST", "localhost"),
         port=os.getenv("DB_PORT", "5432"),
@@ -1097,4 +1101,5 @@ def export_stock():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Local development server. Online, Render starts the app with gunicorn instead (see render.yaml).
+    app.run(debug=os.getenv("FLASK_DEBUG", "1") == "1")
