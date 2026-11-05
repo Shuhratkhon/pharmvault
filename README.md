@@ -1,6 +1,6 @@
 # PHARMVAULT PROJECT:
 
-Database-driven pharmacy stock management website
+> Database-driven pharmacy stock management website
 
 **🌐 Live Website:** https://pharmvault-u5k0.onrender.com
 
@@ -36,5 +36,5 @@ Database-driven pharmacy stock management website
 * Local medicine list (Uzbekistan medicines with prices in sum)
 * Automatic Web Stock price updates
 * Language options (Uzbek, Korean, Russian, German)
-* Better mobile layout
+* Pharmacy account settings (rename, location, license number, sign-in history, delete)
 
