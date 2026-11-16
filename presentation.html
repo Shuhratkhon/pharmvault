@@ -491,6 +491,35 @@ body.calm .packet.back{display:none}
 .editor .crop{display:block;width:100%;padding:14px 16px;border:0;cursor:zoom-in}
 .editor .crop img{display:block;width:100%;height:auto;border-radius:4px;transition:filter .2s}
 .editor .crop:hover img{filter:brightness(1.18)}
+/* team revision: schema tables + DBMS component diagram */
+.sch-grid{display:grid;gap:30px 40px;margin-top:34px;align-items:start}
+.sch{border-radius:18px;overflow:hidden;border:1px solid rgba(176,173,249,.28);background:linear-gradient(180deg,rgba(31,35,80,.8),rgba(19,23,58,.7));box-shadow:0 30px 80px -40px #000}
+.sch-h{display:flex;align-items:center;gap:14px;padding:12px 20px;background:linear-gradient(90deg,#d4d1ff,#9d9af4);color:#0b0e24}
+.sch-h b{font-family:var(--mono);font-size:24px;font-weight:700}
+.sch-h span{margin-left:auto;font-size:17px;color:#2a2a78;font-weight:600}
+.sch table{width:100%;border-collapse:collapse;font-size:19px}
+.sch th{text-align:left;font-weight:600;color:var(--muted);font-size:15px;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;border-bottom:1px solid var(--line2);background:rgba(11,14,36,.45)}
+.sch td{padding:8px 16px;border-bottom:1px solid rgba(59,65,128,.45);color:var(--sub);vertical-align:middle;white-space:nowrap}
+.sch tr:last-child td{border-bottom:0}
+.sch td:first-child{font-family:var(--mono);color:var(--text);font-size:19px}
+.sch td.ty{font-family:var(--mono);color:var(--blue);font-size:17px}
+.sch td.cn{white-space:normal;font-size:17px;line-height:1.3}
+.sch td.cn code{font-family:var(--mono);color:var(--lav);font-size:16px}
+.kb{display:inline-block;min-width:38px;text-align:center;font-family:var(--mono);font-size:14px;font-weight:700;padding:3px 7px;border-radius:7px;margin-right:4px}
+.kb.pk{background:rgba(230,207,138,.18);color:var(--yellow);border:1px solid rgba(230,207,138,.5)}
+.kb.fk{background:rgba(143,168,245,.16);color:var(--blue);border:1px solid rgba(143,168,245,.5)}
+.kb.uq{background:rgba(134,209,168,.14);color:var(--green);border:1px solid rgba(134,209,168,.45)}
+.sch-legend{display:flex;gap:28px;align-items:center;margin-top:28px;font-size:19px;color:var(--sub)}
+.arch text{font-family:var(--sans)}
+.arch .bx{fill:#151a45;stroke:#3b4180;stroke-width:1.6}
+.arch .t1{font-size:23px;font-weight:700;fill:#e9eaff}
+.arch .t2{font-size:17px;fill:#a2a6d2}
+.arch .lyr{font-family:var(--mono);font-size:17px;letter-spacing:.12em;fill:#767bb0}
+.arch .ar{stroke:#9d9af4;stroke-width:2.4;fill:none;marker-end:url(#arch-ah)}
+.arch .ar2{stroke:#9d9af4;stroke-width:2.4;fill:none;marker-end:url(#arch-ah);marker-start:url(#arch-ah2)}
+.arch .flow{stroke:#b0adf9;stroke-width:2.4;fill:none;stroke-dasharray:6 10;animation:archflow 1.2s linear infinite}
+@keyframes archflow{to{stroke-dashoffset:-32}}
+body.calm .arch .flow{animation:none}
 </style>
 </head>
 <body>
@@ -1076,9 +1105,22 @@ body.calm .packet.back{display:none}
   </div>
 </section>
 
+<!-- ================= DBMS ARCHITECTURE — COMPONENT DIAGRAM ================= -->
+<section class="slide" id="arch">
+  <div class="kicker in">07 · DBMS ARCHITECTURE — COMPONENT DIAGRAM</div>
+  <h2 class="in d1">Inside the <span class="hl">DBMS</span> — from click to disk</h2>
+  <svg class="arch" viewBox="0 0 1680 760" style="width:1680px;height:740px;display:block;margin-top:30px">
+    <defs>
+      <marker id="arch-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#b0adf9"/></marker>
+      <marker id="arch-ah2" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10 0 L0 5 L10 10z" fill="#b0adf9"/></marker>
+    </defs>
+    <text class="lyr" x="0" y="52">USERS</text><text class="lyr" x="0" y="182">APPLICATION</text><text class="lyr" x="0" y="420">DBMS</text><text class="lyr" x="0" y="700">DISK</text><line x1="0" y1="108" x2="1680" y2="108" stroke="#262b5c" stroke-dasharray="3 8"/><line x1="0" y1="246" x2="1680" y2="246" stroke="#262b5c" stroke-dasharray="3 8"/><line x1="0" y1="612" x2="1680" y2="612" stroke="#262b5c" stroke-dasharray="3 8"/><g class="in d2"><rect class="bx" x="330" y="10" width="470" height="78" rx="12" style="stroke:#b0adf9;fill:#151a45"/><text class="t1" x="565.0" y="45.0" text-anchor="middle" style="fill:#e9eaff">Pharmacist</text><text class="t2" x="565.0" y="71.0" text-anchor="middle">web browser · Local / Web Stock</text><rect class="bx" x="1080" y="10" width="470" height="78" rx="12" style="stroke:#b0adf9;fill:#151a45"/><text class="t1" x="1315.0" y="45.0" text-anchor="middle" style="fill:#e9eaff">Developer / DBA</text><text class="t2" x="1315.0" y="71.0" text-anchor="middle">psql · schema.sql · setup scripts</text></g><g class="in d3"><rect class="bx" x="200" y="140" width="440" height="84" rx="12" style="stroke:#8fa8f5;fill:#151a45"/><text class="t1" x="420.0" y="178.0" text-anchor="middle" style="fill:#e9eaff">Front-end</text><text class="t2" x="420.0" y="204.0" text-anchor="middle">HTML · CSS · JS · Chart.js</text><rect class="bx" x="720" y="140" width="440" height="84" rx="12" style="stroke:#8fa8f5;fill:#151a45"/><text class="t1" x="940.0" y="178.0" text-anchor="middle" style="fill:#e9eaff">Flask API  ·  app.py</text><text class="t2" x="940.0" y="204.0" text-anchor="middle">routes · sessions · CRUD logic</text><rect class="bx" x="1240" y="140" width="440" height="84" rx="12" style="stroke:#8fa8f5;fill:#151a45"/><text class="t1" x="1460.0" y="178.0" text-anchor="middle" style="fill:#e9eaff">psycopg 3 driver</text><text class="t2" x="1460.0" y="204.0" text-anchor="middle">SQL over TLS to Neon</text></g><g class="in d4"><rect x="200" y="268" width="1480" height="326" rx="20" fill="rgba(108,103,216,.10)" stroke="#6c67d8" stroke-width="2"/><text class="t1" x="224" y="302" style="fill:#b0adf9;font-size:22px">PostgreSQL 16 DBMS  ·  hosted on Neon (cloud)</text><text class="lyr" x="224" y="340" style="fill:#a2a6d2">QUERY PROCESSOR</text><rect class="bx" x="230" y="352" width="420" height="78" rx="12" style="stroke:#3b4180;fill:#151a45"/><text class="t1" x="440.0" y="387.0" text-anchor="middle" style="fill:#e9eaff">Query executor</text><text class="t2" x="440.0" y="413.0" text-anchor="middle">runs JOIN · GROUP BY · CASE</text><rect class="bx" x="725" y="352" width="420" height="78" rx="12" style="stroke:#3b4180;fill:#151a45"/><text class="t1" x="935.0" y="387.0" text-anchor="middle" style="fill:#e9eaff">Query optimizer</text><text class="t2" x="935.0" y="413.0" text-anchor="middle">picks plan · uses B-tree indexes</text><rect class="bx" x="1220" y="352" width="420" height="78" rx="12" style="stroke:#3b4180;fill:#151a45"/><text class="t1" x="1430.0" y="387.0" text-anchor="middle" style="fill:#e9eaff">Parser / compiler</text><text class="t2" x="1430.0" y="413.0" text-anchor="middle">DDL · DML · syntax check</text><text class="lyr" x="224" y="464" style="fill:#a2a6d2">STORAGE MANAGER</text><rect class="bx" x="230" y="476" width="335" height="92" rx="12" style="stroke:#3b4180;fill:#151a45"/><text class="t1" x="397.5" y="518.0" text-anchor="middle" style="fill:#e9eaff">Integrity &amp; auth</text><text class="t2" x="397.5" y="544.0" text-anchor="middle">PK · FK · CHECK · UNIQUE</text><rect class="bx" x="593" y="476" width="335" height="92" rx="12" style="stroke:#3b4180;fill:#151a45"/><text class="t1" x="760.5" y="518.0" text-anchor="middle" style="fill:#e9eaff">Transaction mgr</text><text class="t2" x="760.5" y="544.0" text-anchor="middle">ACID · MVCC · locks</text><rect class="bx" x="956" y="476" width="335" height="92" rx="12" style="stroke:#3b4180;fill:#151a45"/><text class="t1" x="1123.5" y="518.0" text-anchor="middle" style="fill:#e9eaff">Buffer manager</text><text class="t2" x="1123.5" y="544.0" text-anchor="middle">pages in RAM cache</text><rect class="bx" x="1319" y="476" width="335" height="92" rx="12" style="stroke:#3b4180;fill:#151a45"/><text class="t1" x="1486.5" y="518.0" text-anchor="middle" style="fill:#e9eaff">File manager</text><text class="t2" x="1486.5" y="544.0" text-anchor="middle">reads / writes pages</text></g><g class="in d5"><path d="M230 650 v90 a160.0 14 0 0 0 320 0 v-90" fill="#1b1f4a" stroke="#6c67d8" stroke-width="1.6"/><ellipse cx="390.0" cy="650" rx="160.0" ry="14" fill="#2d3184" stroke="#6c67d8" stroke-width="1.6"/><text class="t1" x="390.0" y="703.0" text-anchor="middle" style="font-size:21px">Data files</text><text class="t2" x="390.0" y="729.0" text-anchor="middle">11 tables · 20,000+ rows</text><path d="M602 650 v90 a160.0 14 0 0 0 320 0 v-90" fill="#1b1f4a" stroke="#6c67d8" stroke-width="1.6"/><ellipse cx="762.0" cy="650" rx="160.0" ry="14" fill="#2d3184" stroke="#6c67d8" stroke-width="1.6"/><text class="t1" x="762.0" y="703.0" text-anchor="middle" style="font-size:21px">Indexes</text><text class="t2" x="762.0" y="729.0" text-anchor="middle">11 B-tree indexes + PKs</text><path d="M974 650 v90 a160.0 14 0 0 0 320 0 v-90" fill="#1b1f4a" stroke="#6c67d8" stroke-width="1.6"/><ellipse cx="1134.0" cy="650" rx="160.0" ry="14" fill="#2d3184" stroke="#6c67d8" stroke-width="1.6"/><text class="t1" x="1134.0" y="703.0" text-anchor="middle" style="font-size:21px">System catalog</text><text class="t2" x="1134.0" y="729.0" text-anchor="middle">data dictionary · metadata</text><path d="M1346 650 v90 a160.0 14 0 0 0 320 0 v-90" fill="#1b1f4a" stroke="#6c67d8" stroke-width="1.6"/><ellipse cx="1506.0" cy="650" rx="160.0" ry="14" fill="#2d3184" stroke="#6c67d8" stroke-width="1.6"/><text class="t1" x="1506.0" y="703.0" text-anchor="middle" style="font-size:21px">WAL &amp; backups</text><text class="t2" x="1506.0" y="729.0" text-anchor="middle">log · Neon point-in-time</text></g><g class="in d6"><path class="ar" d="M565 88 V138"/><path class="ar2" d="M640 182 H718"/><path class="ar2" d="M1160 182 H1238"/><path class="ar" d="M1315 88 V138"/><path class="ar" d="M1430.0 224 V350"/><path class="ar" d="M1220 391 H1147"/><path class="ar" d="M725 391 H652"/><path class="ar" d="M440.0 430 V474"/><path class="flow" d="M397.5 568 V634"/><path class="flow" d="M760.5 568 V634"/><path class="flow" d="M1123.5 568 V634"/><path class="flow" d="M1486.5 568 V634"/></g>
+  </svg>
+</section>
+
 <!-- ================= 07 IMPLEMENTATION &amp; SETUP STEPS ================= -->
 <section class="slide" id="s10">
-  <div class="kicker in">07 · IMPLEMENTATION &amp; SETUP STEPS</div>
+  <div class="kicker in">08 · IMPLEMENTATION &amp; SETUP STEPS</div>
   <h2 class="in d1">From laptop to <span class="hl">live website</span></h2>
   <div class="pipe">
     <div class="pipe-track"></div>
@@ -1100,7 +1142,7 @@ body.calm .packet.back{display:none}
 
 <!-- ================= 08 DATABASE TYPE SELECTION &amp; JUSTIFICATION ================= -->
 <section class="slide" id="s4">
-  <div class="kicker in">08 · DATABASE TYPE SELECTION &amp; JUSTIFICATION</div>
+  <div class="kicker in">09 · DATABASE TYPE SELECTION &amp; JUSTIFICATION</div>
   <h2 class="in d1">Why <span class="hl">SQL</span> — running in the cloud</h2>
   <div class="cols" style="grid-template-columns:1.35fr 1fr;gap:60px;margin-top:40px">
     <table class="cmp glass">
@@ -1134,7 +1176,7 @@ body.calm .packet.back{display:none}
 
 <!-- ================= 09 DBMS ARCHITECTURE — THREE-SCHEMA ================= -->
 <section class="slide" id="s6">
-  <div class="kicker in">09 · DBMS ARCHITECTURE — THREE-SCHEMA</div>
+  <div class="kicker in">10 · DBMS ARCHITECTURE — THREE-SCHEMA</div>
   <h2 class="in d1">PharmVault on the <span class="hl">three levels</span></h2>
   <div class="cols" style="grid-template-columns:1fr 1.05fr;gap:40px;margin-top:30px">
     <div class="rings in d2">
@@ -1157,7 +1199,7 @@ body.calm .packet.back{display:none}
 
 <!-- ================= 10 SCHEMA / DATA MODEL (1/2) — ER DIAGRAM ================= -->
 <section class="slide" id="s8">
-  <div class="kicker in">10 · SCHEMA / DATA MODEL (1/2) — ER DIAGRAM</div>
+  <div class="kicker in">11 · SCHEMA / DATA MODEL (1/2) — ER DIAGRAM</div>
   <h2 class="in d1">11 tables, <span class="hl">linked by keys</span></h2>
   <div style="display:grid;grid-template-columns:1150px 1fr;gap:40px;margin-top:30px;align-items:start">
     <svg class="er" viewBox="0 0 1150 560" style="width:1150px;height:560px">
@@ -1175,7 +1217,7 @@ body.calm .packet.back{display:none}
 
 <!-- ================= 11 SCHEMA / DATA MODEL (2/2) — STAR SCHEMA ================= -->
 <section class="slide" id="s9">
-  <div class="kicker in">11 · SCHEMA / DATA MODEL (2/2) — STAR SCHEMA</div>
+  <div class="kicker in">12 · SCHEMA / DATA MODEL (2/2) — STAR SCHEMA</div>
   <h2 class="in d1">The local database as a <span class="hl">star</span></h2>
   <div style="display:grid;grid-template-columns:1050px 1fr;gap:50px;margin-top:20px;align-items:center">
     <svg class="star" viewBox="0 0 1050 690" style="width:1050px;height:690px">
@@ -1213,9 +1255,40 @@ body.calm .packet.back{display:none}
   </div>
 </section>
 
+<!-- ================= SCHEMA TABLES (1/3) ================= -->
+<section class="slide" id="sch1">
+  <div class="kicker in">13 · SCHEMA / DATA MODEL — TABLES (1/3)</div>
+  <h2 class="in d1">Core tables — <span class="hl">medicine &amp; stock</span></h2>
+  <div class="sch-grid" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+<div class="sch in d2"><div class="sch-h"><b>med</b><span>medicine catalogue · 13 columns</span></div><table><colgroup><col><col><col style="width:110px"><col></colgroup><tr><th>Column</th><th>Data type</th><th>Key</th><th>Constraints</th></tr><tr><td>med_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span></td><td class="cn">primary key</td></tr><tr><td>med_name</td><td class="ty">VARCHAR(250)</td><td></td><td class="cn"><code>NOT NULL</code> · indexed</td></tr><tr><td>price</td><td class="ty">NUMERIC(10,2)</td><td></td><td class="cn"><code>NOT NULL</code> · <code>CHECK ≥ 0</code></td></tr><tr><td>quantity</td><td class="ty">INTEGER</td><td></td><td class="cn"><code>DEFAULT 0</code> · <code>CHECK ≥ 0</code></td></tr><tr><td>illness_id</td><td class="ty">INTEGER</td><td><span class="kb fk">FK</span></td><td class="cn">→ illness(illness_id)</td></tr><tr><td>type</td><td class="ty">VARCHAR(100)</td><td></td><td class="cn">indexed</td></tr><tr><td>form</td><td class="ty">VARCHAR(80)</td><td></td><td class="cn">indexed</td></tr><tr><td>pharma_id</td><td class="ty">INTEGER</td><td><span class="kb fk">FK</span></td><td class="cn">→ pharma(pharma_id) · indexed</td></tr><tr><td>dosage_strength</td><td class="ty">VARCHAR(100)</td><td></td><td class="cn"></td></tr><tr><td>expiry_date</td><td class="ty">DATE</td><td></td><td class="cn"></td></tr><tr><td>prescription_required</td><td class="ty">BOOLEAN</td><td></td><td class="cn"><code>NOT NULL DEFAULT FALSE</code></td></tr><tr><td>in_web</td><td class="ty">BOOLEAN</td><td></td><td class="cn"><code>DEFAULT FALSE</code> · partial index</td></tr><tr><td>web_id</td><td class="ty">INTEGER</td><td><span class="kb uq">UQ</span></td><td class="cn"><code>UNIQUE</code> · Web Stock numbering</td></tr></table></div>
+<div style="display:grid;gap:30px"><div class="sch in d3"><div class="sch-h"><b>stock</b><span>medicine × pharmacy · 7 columns</span></div><table><colgroup><col><col><col style="width:110px"><col></colgroup><tr><th>Column</th><th>Data type</th><th>Key</th><th>Constraints</th></tr><tr><td>stock_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span></td><td class="cn">primary key</td></tr><tr><td>pharmacy_id</td><td class="ty">INTEGER</td><td><span class="kb fk">FK</span></td><td class="cn">→ pharmacy · <code>NOT NULL</code></td></tr><tr><td>med_id</td><td class="ty">INTEGER</td><td><span class="kb fk">FK</span></td><td class="cn">→ med · <code>ON DELETE CASCADE</code></td></tr><tr><td>stock_type</td><td class="ty">VARCHAR(20)</td><td></td><td class="cn"><code>IN ('web','local')</code></td></tr><tr><td>quantity</td><td class="ty">INTEGER</td><td></td><td class="cn"><code>DEFAULT 0</code> · <code>CHECK ≥ 0</code></td></tr><tr><td>expiry_date</td><td class="ty">DATE</td><td></td><td class="cn"></td></tr><tr><td>unit_price</td><td class="ty">NUMERIC(10,2)</td><td></td><td class="cn"><code>CHECK ≥ 0</code></td></tr></table></div><div class="sch in d4"><div class="sch-h"><b>pharmacy</b><span>users of the system · 4 columns</span></div><table><colgroup><col><col><col style="width:110px"><col></colgroup><tr><th>Column</th><th>Data type</th><th>Key</th><th>Constraints</th></tr><tr><td>pharmacy_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span></td><td class="cn">primary key</td></tr><tr><td>pharmacy_name</td><td class="ty">VARCHAR(150)</td><td></td><td class="cn"><code>NOT NULL</code></td></tr><tr><td>pharmacy_country</td><td class="ty">VARCHAR(100)</td><td></td><td class="cn"><code>NOT NULL</code></td></tr><tr><td>password_hash</td><td class="ty">VARCHAR(255)</td><td></td><td class="cn">scrypt hash · NULL until first sign-in</td></tr></table></div></div>
+  </div>
+  <div class="sch-legend in d6"><span><span class="kb pk">PK</span> primary key</span><span><span class="kb fk">FK</span> foreign key</span><span><span class="kb uq">UQ</span> unique</span><span style="margin-left:auto">source: <code style="font-family:var(--mono);color:var(--lav)">schema.sql</code> · PostgreSQL 16</span></div>
+</section>
+
+<!-- ================= SCHEMA TABLES (2/3) ================= -->
+<section class="slide" id="sch2">
+  <div class="kicker in">14 · SCHEMA / DATA MODEL — TABLES (2/3)</div>
+  <h2 class="in d1">Lookup tables — <span class="hl">who, what, how</span></h2>
+  <div class="sch-grid" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+<div class="sch in d2"><div class="sch-h"><b>pharma</b><span>manufacturers · 5 columns</span></div><table><colgroup><col><col><col style="width:110px"><col></colgroup><tr><th>Column</th><th>Data type</th><th>Key</th><th>Constraints</th></tr><tr><td>pharma_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span></td><td class="cn">primary key</td></tr><tr><td>pharma_name</td><td class="ty">VARCHAR(200)</td><td></td><td class="cn"><code>NOT NULL</code></td></tr><tr><td>pharma_country</td><td class="ty">VARCHAR(100)</td><td></td><td class="cn"></td></tr><tr><td>pharma_market_value</td><td class="ty">NUMERIC(14,2)</td><td></td><td class="cn"></td></tr><tr><td>pharma_origin_year</td><td class="ty">INTEGER</td><td></td><td class="cn"><code>CHECK 1800–2100</code></td></tr></table></div><div class="sch in d3"><div class="sch-h"><b>illness</b><span>conditions treated · 5 columns</span></div><table><colgroup><col><col><col style="width:110px"><col></colgroup><tr><th>Column</th><th>Data type</th><th>Key</th><th>Constraints</th></tr><tr><td>illness_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span></td><td class="cn">primary key</td></tr><tr><td>illness_name</td><td class="ty">VARCHAR(200)</td><td></td><td class="cn"><code>NOT NULL</code> · indexed</td></tr><tr><td>illness_type</td><td class="ty">VARCHAR(100)</td><td></td><td class="cn"></td></tr><tr><td>illness_danger_level</td><td class="ty">VARCHAR(20)</td><td></td><td class="cn"><code>IN ('low','moderate','high')</code></td></tr><tr><td>illness_pre_required</td><td class="ty">BOOLEAN</td><td></td><td class="cn"><code>NOT NULL DEFAULT FALSE</code></td></tr></table></div><div class="sch in d4"><div class="sch-h"><b>ingredient</b><span>active substances · 4 columns</span></div><table><colgroup><col><col><col style="width:110px"><col></colgroup><tr><th>Column</th><th>Data type</th><th>Key</th><th>Constraints</th></tr><tr><td>ingredient_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span></td><td class="cn">primary key</td></tr><tr><td>ingredient_name</td><td class="ty">VARCHAR(200)</td><td></td><td class="cn"><code>NOT NULL</code> · indexed</td></tr><tr><td>ingredient_value</td><td class="ty">NUMERIC(10,2)</td><td></td><td class="cn"></td></tr><tr><td>ingredient_type</td><td class="ty">VARCHAR(80)</td><td></td><td class="cn"></td></tr></table></div><div class="sch in d5"><div class="sch-h"><b>dosage</b><span>how to take a medicine · 5 columns</span></div><table><colgroup><col><col><col style="width:110px"><col></colgroup><tr><th>Column</th><th>Data type</th><th>Key</th><th>Constraints</th></tr><tr><td>dosage_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span></td><td class="cn">primary key</td></tr><tr><td>med_id</td><td class="ty">INTEGER</td><td><span class="kb fk">FK</span></td><td class="cn">→ med · <code>CASCADE</code> · indexed</td></tr><tr><td>age_group</td><td class="ty">VARCHAR(30)</td><td></td><td class="cn"><code>IN ('adult','child')</code></td></tr><tr><td>dosage_note</td><td class="ty">VARCHAR(120)</td><td></td><td class="cn"></td></tr><tr><td>times_per_day</td><td class="ty">INTEGER</td><td></td><td class="cn"><code>CHECK 1–10</code></td></tr></table></div>
+  </div>
+  <div class="sch-legend in d6"><span><span class="kb pk">PK</span> primary key</span><span><span class="kb fk">FK</span> foreign key</span><span><span class="kb uq">UQ</span> unique</span><span style="margin-left:auto">source: <code style="font-family:var(--mono);color:var(--lav)">schema.sql</code> · PostgreSQL 16</span></div>
+</section>
+
+<!-- ================= SCHEMA TABLES (3/3) ================= -->
+<section class="slide" id="sch3">
+  <div class="kicker in">15 · SCHEMA / DATA MODEL — TABLES (3/3)</div>
+  <h2 class="in d1">Junction &amp; log tables — <span class="hl">linking and tracking</span></h2>
+  <div class="sch-grid" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+<div class="sch in d2"><div class="sch-h"><b>history</b><span>activity log · 6 columns</span></div><table><colgroup><col><col><col style="width:110px"><col></colgroup><tr><th>Column</th><th>Data type</th><th>Key</th><th>Constraints</th></tr><tr><td>history_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span></td><td class="cn"><code>GENERATED ALWAYS AS IDENTITY</code></td></tr><tr><td>pharmacy_id</td><td class="ty">INTEGER</td><td><span class="kb fk">FK</span></td><td class="cn">→ pharmacy · <code>CASCADE</code></td></tr><tr><td>stock_type</td><td class="ty">VARCHAR(20)</td><td></td><td class="cn"><code>IN ('web','local')</code></td></tr><tr><td>action</td><td class="ty">VARCHAR(20)</td><td></td><td class="cn"><code>seed·import·download·add·edit·delete</code></td></tr><tr><td>summary</td><td class="ty">TEXT</td><td></td><td class="cn"><code>NOT NULL</code></td></tr><tr><td>created_at</td><td class="ty">TIMESTAMPTZ</td><td></td><td class="cn"><code>DEFAULT NOW()</code></td></tr></table></div><div class="sch in d3"><div class="sch-h"><b>import_batch</b><span>data-load audit · 6 columns</span></div><table><colgroup><col><col><col style="width:110px"><col></colgroup><tr><th>Column</th><th>Data type</th><th>Key</th><th>Constraints</th></tr><tr><td>import_batch_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span></td><td class="cn">primary key</td></tr><tr><td>source_name</td><td class="ty">VARCHAR(200)</td><td></td><td class="cn"><code>NOT NULL</code></td></tr><tr><td>source_type</td><td class="ty">VARCHAR(50)</td><td></td><td class="cn"><code>NOT NULL</code></td></tr><tr><td>record_count</td><td class="ty">INTEGER</td><td></td><td class="cn"><code>NOT NULL DEFAULT 0</code></td></tr><tr><td>import_date</td><td class="ty">DATE</td><td></td><td class="cn"><code>NOT NULL</code></td></tr><tr><td>notes</td><td class="ty">TEXT</td><td></td><td class="cn"></td></tr></table></div><div class="sch in d4"><div class="sch-h"><b>med_ingredient</b><span>junction · M:N med ↔ ingredient</span></div><table><colgroup><col><col><col style="width:110px"><col></colgroup><tr><th>Column</th><th>Data type</th><th>Key</th><th>Constraints</th></tr><tr><td>med_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span><span class="kb fk">FK</span></td><td class="cn">→ med · <code>ON DELETE CASCADE</code></td></tr><tr><td>ingredient_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span><span class="kb fk">FK</span></td><td class="cn">→ ingredient · indexed</td></tr></table></div><div class="sch in d5"><div class="sch-h"><b>med_illness</b><span>junction · M:N med ↔ illness</span></div><table><colgroup><col><col><col style="width:110px"><col></colgroup><tr><th>Column</th><th>Data type</th><th>Key</th><th>Constraints</th></tr><tr><td>med_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span><span class="kb fk">FK</span></td><td class="cn">→ med · <code>ON DELETE CASCADE</code></td></tr><tr><td>illness_id</td><td class="ty">INTEGER</td><td><span class="kb pk">PK</span><span class="kb fk">FK</span></td><td class="cn">→ illness</td></tr></table></div>
+  </div>
+  <div class="sch-legend in d6"><span><span class="kb pk">PK</span> primary key</span><span><span class="kb fk">FK</span> foreign key</span><span><span class="kb uq">UQ</span> unique</span><span style="margin-left:auto">source: <code style="font-family:var(--mono);color:var(--lav)">schema.sql</code> · PostgreSQL 16</span></div>
+</section>
+
 <!-- ================= 12 QUERIES / CRUD (1/2) — CREATE &amp; READ ================= -->
 <section class="slide" id="s11">
-  <div class="kicker in">12 · QUERIES / CRUD (1/2) — CREATE &amp; READ</div>
+  <div class="kicker in">16 · QUERIES / CRUD (1/2) — CREATE &amp; READ</div>
   <h2 class="in d1"><span class="hl">Create</span> &amp; <span class="hl">Read</span> — add, then search</h2>
 
   <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:44px;margin-top:36px;align-items:start">
@@ -1253,7 +1326,7 @@ body.calm .packet.back{display:none}
 
 <!-- ================= 13 QUERIES / CRUD (2/2) — UPDATE &amp; DELETE ================= -->
 <section class="slide" id="s12">
-  <div class="kicker in">13 · QUERIES / CRUD (2/2) — UPDATE &amp; DELETE</div>
+  <div class="kicker in">17 · QUERIES / CRUD (2/2) — UPDATE &amp; DELETE</div>
   <h2 class="in d1"><span class="hl">Update</span> &amp; <span class="hl">Delete</span> — edit, then clear</h2>
 
   <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:44px;margin-top:36px;align-items:start">
@@ -1290,7 +1363,7 @@ body.calm .packet.back{display:none}
 
 <!-- ================= 14 ADVANTAGES &amp; LIMITATIONS OBSERVED ================= -->
 <section class="slide" id="s13">
-  <div class="kicker in">14 · ADVANTAGES &amp; LIMITATIONS OBSERVED</div>
+  <div class="kicker in">18 · ADVANTAGES &amp; LIMITATIONS OBSERVED</div>
   <h2 class="in d1">What we <span class="hl">learned by building it</span></h2>
   <div class="two">
     <div class="col adv"><h3><i style="background:var(--blue)"></i>Advantages</h3>
@@ -1312,7 +1385,7 @@ body.calm .packet.back{display:none}
 
 <!-- ================= 15 CONCLUSION ================= -->
 <section class="slide" id="s14">
-  <div class="kicker in">15 · CONCLUSION</div>
+  <div class="kicker in">19 · CONCLUSION</div>
   <div style="display:grid;grid-template-columns:1fr 700px;gap:60px;align-items:center">
     <div>
       <h2 class="in d1">PharmVault is <span class="hl">live</span> 🚀</h2>
@@ -1348,7 +1421,7 @@ body.calm .packet.back{display:none}
 
 <!-- ================= 16 REFERENCES ================= -->
 <section class="slide" id="s15">
-  <div class="kicker in">16 · REFERENCES</div>
+  <div class="kicker in">20 · REFERENCES</div>
   <h2 class="in d1">Sources &amp; <span class="hl">documentation</span></h2>
   <ul class="refs">
     <li class="ic" style="--i:1"><svg class="ref-ic" viewBox="0 0 24 24"><use href="#ic-book" fill="#b0adf9"/></svg><b>Elmasri &amp; Navathe</b> — Fundamentals of Database Systems, 7th ed. (three-schema architecture)</li>
