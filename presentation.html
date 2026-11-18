@@ -520,6 +520,16 @@ body.calm .packet.back{display:none}
 .arch .flow{stroke:#b0adf9;stroke-width:2.4;fill:none;stroke-dasharray:6 10;animation:archflow 1.2s linear infinite}
 @keyframes archflow{to{stroke-dashoffset:-32}}
 body.calm .arch .flow{animation:none}
+
+/* play / pause for the animated website demos (pages 4-5) */
+.frame .pp{position:absolute;right:28px;bottom:28px;z-index:6;width:58px;height:58px;border-radius:50%;border:1.5px solid rgba(176,173,249,.7);
+  background:rgba(13,16,48,.85);cursor:pointer;display:grid;place-items:center;box-shadow:0 0 24px -4px rgba(176,173,249,.6);transition:transform .2s,background .2s}
+.frame .pp:hover{transform:scale(1.08);background:rgba(108,103,216,.9)}
+.frame .pp svg{width:26px;height:26px;fill:#e9eaff}
+.frame .pp .i-play{display:none}
+.frame.paused .pp .i-play{display:block}.frame.paused .pp .i-pause{display:none}
+.frame.paused .frame-in, .frame.paused .frame-in *{animation-play-state:paused!important}
+@media print{.frame .pp{display:none}}
 </style>
 </head>
 <body>
@@ -756,7 +766,7 @@ body.calm .arch .flow{animation:none}
       <li><b>Edit</b> price · quantity · expiry</li>
       <li><b>Watchlist</b> · <b>Dashboard</b> · <b>History</b></li>
     </ul>
-    <div class="frame in d2"><div class="frame-in">
+    <div class="frame in d2"><button class="pp" aria-label="Pause" title="Play / pause"><svg viewBox="0 0 24 24"><path class="i-pause" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/><path class="i-play" d="M8 5l11 7-11 7z"/></svg></button><div class="frame-in">
       <div class="ui-top"><i></i><i></i><i></i><span>pharmvault-u5k0.onrender.com</span></div>
       <div class="ui-body">
         <div class="ui-side"><div class="on"></div><div></div><div></div><div></div><div></div><div class="warn"></div><div class="dang"></div><div style="height:12px;background:none"></div><div></div><div></div><div></div></div>
@@ -811,7 +821,7 @@ body.calm .arch .flow{animation:none}
       <li><b>Read-only</b> · own IDs 1, 2, 3…</li>
       <li><b>Drug Class</b> tab · same look as Local</li>
     </ul>
-    <div class="frame in d2"><div class="frame-in">
+    <div class="frame in d2"><button class="pp" aria-label="Pause" title="Play / pause"><svg viewBox="0 0 24 24"><path class="i-pause" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/><path class="i-play" d="M8 5l11 7-11 7z"/></svg></button><div class="frame-in">
       <div class="ui-top"><i></i><i></i><i></i><span>pharmvault-u5k0.onrender.com · Web Stock</span></div>
       <div class="ui-body">
         <div class="ui-side"><div></div><div class="on"></div><div></div><div></div><div></div><div></div><div style="height:12px;background:none"></div><div></div><div></div><div></div></div>
@@ -1726,6 +1736,13 @@ for(let a=50;a>=-5;a-=15){const ln=document.createElementNS(NS,'line');ln.setAtt
     e.preventDefault(); e.stopImmediatePropagation(); close();   // any key closes it; slides do not move
   }, true);
 })();
+</script>
+<script>
+document.querySelectorAll(".frame .pp").forEach((b) => b.addEventListener("click", (e) => {
+  e.stopPropagation();
+  const f = b.closest(".frame"), p = f.classList.toggle("paused");
+  b.setAttribute("aria-label", p ? "Play" : "Pause");
+}));
 </script>
 </body>
 </html>
